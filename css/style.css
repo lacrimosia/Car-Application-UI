@@ -5,3 +5,16 @@ body{
 .main-menu{
 	font-size: 20px;
 }
+
+.shortcut-background{
+	border: 1px solid #bbb;
+	height: auto;
+	padding:10px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.deleteBox{
+	float: left;
+	margin: -10px;
+}

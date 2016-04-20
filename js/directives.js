@@ -18,3 +18,10 @@ app.directive('homeShortcuts', function(){
 		templateUrl: './partials/shortcuts.html'
 	};
 });
+
+app.directive('userName', function(){
+	return{
+		restrict: 'AEC',
+		templateUrl: './partials/name.html'
+	};
+});

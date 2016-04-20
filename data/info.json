@@ -1,16 +1,54 @@
 {
+	"user": "User",
+	"userThumb":"fa fa-user",
 	"shortcuts": [
 		{
 			"name": "Applications",
-			"icon": "fa fa-desktop",
+			"icon": "fa fa-folder",
 			"link": "/apps",
 			"description": "I am the apps description"
 		},
 		{
+			"name": "App Store",
+			"icon": "fa fa-shopping-bag",
+			"link": "apps/store",
+			"description": "I am the App Store"
+		},
+		{
 			"name": "Music Player",
-			"icon": "fa fa-desktop",
-			"link": "/musicplayer",
+			"icon": "fa fa-music",
+			"link": "apps/musicplayer",
 			"description": "I am the music description"
+		},
+		{
+			"name": "Phone",
+			"icon": "fa fa-phone",
+			"link": "apps/phone",
+			"description": "Making a Phone Call"
+		},
+		{
+			"name": "Browser",
+			"icon": "fa fa-internet-explorer",
+			"link": "apps/browser",
+			"description": "Lets open the browser"
+		},
+		{
+			"name": "Mail",
+			"icon": "fa fa-envelope",
+			"link": "apps/mail",
+			"description": "Lets read some mail"
+		},
+		{
+			"name": "Spotify",
+			"icon": "fa fa-spotify",
+			"link": "apps/spotify",
+			"description": "Lets listen to spotify"
+		},
+		{
+			"name": "Settings",
+			"icon": "fa fa-cog",
+			"link": "apps/settings",
+			"description": "Lets edit our settings"
 		}
 	]
 }
