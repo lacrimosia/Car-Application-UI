@@ -11,3 +11,10 @@ app.directive('status', function(){
 		templateUrl: './partials/status-menu.html'
 	};
 });
+
+app.directive('homeShortcuts', function(){
+	return{
+		restrict: 'AEC',
+		templateUrl: './partials/shortcuts.html'
+	};
+});

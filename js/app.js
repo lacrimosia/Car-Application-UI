@@ -4,11 +4,11 @@ app.config(['$routeProvider', function($routeProvider) {
    $routeProvider.
    
    when('/', {
-      templateUrl: 'pages/home.html', controller: 'test'
+      templateUrl: 'pages/home.html', controller: 'home'
    }).
 
    when('/apps', {
-      templateUrl: 'pages/apps.html', controller: 'test'
+      templateUrl: 'pages/apps.html', controller: 'apps'
    }).
 
    otherwise({

@@ -1,0 +1,16 @@
+{
+	"shortcuts": [
+		{
+			"name": "Applications",
+			"icon": "fa fa-desktop",
+			"link": "/apps",
+			"description": "I am the apps description"
+		},
+		{
+			"name": "Music Player",
+			"icon": "fa fa-desktop",
+			"link": "/musicplayer",
+			"description": "I am the music description"
+		}
+	]
+}
