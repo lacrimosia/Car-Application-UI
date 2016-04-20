@@ -3,7 +3,8 @@ body{
 }
 
 .mainApp{
-	background:url('../images/wallpaper.jpg') no-repeat top center;
+	background:url('../images/space.jpg') no-repeat top center;
+	background-size: cover;
 	height: 1920px !important;
 	overflow: hidden;
 	/*border: 1px solid #bbb;*/
@@ -12,17 +13,36 @@ body{
 .main-menu{
 	font-size: 20px;
 	margin-bottom: 20px;
+}
+
+.main-menu-background{
 	background: #09216d;
+	width: 100%;
+	height: 50px;
+}
+
+.main-menu li a:focus{
+	color: #ffffff;
+	background: #3c629e;
+	outline: none;
 }
 
 .main-menu li a:hover{
+	background: #3375bb;
 	color: #ffffff;
-	background: #3c629e;
 }
 
 .main-menu li a{
 	color: #ffffff;
 	background: #09216d;
+}
+
+/* background for status bar */
+.statusbar{
+	background: #415068;
+	width:100%;
+	color: #ffffff;
+	height: 40px;
 }
 
 .btn-primary{
@@ -39,13 +59,17 @@ body{
 	padding:10px;
 	text-align: center;
 	margin-bottom: 30px;
-	opacity: 0.9;
 }
 
 .shortcut-background:hover{
 	background: #3c629e;
 	color: #ffffff;
 	cursor: pointer;
+}
+
+.mainarea{
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .deleteBox{
@@ -56,6 +80,10 @@ body{
 .closeMe{
 	float: right;
 	
+}
+
+.nav-pills li a{
+	border-radius: 0px;
 }
 
 /* center the modal vertically */
