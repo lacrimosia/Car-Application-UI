@@ -11,21 +11,24 @@ app.factory('contentService',['$http', function($http){
 // modal popup service
 app.factory('modalService',['$uibModal', function($uibModal){
 	return {
-      openMenuModal: function(index, title, description, templateLink) {
+      openMenuModal: function(index, title, description, templateLink, array, size) {
         var modalObj = $uibModal.open({
           templateUrl: templateLink,
           backdrop: 'static',
           keyboard: true,
-          size: 'md',
+          size: size,
           animation: true,
           controller: function($scope, $uibModalInstance){
             $scope.title = title;
             $scope.description = description;
+            $scope.index = index;
+            $scope.array = array;
 
             $scope.ok = function(id){
               //Process Close Button Click
               $uibModalInstance.close(); 
             }
+
             $scope.cancel = function(){
               $uibModalInstance.dismiss('cancel');
             }

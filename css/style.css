@@ -1,18 +1,50 @@
 body{
+	background: #f1f1f1;
+}
 
+.mainApp{
+	background:url('../images/wallpaper.jpg') no-repeat top center;
+	height: 1920px !important;
+	overflow: hidden;
+	/*border: 1px solid #bbb;*/
 }
 
 .main-menu{
 	font-size: 20px;
 	margin-bottom: 20px;
+	background: #09216d;
+}
+
+.main-menu li a:hover{
+	color: #ffffff;
+	background: #3c629e;
+}
+
+.main-menu li a{
+	color: #ffffff;
+	background: #09216d;
+}
+
+.btn-primary{
+	background: #1d4482 !important;
+	border: none !important;
+	color: #ffffff;
 }
 
 .shortcut-background{
-	border: 1px solid #bbb;
+	/*border: 1px solid #bbb;*/
+	background: #09216d;
+	color: #ffffff;
 	height: auto;
 	padding:10px;
 	text-align: center;
 	margin-bottom: 30px;
+}
+
+.shortcut-background:hover{
+	background: #3c629e;
+	color: #ffffff;
+	cursor: pointer;
 }
 
 .deleteBox{

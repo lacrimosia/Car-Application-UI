@@ -17,16 +17,19 @@ app.controller('home', [
     	$scope.backup = [];             // when deleted, goes here in case of undo or reset
 
     	// remove desktop shortcut on click
-    	$scope.deleteBox = function(index, title, description, templateLink){
+    	$scope.deleteBox = function(index, title, description, templateLink, array, size){
     		$scope.selected = index;
-    		 modalService.openMenuModal(null, title, description, templateLink);
-    		/*if($scope.selected != -1){
+    		
+
+
+    		if($scope.selected != -1){
     			$scope.shortcutList.splice($scope.selected, 1);
-    			$scope.backup.push($scope.shortcutList[$scope.selected]);
-    			console.log($scope.backup);
+    			 modalService.openMenuModal(null, title, description, templateLink, array, size);
+    			//$scope.backup.push($scope.shortcutList[$scope.selected]);
+    			//console.log($scope.backup);
     		}else{
     			console.log("Nothing to delete");
-    		}*/
+    		}
     		
     	};
     });
