@@ -3,7 +3,7 @@ body{
 }
 
 .mainApp{
-	background:url('../images/space.jpg') no-repeat top center;
+	background:url('../images/wallpaper.jpg') no-repeat top center;
 	background-size: cover;
 	height: 1920px !important;
 	overflow: hidden;
