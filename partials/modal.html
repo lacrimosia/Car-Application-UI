@@ -1,7 +1,18 @@
-<div ng-controller="Home">
+<div ng-controller="home">
 <div class="modalBox animated fadeIn">
-		<h1> {{title}} </h1>
-			<p>{{description}}</p>
-			<div class="modal-footer"></div>	
+<div class="modal-header">
+<!--<button class="btn btn-primary closeMe"><i class="fa fa-times"></i></button>-->
+            <h5 class="modal-title">{{title}}</h5>
+            
+        </div>
+        <div class="modal-body">
+            <h3 class="modal-title">Are you sure you want to delete the {{description}} shortcut?</h3>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-danger">Yes</button>
+			<button class="btn btn-success">No</button>
 </div>
 </div>
+</div>
+
+

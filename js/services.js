@@ -9,27 +9,28 @@ app.factory('contentService',['$http', function($http){
 }]);
 
 // modal popup service
-/*app.factory('modalService',['$uibModal', function($uibModal){
+app.factory('modalService',['$uibModal', function($uibModal){
 	return {
-      openMenuModal: function(index, title, description) {
+      openMenuModal: function(index, title, description, templateLink) {
         var modalObj = $uibModal.open({
-          templateUrl: 'partials/modal.html',
+          templateUrl: templateLink,
           backdrop: 'static',
           keyboard: true,
-          size: 'sm',
-          controller: function($scope, $modalInstance){
+          size: 'md',
+          animation: true,
+          controller: function($scope, $uibModalInstance){
             $scope.title = title;
             $scope.description = description;
 
             $scope.ok = function(id){
               //Process Close Button Click
-              $modalInstance.close(); 
+              $uibModalInstance.close(); 
             }
             $scope.cancel = function(){
-              $modalInstance.dismiss('cancel');
+              $uibModalInstance.dismiss('cancel');
             }
            }
         });
       }
     };
-}]);*/
+}]);

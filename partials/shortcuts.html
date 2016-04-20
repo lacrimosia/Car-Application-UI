@@ -1,6 +1,6 @@
 <div class="col-md-3" ng-repeat="s in shortcutList">
 	<div class="shortcut-background animated zoomIn" ng-class="{'animated': '!deleted', 'fadeOut': '!deleted'}">
-	<button class="btn btn-primary deleteBox" ng-click="deleteBox($index, 'Are You sure you want to delete', 'I am deleting')"><i class="fa fa-times-circle"></i></button>
+	<button class="btn btn-primary deleteBox" ng-click="deleteBox($index, 'Delete Shortcut', s.name, 'partials/modal.html')"><i class="fa fa-times-circle"></i></button>
 		<p><h1><i class="{{s.icon}}"></i></h1></p>
 		<h3>{{ s.name }}</h3>
 		<p><small>{{ s.link }}</small></p>

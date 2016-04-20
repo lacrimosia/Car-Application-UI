@@ -4,7 +4,9 @@
 app.controller('home', [
 	'$scope', 
 	'contentService', 
-	'$http', function($scope, contentService, $http){
+	'$http',
+	'$uibModal',
+	'modalService', function($scope, contentService, $http, $uibModal, modalService){
 
     contentService.then(function(data){
         $scope.data = data;   // access all data
@@ -15,16 +17,16 @@ app.controller('home', [
     	$scope.backup = [];             // when deleted, goes here in case of undo or reset
 
     	// remove desktop shortcut on click
-    	$scope.deleteBox = function(index){
+    	$scope.deleteBox = function(index, title, description, templateLink){
     		$scope.selected = index;
-    		// modalService.openMenuModal('t', title, description);
-    		if($scope.selected != -1){
+    		 modalService.openMenuModal(null, title, description, templateLink);
+    		/*if($scope.selected != -1){
     			$scope.shortcutList.splice($scope.selected, 1);
     			$scope.backup.push($scope.shortcutList[$scope.selected]);
     			console.log($scope.backup);
     		}else{
     			console.log("Nothing to delete");
-    		}
+    		}*/
     		
     	};
     });
