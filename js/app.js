@@ -1,6 +1,6 @@
 var app = angular.module('myApp', ['ngRoute', 'ui.bootstrap']);
 
-app.config(['$routeProvider', function($routeProvider) {
+app.config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider) {
    $routeProvider.
    
    when('/', {
