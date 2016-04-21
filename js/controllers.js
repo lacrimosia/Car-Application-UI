@@ -1,6 +1,6 @@
 'use strict';
 
-
+// home page controller
 app.controller('home', [
 	'$scope', 
 	'contentService', 
@@ -40,6 +40,40 @@ app.controller('home', [
 
 }]);
 
-app.controller('apps', ['$scope', '$http', function($scope, $http){
+// applications controller
+app.controller('apps', ['$scope', '$http', 'contentService', function($scope, $http, contentService){
+ contentService.then(function(data){
+        $scope.data = data;   // access all data
+        $scope.data = data;   // access all data
+        $scope.appsList = $scope.data.appsList;  // list of shortcuts
+
+
+    });
+
+}]);
+
+// phone controller
+app.controller('phone', ['$scope', '$http', function($scope, $http){
+
+}]);
+
+// mail controller
+app.controller('mail', ['$scope', '$http', function($scope, $http){
+
+}]);
+
+// store controller
+app.controller('store', ['$scope', '$http', function($scope, $http){
+
+}]);
+
+// music player controller
+app.controller('musicPlayer', ['$scope', '$http', function($scope, $http){
+
+}]);
+
+//weather
+// music player controller
+app.controller('weather', ['$scope', '$http', function($scope, $http){
 
 }]);

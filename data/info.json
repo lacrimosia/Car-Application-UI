@@ -17,13 +17,13 @@
 		{
 			"name": "Music Player",
 			"icon": "fa fa-music",
-			"link": "apps/musicplayer",
+			"link": "apps/music-player",
 			"description": "I am the music description"
 		},
 		{
 			"name": "Phone",
 			"icon": "fa fa-phone",
-			"link": "apps/phone",
+			"link": "/phone",
 			"description": "Making a Phone Call"
 		},
 		{
@@ -49,6 +49,68 @@
 			"icon": "fa fa-cog",
 			"link": "apps/settings",
 			"description": "Lets edit our settings"
+		}
+	],
+	"appsList": [
+		{
+			"name": "Amazon",
+			"icon": "fa fa-cog",
+			"link": "apps/amazon",
+			"description": "This is the amazon"
+		},
+		{
+			"name": "Ebay",
+			"icon": "fa fa-cog",
+			"link": "apps/ebay",
+			"description": "This is Ebay"
+		},
+		{
+			"name": "Microsoft",
+			"icon": "fa fa-cog",
+			"link": "apps/microsoft",
+			"description": "This is the Microsoft"
+		},
+		{
+			"name": "Stack Overflow",
+			"icon": "fa fa-cog",
+			"link": "apps/stack-overflow",
+			"description": "Stack Overflow forum"
+		},
+		{
+			"name": "Dell",
+			"icon": "fa fa-cog",
+			"link": "apps/dell",
+			"description": "Dell Shopping Area"
+		},
+		{
+			"name": "Yelp",
+			"icon": "fa fa-cog",
+			"link": "apps/yelp",
+			"description": "This is Yelp"
+		},
+		{
+			"name": "Weather",
+			"icon": "fa fa-cog",
+			"link": "apps/amazon",
+			"description": "This is the Weather app"
+		},
+		{
+			"name": "Amazon",
+			"icon": "fa fa-cog",
+			"link": "apps/amazon",
+			"description": "This is the amazon"
+		},
+		{
+			"name": "Amazon",
+			"icon": "fa fa-cog",
+			"link": "apps/amazon",
+			"description": "This is the amazon"
+		},
+		{
+			"name": "Amazon",
+			"icon": "fa fa-cog",
+			"link": "apps/amazon",
+			"description": "This is the amazon"
 		}
 	]
 }

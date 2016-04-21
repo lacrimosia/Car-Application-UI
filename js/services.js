@@ -1,11 +1,14 @@
 // get the json file
 app.factory('contentService',['$http', function($http){
+
 	// get the external json data
 	var Url  = "data/info.json";
     var information = $http.get(Url).then(function(response){
         return response.data;
     });
+
     return information; 
+
 }]);
 
 // modal popup service

@@ -1,7 +1,11 @@
 <div class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<h2 class="animated fadeIn">wer</h2>
-			</div>
+			<div class="col-md-3" ng-repeat="a in appsList">
+	<div class="shortcut-background animated zoomIn" ng-class="{'animated': '!deleted', 'fadeOut': '!deleted'}" ng-click="goTo(a.link)">
+		<p><h1><i class="{{a.icon}}"></i></h1></p>
+		<h3>{{ a.name }}</h3>
+		<p><small>{{ a.link }}</small></p>
+	</div>
+</div>
 		</div>
 	</div>

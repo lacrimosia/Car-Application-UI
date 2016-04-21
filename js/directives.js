@@ -25,3 +25,24 @@ app.directive('userName', function(){
 		templateUrl: './partials/name.html'
 	};
 });
+
+app.directive('appStore', function(){
+	return{
+		restrict: 'AEC',
+		templateUrl: './partials/store.html'
+	};
+});
+
+app.directive('musicPlayer', function(){
+	return{
+		restrict: 'AEC',
+		templateUrl: './partials/music-player.html'
+	};
+});
+
+app.directive('weather', function(){
+	return{
+		restrict: 'AEC',
+		templateUrl: './partials/weather.html'
+	};
+});
