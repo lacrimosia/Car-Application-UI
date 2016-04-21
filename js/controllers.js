@@ -74,6 +74,9 @@ app.controller('musicPlayer', ['$scope', '$http', function($scope, $http){
 
 //weather
 // music player controller
-app.controller('weather', ['$scope', '$http', function($scope, $http){
+app.controller('weather', ['$scope', '$http','weatherService', function($scope, $http, weatherService){
+
+// $scope.weather = weatherService.get({cityname: 'Las Vegas'});
+$scope.weather = weatherService.getWeather().get();
 
 }]);

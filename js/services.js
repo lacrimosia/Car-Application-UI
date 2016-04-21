@@ -11,6 +11,16 @@ app.factory('contentService',['$http', function($http){
 
 }]);
 
+// get the json file of the weather
+app.factory('weatherService',['$resource', function($resource){
+  // return $resource('api.openweathermap.org/data/2.5/weather?q=:cityname',{cityname: "@cityname"});
+  var factory={};
+     factory.getWeather = function(){
+         return $resource("http://api.wunderground.com/api/9eb7777065b59c55/conditions/q/CA/San_Francisco.json").get();
+     }
+    return factory;
+}]);
+
 // modal popup service
 app.factory('modalService',['$uibModal', function($uibModal){
 	return {
