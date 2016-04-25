@@ -13,6 +13,9 @@ body{
 .main-menu{
 	font-size: 20px;
 	margin-bottom: 20px;
+	background: #09216d;
+	border: none !important;
+	border-radius: 0px !important;
 }
 
 .main-menu-background{
@@ -23,18 +26,18 @@ body{
 
 .main-menu li a:focus{
 	color: #ffffff;
-	background: #3c629e;
+	background: #3c629e !important;
 	outline: none;
 }
 
 .main-menu li a:hover{
-	background: #3375bb;
+	background: #3375bb !important;
 	color: #ffffff;
 }
 
 .main-menu li a{
-	color: #ffffff;
-	background: #09216d;
+	color: #ffffff !important;
+	background: #09216d !important;
 }
 
 /* background for status bar */
@@ -46,15 +49,15 @@ body{
 }
 
 .btn-primary{
-	background: #1d4482 !important;
+	background: #09216D !important;
 	border: none !important;
 	color: #ffffff;
 }
 
 .shortcut-background{
 	/*border: 1px solid #bbb;*/
-	background: #09216d;
-	color: #ffffff;
+	background: #E6E6E6;
+	color: #09216D;
 	height: auto;
 	padding:10px;
 	text-align: center;
