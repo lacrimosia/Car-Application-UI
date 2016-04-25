@@ -2,8 +2,13 @@
 <div class="container">
 	<div class="row">
 		<user-name></user-name>
-		<div class="col-md-6 col-sm-12"><weather></weather></div>
-		<div class="col-md-4 col-sm-12 col-xs-12"><spotify-widget></spotify-widget></div>
-		<home-shortcuts></home-shortcuts>
+		<div class="col-md-6 col-sm-12 col-xs-12 col-lg-8">
+			<div class="shortcut-background animated zoomIn"><h5> Weather</h5>
+			<hr>
+			<weather></weather>
+			</div>
+		</div>
+		<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4"><spotify-widget></spotify-widget></div>
+		<div class="col-md-3" ng-repeat="s in shortcutList"><home-shortcuts></home-shortcuts></div>
 	</div>
 </div>
