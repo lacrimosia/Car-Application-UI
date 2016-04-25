@@ -11,6 +11,17 @@ app.factory('contentService',['$http', function($http){
 
 }]);
 
+// get the json file of the weather
+app.factory('weatherService',['$resource', function($resource){
+  // return $resource('api.openweathermap.org/data/2.5/weather?q=:cityname',{cityname: "@cityname"});
+  var factory={};
+     factory.getWeather=function(){
+         return $resource("api.openweathermap.org/data/2.5/weather?lat=35&lon=139").query();
+     }
+    return factory;
+}]);
+
+
 // modal popup service
 app.factory('modalService',['$uibModal', function($uibModal){
 	return {
@@ -40,3 +51,6 @@ app.factory('modalService',['$uibModal', function($uibModal){
       }
     };
 }]);
+
+
+// load script tag service

@@ -7,7 +7,10 @@ app.controller('home', [
 	'$http',
 	'$uibModal',
 	'modalService', 
-	'$location', function($scope, contentService, $http, $uibModal, modalService, $location){
+	'$location',
+	'$routeParams',
+	'$route',
+	'$window', function($scope, contentService, $http, $uibModal, modalService, $location, $routeParams, $route, $window){
 
     contentService.then(function(data){
         $scope.data = data;   // access all data
@@ -23,6 +26,7 @@ app.controller('home', [
     		$location.url(url);
     	}
 
+    	//$scope.reload();
     	// remove desktop shortcut on click
     	$scope.deleteBox = function(index, title, description, templateLink, array, size){
     		$scope.selected = index;
@@ -72,8 +76,14 @@ app.controller('musicPlayer', ['$scope', '$http', function($scope, $http){
 
 }]);
 
-//weather
-// music player controller
-app.controller('weather', ['$scope', '$http', function($scope, $http){
+//weather controller
+app.controller('weather', ['$scope', '$http','weatherService', '$window', function($scope, $http, weatherService, $window){
 
+// $scope.weather = weatherService.get({cityname: 'Las Vegas'});
+// $scope.weather = weatherService.getWeather();
+$scope.reload = function(){
+    		alert("hello");
+    		$window.location.reload();
+    	}
+ // $scope.reload();
 }]);

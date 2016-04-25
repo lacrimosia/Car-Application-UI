@@ -43,6 +43,11 @@ app.directive('musicPlayer', function(){
 app.directive('weather', function(){
 	return{
 		restrict: 'AEC',
-		templateUrl: './partials/weather.html'
+		templateUrl: './partials/weather.html',
+		link: function($scope, element, attrs){
+			var addScript = angular.element(document.createElement('script'))
+                        addScript.attr({src:'http://oap.accuweather.com/launch.js'}) // set script when loading
+                        element.append(addScript)
+		}
 	};
 });
