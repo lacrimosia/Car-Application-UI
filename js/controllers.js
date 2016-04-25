@@ -78,13 +78,23 @@ app.controller('musicPlayer', ['$scope', '$http', function($scope, $http){
 
 
 //weather
-// music player controller
-app.controller('weather', ['$scope', '$http','weatherService', function($scope, $http, weatherService){
+app.controller('weather', [
+	'$scope', 
+	'$http',
+	'weatherService',
+	'$location', function($scope, $http, weatherService, $location){
 // $scope.weather = weatherService.get({cityname: 'Las Vegas'});
 // $scope.weather = weatherService.getWeather();
-$scope.reload = function(){
-    		alert("hello");
-    		$window.location.reload();
-    	}
- // $scope.reload();
+   $scope.goTo = function(url){
+   	$location.url(url);
+   }
+}]);
+
+//weather Report
+app.controller('weather', [
+	'$scope', 
+	'$http',
+	'weatherService',
+	'$location', function($scope, $http, weatherService, $location){
+
 }]);

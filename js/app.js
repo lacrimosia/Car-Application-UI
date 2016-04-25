@@ -32,8 +32,12 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
       templateUrl: 'partials/weather.html', controller: 'weather'
    }).
 
+   when('/apps/weatherReport', {
+      templateUrl: 'pages/weatherReport.html'
+   }).
+
    otherwise({
-      redirectTo: '/'
+      redirectTo: '/404', templateUrl: 'partials/404.html'
    });
 	
 }]);

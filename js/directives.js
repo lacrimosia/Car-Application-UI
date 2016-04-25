@@ -40,10 +40,24 @@ app.directive('musicPlayer', function(){
 	};
 });
 
+// weather main widget
 app.directive('weather', function(){
 	return{
 		restrict: 'AEC',
 		templateUrl: './partials/weather.html',
+		link: function($scope, element, attrs){
+			var addScript = angular.element(document.createElement('script'))
+                        addScript.attr({src:'http://oap.accuweather.com/launch.js'}) // set script when loading
+                        element.append(addScript)
+		}
+	};
+});
+
+// Weather report
+app.directive('weatherReport', function(){
+	return{
+		restrict: 'AEC',
+		templateUrl: './partials/WeatherData.html',
 		link: function($scope, element, attrs){
 			var addScript = angular.element(document.createElement('script'))
                         addScript.attr({src:'http://oap.accuweather.com/launch.js'}) // set script when loading
