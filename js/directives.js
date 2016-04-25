@@ -40,6 +40,14 @@ app.directive('musicPlayer', function(){
 	};
 });
 
+// playlist widget on homepage for spotify
+app.directive('spotifyWidget', function(){
+	return{
+		restrict: 'AEC',
+		templateUrl: './partials/playlist-widget.html'
+	};
+});
+
 // weather main widget
 app.directive('weather', function(){
 	return{
