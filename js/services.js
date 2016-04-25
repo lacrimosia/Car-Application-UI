@@ -15,12 +15,12 @@ app.factory('contentService',['$http', function($http){
 app.factory('weatherService',['$resource', function($resource){
   // return $resource('api.openweathermap.org/data/2.5/weather?q=:cityname',{cityname: "@cityname"});
   var factory={};
-     factory.getWeather=function(){
-         return $resource("api.openweathermap.org/data/2.5/weather?lat=35&lon=139").query();
+
+     factory.getWeather = function(){
+         return $resource("http://api.wunderground.com/api/9eb7777065b59c55/conditions/q/CA/San_Francisco.json").get();
      }
     return factory;
 }]);
-
 
 // modal popup service
 app.factory('modalService',['$uibModal', function($uibModal){
