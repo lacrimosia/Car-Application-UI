@@ -1,9 +1,10 @@
 body{
-	background: #f1f1f1;
+	background: #ECECEC;
 }
 
 .mainApp{
-	background:url('../images/wallpaper.jpg') no-repeat top center;
+	/*background:url('../images/wallpaper.jpg') no-repeat top center;*/
+	background: #222F3D;
 	background-size: cover;
 	height: 1890px !important;
 	overflow: hidden;
@@ -13,13 +14,13 @@ body{
 .main-menu{
 	font-size: 20px;
 	margin-bottom: 20px;
-	background: #09216d;
+	background: #34495E;
 	border: none !important;
 	border-radius: 0px !important;
 }
 
 .main-menu-background{
-	background: #09216d;
+	background: #34495E;
 	width: 100%;
 	height: 50px;
 }
@@ -31,33 +32,34 @@ body{
 }
 
 .main-menu li a:hover{
-	background: #3375bb !important;
+	background: #2980B9 !important;
 	color: #ffffff;
 }
 
 .main-menu li a{
 	color: #ffffff !important;
-	background: #09216d !important;
+	background: #34495E !important;
 }
 
 /* background for status bar */
 .statusbar{
-	background: #415068;
+	background: #2C3E50;
 	width:100%;
 	color: #ffffff;
 	height: 40px;
 }
 
 .btn-primary{
-	background: #09216D !important;
+	background: #222F3D !important;
 	border: none !important;
-	color: #ffffff;
+	color: #ECF0F1;
 }
 
 .shortcut-background{
 	/*border: 1px solid #bbb;*/
-	background: #E6E6E6;
-	color: #09216D;
+	background: #34495E;
+	color: #ECF0F1;
+	min-height: 100px;
 	height: auto;
 	padding:10px;
 	text-align: center;
@@ -66,7 +68,7 @@ body{
 
 .shortcut-background:hover{
 	/*background: #3c629e;*/
-	color: #415068;
+	/*color: #415068;*/
 	cursor: pointer;
 }
 
@@ -110,7 +112,7 @@ body{
 }
 
 hr{
-	border-top: 1px solid #415068 !important;
+	border-top: 1px solid #ECF0F1 !important;
 }
 
 /* spotify widget responsive */
