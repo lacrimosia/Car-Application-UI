@@ -64,49 +64,57 @@
 			"name": "Amazon",
 			"icon": "fa fa-cog",
 			"link": "apps/amazon",
-			"description": "This is the amazon"
+			"description": "This is the amazon",
+			"image": "images/amazon.png"
 		},
 		{
 			"name": "Ebay",
 			"icon": "fa fa-cog",
 			"link": "apps/ebay",
-			"description": "This is Ebay"
+			"description": "This is Ebay",
+			"image": "images/ebay.jpg"
 		},
 		{
 			"name": "Microsoft",
 			"icon": "fa fa-cog",
 			"link": "apps/microsoft",
-			"description": "This is the Microsoft"
+			"description": "This is the Microsoft",
+			"image": "images/microsoft.png"
 		},
 		{
 			"name": "Stack Overflow",
 			"icon": "fa fa-cog",
 			"link": "apps/stack-overflow",
-			"description": "Stack Overflow forum"
+			"description": "Stack Overflow forum",
+			"image": "images/stackoverflow.jpg"
 		},
 		{
 			"name": "Dell",
 			"icon": "fa fa-cog",
 			"link": "apps/dell",
-			"description": "Dell Shopping Area"
+			"description": "Dell Shopping Area",
+			"image": "images/dell.jpg"
 		},
 		{
 			"name": "Yelp",
 			"icon": "fa fa-cog",
 			"link": "apps/yelp",
-			"description": "This is Yelp"
+			"description": "This is Yelp",
+			"image": "images/yelp.jpg"
 		},
 		{
 			"name": "Weather",
 			"icon": "fa fa-cog",
 			"link": "apps/amazon",
-			"description": "This is the Weather app"
+			"description": "This is the Weather app",
+			"image": "images/weatherchannel.jpg"
 		},
 		{
-			"name": "Amazon",
+			"name": "ESPN",
 			"icon": "fa fa-cog",
 			"link": "apps/amazon",
-			"description": "This is the amazon"
+			"description": "This is the amazon",
+			"image": "images/espn.png"
 		},
 		{
 			"name": "Amazon",
