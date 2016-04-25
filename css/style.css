@@ -1,10 +1,10 @@
 body{
-	background: #ffffff;
+	background: #E8E8E8;
 }
 
 .mainApp{
 	/*background:url('../images/wallpaper.jpg') no-repeat top center;*/
-	background: #EFEFEF;
+	background: #FCFCFC;
 	background-size: cover;
 	height: 1890px !important;
 	overflow: hidden;
@@ -32,7 +32,8 @@ body{
 }
 
 .main-menu li a:hover{
-	background: #2980B9 !important;
+	/*background: #2980B9 !important;*/
+	background: #3C629E !important;
 	color: #ffffff;
 }
 
@@ -43,7 +44,7 @@ body{
 
 /* background for status bar */
 .statusbar{
-	background: #2C3E50;
+	background: #3c629e;
 	width:100%;
 	color: #ffffff;
 	height: 40px;
@@ -55,12 +56,20 @@ body{
 	color: #ECF0F1;
 }
 
+h5{
+	color: #3C629E !important;
+	text-align: left !important;
+	font-size: 18px !important;
+	font-weight: bold !important;
+}
+
 .shortcut-background{
 	/*border: 1px solid #bbb;*/
-	background: #DDDDDD;
-	color: #ECF0F1;
+	background: #F4F4F4;
+	color: #FFFFFF;
 	min-height: 100px;
 	height: auto;
+	/* height: 165px; */
 	padding:10px;
 	text-align: center;
 	margin-bottom: 30px;
@@ -80,6 +89,14 @@ body{
 .deleteBox{
 	float: left;
 	margin: -10px;
+	z-index: 3;
+}
+
+.addBox{
+	top: 0px;
+	left: 0px;
+	z-index: 3;
+	position: absolute;
 }
 
 .closeMe{
@@ -112,7 +129,7 @@ body{
 }
 
 hr{
-	border-top: 1px solid #34495E !important;
+	border-top: 1px solid #3C629E !important;
 }
 
 /* spotify widget responsive */
@@ -137,4 +154,10 @@ hr{
 /* weather full screen */
 div.aw-widget-36hour-inner{
 	margin: 0 center !important;
+}
+
+/* style override */
+.navbar-collapse{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
 }
