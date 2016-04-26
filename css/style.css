@@ -105,6 +105,7 @@ h5{
 	/*background: #3c629e;*/
 	/*color: #415068;*/
 	cursor: pointer;
+	opacity: 0.5;
 }
 
 .mainarea{
