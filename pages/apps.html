@@ -1,6 +1,6 @@
 <div class="container animated slideInLeft">
   <div class="row">
-	<div class="col-md-4" ng-repeat="a in appsList">
+	<div class="col-md-4 boxes-touch" ng-repeat="a in appsList">
 	<div class="apps-background" ng-click="goTo(a.link)" ng-style="{'background-image':'url({{a.image}})', 'background-repeat': 'no-repeat', 'background-size': 'cover'}">
 
 	<button class="btn btn-primary addBox" ng-click="deleteBox($index, 'Delete Shortcut', s.name, 'partials/modal.html', shortcutList, sm)"><i class="fa fa-plus"></i></button>

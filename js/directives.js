@@ -73,3 +73,16 @@ app.directive('weatherReport', function(){
 		}
 	};
 });
+
+// options dropdown
+app.directive('options', function(){
+	return{
+		restrict: 'AEC',
+		link: function($scope, element, attrs){
+			$(element).on("click", function (event){
+            	// event.preventDefault();
+            	// alert("This is working");
+        	});
+		}
+	}
+});

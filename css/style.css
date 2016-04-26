@@ -6,7 +6,7 @@ body{
 	/*background:url('../images/wallpaper.jpg') no-repeat top center;*/
 	background: #FCFCFC;
 	background-size: cover;
-	height: 1890px !important;
+	height: 1265px !important;
 	overflow: hidden;
 	/*border: 1px solid #bbb;*/
 }
@@ -63,6 +63,13 @@ h5{
 	font-weight: bold !important;
 }
 
+/* touching boxes */
+.boxes-touch{
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	margin: 0px !important;
+}
+
 .shortcut-background{
 	/*border: 1px solid #bbb;*/
 	background: #F4F4F4;
@@ -72,7 +79,8 @@ h5{
 	/* height: 165px; */
 	padding:10px;
 	text-align: center;
-	margin-bottom: 30px;
+	/* margin-bottom: 30px; */ 
+	
 }
 
 .shortcut-background:hover{
@@ -90,7 +98,7 @@ h5{
 	height: 165px;
 	padding:10px;
 	text-align: center;
-	margin-bottom: 30px;
+	/* margin-bottom: 30px; */
 }
 
 .apps-background:hover{
