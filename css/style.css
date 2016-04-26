@@ -81,6 +81,24 @@ h5{
 	cursor: pointer;
 }
 
+.apps-background{
+	/*border: 1px solid #bbb;*/
+	background: #F4F4F4;
+	color: #FFFFFF;
+	min-height: 100px;
+	/* height: auto; */
+	height: 165px;
+	padding:10px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.apps-background:hover{
+	/*background: #3c629e;*/
+	/*color: #415068;*/
+	cursor: pointer;
+}
+
 .mainarea{
 	padding-left: 0px;
 	padding-right: 0px;
