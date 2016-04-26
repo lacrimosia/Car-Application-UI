@@ -1,8 +1,7 @@
-<div class="container animated fadeIn">
-
-		<div class="row">
+<div class="container animated slideInLeft">
+  <div class="row">
 	<div class="col-md-3" ng-repeat="a in appsList">
-	<div class="shortcut-background animated zoomIn" ng-class="{'animated': '!deleted', 'fadeOut': '!deleted'}" ng-click="goTo(a.link)" ng-style="{'background-image':'url({{a.image}})', 'background-repeat': 'no-repeat', 'background-size': 'cover'}">
+	<div class="shortcut-background" ng-click="goTo(a.link)" ng-style="{'background-image':'url({{a.image}})', 'background-repeat': 'no-repeat', 'background-size': 'cover'}">
 
 	<button class="btn btn-primary addBox" ng-click="deleteBox($index, 'Delete Shortcut', s.name, 'partials/modal.html', shortcutList, sm)"><i class="fa fa-plus"></i></button>
 	<div class="overlay-dark">

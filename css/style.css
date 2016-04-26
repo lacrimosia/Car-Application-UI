@@ -94,7 +94,7 @@ h5{
 
 .addBox{
 	top: 0px;
-	left: 0px;
+	left: 15px;
 	z-index: 3;
 	position: absolute;
 }
