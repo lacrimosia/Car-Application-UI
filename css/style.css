@@ -12,7 +12,8 @@ a:hover{
 
 .mainApp{
 	/*background:url('../images/wallpaper.jpg') no-repeat top center;*/
-	background: #FCFCFC;
+	/*background: #FCFCFC;*/
+	background: #222F3D;
 	background-size: cover;
 	height: 1265px !important;
 	overflow: hidden;
@@ -55,7 +56,7 @@ a:hover{
 	background: #3c629e;
 	width:100%;
 	color: #ffffff;
-	height: 100px;
+	height: 40px;
 }
 
 .btn-primary{
@@ -65,7 +66,8 @@ a:hover{
 }
 
 h5{
-	color: #3C629E !important;
+	/*color: #3C629E !important;*/
+	color: #ccc;
 	text-align: left !important;
 	font-size: 18px !important;
 	font-weight: bold !important;
@@ -80,14 +82,15 @@ h5{
 
 .shortcut-background{
 	/*border: 1px solid #bbb;*/
-	background: #F4F4F4;
+	/*background: #F4F4F4;*/
+	background: #34495E;
 	color: #FFFFFF;
 	min-height: 100px;
 	height: auto;
 	/* height: 165px; */
 	padding:10px;
 	text-align: center;
-	/* margin-bottom: 30px; */ 
+	margin-bottom: 30px;
 	
 }
 
@@ -164,7 +167,8 @@ h5{
 }
 
 hr{
-	border-top: 1px solid #3C629E !important;
+	/*border-top: 1px solid #3C629E !important;*/
+	border-top: 1px solid #ccc !important;
 }
 
 /* spotify widget responsive */
