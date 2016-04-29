@@ -1,5 +1,5 @@
 body{
-	background: #E8E8E8;
+	background: #000000;
 }
 
 a{
@@ -13,8 +13,10 @@ a:hover{
 .mainApp{
 	/*background:url('../images/wallpaper.jpg') no-repeat top center;*/
 	/*background: #FCFCFC;*/
-	background: #222F3D;
-	background-size: cover;
+	background: #181818;
+	margin: 0 auto;
+	width: 1080px;
+	/*background-size: cover;*/
 	height: 1265px !important;
 	overflow: hidden;
 	/*border: 1px solid #bbb;*/
@@ -23,44 +25,43 @@ a:hover{
 .main-menu{
 	font-size: 20px;
 	margin-bottom: 20px;
-	background: #34495E;
+	background: #262626;
 	border: none !important;
 	border-radius: 0px !important;
 }
 
 .main-menu-background{
-	background: #34495E;
+	background: #262626;
 	width: 100%;
 	height: 50px;
 }
 
 .main-menu li a:focus{
 	color: #ffffff;
-	background: #3c629e !important;
+	background: #16A8F5 !important;
 	outline: none;
 }
 
 .main-menu li a:hover{
 	/*background: #2980B9 !important;*/
-	background: #3C629E !important;
+	background: #16A8F5 !important;
 	color: #ffffff;
 }
 
 .main-menu li a{
-	color: #ffffff !important;
-	background: #34495E !important;
+	color: #E1E1E1 !important;
 }
 
 /* background for status bar */
 .statusbar{
-	background: #3c629e;
+	background: #181818;
 	width:100%;
-	color: #ffffff;
+	color: #16A8F5;
 	height: 40px;
 }
 
 .btn-primary{
-	background: #222F3D !important;
+	background: #515151 !important;
 	border: none !important;
 	color: #ECF0F1;
 }
@@ -83,7 +84,7 @@ h5{
 .shortcut-background{
 	/*border: 1px solid #bbb;*/
 	/*background: #F4F4F4;*/
-	background: #34495E;
+	background: #262626;
 	color: #FFFFFF;
 	min-height: 100px;
 	height: auto;
@@ -102,14 +103,14 @@ h5{
 
 .apps-background{
 	/*border: 1px solid #bbb;*/
-	background: #F4F4F4;
+	background: #262626;
 	color: #FFFFFF;
 	min-height: 100px;
 	/* height: auto; */
 	height: 200px;
 	padding:10px;
 	text-align: center;
-	/* margin-bottom: 30px; */
+	margin-bottom: 30px;
 }
 
 .apps-background:hover{
@@ -199,4 +200,23 @@ div.aw-widget-36hour-inner{
 .navbar-collapse{
 	padding-left: 0px !important;
 	padding-right: 0px !important;
+}
+
+/* modal styles */
+.modalBox, .modal-body, .modal-footer{
+	background: #181818;
+	border: none !important;
+	color: #CCCCCC;
+}
+
+/* nav dropdown for shortcuts */
+.dropdown-menu{
+	background: #515151;
+	border: none !important;
+	color: #CCCCCC;
+	border: 1px solid #ccc;
+}
+
+.dropdown-menu li a:hover{
+	background: #15A6F3 !important;
 }

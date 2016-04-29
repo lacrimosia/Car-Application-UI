@@ -14,10 +14,10 @@
       </ul>
     </div>
 
-		<p><h1><i class="{{s.icon}}"></i></h1></p>
-		<h3>{{ s.name }}</h3>
+		<h1><i class="{{s.icon}}"></i></h1>
+		<h6 class="text-center">{{ s.name }}</h6>
 		<!--<p><small>{{ s.link }}</small></p>-->
-    <button class="btn btn-primary btn-lg" ng-click="goTo(s.link)"> Open App </button>
+    <button class="btn btn-primary btn-lg" ng-click="goTo(s.link)"> View App </button>
 	</div>
 <div class="empty" ng-if="shortcutList.length===0">
 		<h1>Nothing Seems to be here. <i class="fa fa-frown-o"></i></h1>
