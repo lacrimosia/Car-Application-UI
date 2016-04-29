@@ -32,7 +32,7 @@ app.controller('home', [
     		$scope.selected = index;
     		if($scope.selected != -1){
     			$scope.shortcutList.splice($scope.selected, 1);
-    			 modalService.openMenuModal(null, title, description, templateLink, array, size);
+    			 modalService.openMenuModal(index, title, description, templateLink, array, size);
     			//$scope.backup.push($scope.shortcutList[$scope.selected]);
     			//console.log($scope.backup);
     		}else{

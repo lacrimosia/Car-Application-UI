@@ -2,6 +2,14 @@ body{
 	background: #E8E8E8;
 }
 
+a{
+
+}
+
+a:hover{
+	cursor: pointer !important;
+}
+
 .mainApp{
 	/*background:url('../images/wallpaper.jpg') no-repeat top center;*/
 	background: #FCFCFC;
