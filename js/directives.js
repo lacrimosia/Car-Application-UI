@@ -86,3 +86,11 @@ app.directive('options', function(){
 		}
 	}
 });
+
+// car speed monitor
+app.directive('speedMonitor', function(){
+	return{
+		restrict: 'AEC',
+		templateUrl: './partials/speed.html'
+	};
+});

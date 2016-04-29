@@ -1,16 +1,35 @@
-<!-- shortcuts -->
-<div class="container animated fadeIn">
+<!-- weather Widget -->
+<div class="container-fluid animated fadeIn">
 	<div class="row">
-		<div class="col-md-6 col-sm-12 col-xs-12 col-lg-8">
+		<div class="col-md-6 col-sm-12 col-xs-12 col-lg-6">
 			<div class="shortcut-background animated fadeIn"><h5> Weather</h5>
-			<hr>
+			<hr/>
 			<weather></weather>
 			</div>
+		</div>		
+    </div>
+</div>
+
+
+<!-- Spotify Widget -->
+<div class="container-fluid animated fadeIn">
+	<div class="row">
+		<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+			<spotify-widget></spotify-widget>
 		</div>
-		<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4"><spotify-widget></spotify-widget></div>
-<div class="containment shortcut-background col-md-12 col-sm-12 col-xs-12 col-lg-12">
-<h5>Shortcuts</h5>
-<hr>
-<div class="col-md-4 col-lg-4 boxes-touch" ng-repeat="s in shortcutList"><home-shortcuts></home-shortcuts></div></div>
+	</div>
+</div>
+
+
+<!--shortcuts -->
+<div class="container-fluid animated fadeIn">
+	<div class="row">
+		<div class="containment shortcut-background col-md-12 col-sm-12 col-xs-12 col-lg-12">
+			<h5>Shortcuts</h5>
+				<hr/>
+			<div class="col-md-4 col-lg-4 boxes-touch" ng-repeat="s in shortcutList">
+				<home-shortcuts></home-shortcuts>
+			</div>
+</div>
 	</div>
 </div>
