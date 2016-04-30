@@ -117,10 +117,11 @@
 			"image": "images/espn.png"
 		},
 		{
-			"name": "Amazon",
+			"name": "Calendar",
 			"icon": "fa fa-cog",
-			"link": "apps/amazon",
-			"description": "This is the amazon"
+			"link": "apps/calendar",
+			"description": "This is the Calendar",
+			"image": "images/espn.png"
 		},
 		{
 			"name": "Amazon",

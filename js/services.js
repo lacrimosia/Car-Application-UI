@@ -53,4 +53,12 @@ app.factory('modalService',['$uibModal', function($uibModal){
 }]);
 
 
-// load script tag service
+// load goto link function
+app.factory('gotoService', ['$location', function($location){
+  return{
+    getLink: function(url){
+     // console.log('the service', url);
+        $location.url(url);
+    }
+  }
+}]);

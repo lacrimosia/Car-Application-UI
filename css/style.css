@@ -17,7 +17,8 @@ a:hover{
 	margin: 0 auto;
 	width: 1090px;
 	/*background-size: cover;*/
-	height: 1265px !important;
+	/* height: 1265px !important; */
+	height: 1890px !important;
 	overflow: hidden;
 	/*border: 1px solid #bbb;*/
 }
@@ -219,4 +220,18 @@ div.aw-widget-36hour-inner{
 
 .dropdown-menu li a:hover{
 	background: #15A6F3 !important;
+}
+
+
+/* Calendar Paper */
+.paper{
+  background: #16A8F5;
+  width: 100%;
+  height: 60%;
+  padding: 5px;
+}
+
+.paper h1{
+	font-size: 11em !important;
+	text-align: center;
 }

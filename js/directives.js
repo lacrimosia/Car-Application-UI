@@ -94,3 +94,12 @@ app.directive('speedMonitor', function(){
 		templateUrl: './partials/speed.html'
 	};
 });
+
+
+// calendar component
+app.directive('calendarWidget', function(){
+	return{
+		restrict: 'AEC',
+		templateUrl: './partials/calendar.html'
+	};
+});
