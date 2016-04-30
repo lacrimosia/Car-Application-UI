@@ -222,6 +222,13 @@ div.aw-widget-36hour-inner{
 	background: #15A6F3 !important;
 }
 
+.blue-text{
+	color: #16A8F5;
+}
+
+.white-text{
+	color: #f5f5f5;
+}
 
 /* Calendar Paper */
 .paper{
@@ -260,6 +267,10 @@ div.aw-widget-36hour-inner{
 	text-transform: uppercase;
 }
 
+.days{
+	margin-bottom: 30px;
+}
+
 /* month div */
 .month{
 	background: #16A8F5 !important;
@@ -271,5 +282,5 @@ div.aw-widget-36hour-inner{
 
 .month h3{
 	font-size: 2.5em !important;
-
+	color: #ffffff;
 }

@@ -112,40 +112,28 @@ app.controller('weather', [
 app.controller('calendar', [
     '$scope', 
     '$http',
-    'gotoService', function($scope, $http, gotoService){
+    'gotoService',
+    'timeService', function($scope, $http, gotoService, timeService){
     $scope.date = new Date();  // date()
     $scope.calendarDay = $scope.date.getDate(); // get the day of the month
 
     // get and return the month
-    $scope.getCurrentMonth = function(){
-
-    var monthNames = ["January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December"
-    ];
-       // return the months
-        $scope.month = monthNames[$scope.date.getMonth()];
-        return $scope.month;
-    };
+    $scope.currentMonth = timeService.getCurrentMonth($scope.date.getMonth());
 
    // go to a link
     $scope.goTo = function(url){
         gotoService.getLink(url);
    }
 
-   // return all the days of the month
-   $scope.getAllDays = function(month,year){
-        $scope.num = new Date(year, month, 0).getDate();
-        $scope.days = [];
-        
-       // generate all days for month and put into days
-       for(var n=1; n<$scope.num; n++){
-            $scope.days.push(n);
-           // console.log('the list', $scope.days.length);
-        }
-       return $scope.days;
-   };
-   // change calendar based on month and year
-   $scope.getAllDays(4, 2016);
+   // get all the days of the month from the array
+   // days[]
+   $scope.getAllDays = timeService.getAllDays($scope.calendarDay, 2016);
+
+   // get the current day of the month  
+   $scope.getDays = timeService.getCurrentDay();
+
+   // get the year
+   $scope.getYear = timeService.year();
 }]);
 
 
@@ -157,5 +145,5 @@ app.controller('systemTime', [
     'timeService', function($scope, $http, gotoService, timeService){
         $scope.hours = timeService.getHours();  // show the hours
         $scope.minutes = timeService.getMinutes(); // show the minutes
-        $scope.getType = timeService.getType($scope.hours);
+        $scope.getType = timeService.getType($scope.hours); // am or pm
 }]);

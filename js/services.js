@@ -72,6 +72,8 @@ app.factory('timeService', ['$location', function($location){
       var hours = d.getHours();
         if(hours > 12){
           hours = hours - 12;
+        }else if(hours < 12){
+          hours = hours + 12;
         }
       return hours;
     },
@@ -86,17 +88,47 @@ app.factory('timeService', ['$location', function($location){
       
     },
     getType: function(hours){
-      if(hours > 12){
-        return 'AM';
-      }else{
+     /* if(hours > 12){
         return 'PM';
-      }
+      }else if(hours < 12 || hours == 12){
+        return 'AM';
+      }*/
+      var types = hours >= 12 ? 'AM' : 'PM';
+      hours = hours % 12;
+      hours = hours ? hours : 12;
+      return types;
     },
-    getDay: function(day){
-    var monthNames = ["Monday", "Tuesday"
-     ];
-
-
+    getCurrentMonth: function(date){
+      var monthNames = ["January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+      ];
+       // return the months
+        var month = monthNames[date];
+        return month;
+    },
+    getAllDays: function(month, year){
+    var num = new Date(year, month, 0).getDate();
+        var days = [];
+       
+       // generate all days for month and put into days array
+       for(var n=0; n<num; n++){
+            days.push(n+1);
+        }
+       return days;
+    },
+    getCurrentDay: function(){
+    var monthNames = ["Sunday","Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    var date = new Date();
+    var getDayName = date.getDay();
+    var Day = monthNames[getDayName];
+    return Day;
+    },
+    year: function(){
+      var date = new Date();
+      var year = date.getFullYear();
+        return year;
     }
-  }
+
+}
+
 }]);
