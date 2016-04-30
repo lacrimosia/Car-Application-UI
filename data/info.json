@@ -119,7 +119,7 @@
 		{
 			"name": "Calendar",
 			"icon": "fa fa-cog",
-			"link": "apps/calendar",
+			"link": "/apps/calendar",
 			"description": "This is the Calendar",
 			"image": "images/espn.png"
 		},

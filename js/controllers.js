@@ -131,6 +131,21 @@ app.controller('calendar', [
     $scope.goTo = function(url){
         gotoService.getLink(url);
    }
+
+   // return all the days of the month
+   $scope.getAllDays = function(month,year){
+        $scope.num = new Date(year, month, 0).getDate();
+        $scope.days = [];
+        
+       // generate all days for month and put into days
+       for(var n=1; n<$scope.num; n++){
+            $scope.days.push(n);
+           // console.log('the list', $scope.days.length);
+        }
+       return $scope.days;
+   };
+   // change calendar based on month and year
+   $scope.getAllDays(4, 2016);
 }]);
 
 

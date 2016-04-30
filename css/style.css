@@ -238,6 +238,28 @@ div.aw-widget-36hour-inner{
 	margin: 0px !important;
 }
 
+/* actual calendar */
+.dates{
+  background: #ffffff;
+  height: 50%;
+  padding: 3px !important;
+  margin-bottom: 6px !important;
+}
+
+.dates h1{
+	font-size: 9em !important;
+	text-align: center;
+	color: #585858;
+	margin: 0px !important;
+}
+
+.daysofWeek{
+	background: #16A8F5 !important;
+	height: 6%;
+	padding: 5px;
+	text-transform: uppercase;
+}
+
 /* month div */
 .month{
 	background: #16A8F5 !important;

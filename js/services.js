@@ -91,6 +91,12 @@ app.factory('timeService', ['$location', function($location){
       }else{
         return 'PM';
       }
+    },
+    getDay: function(day){
+    var monthNames = ["Monday", "Tuesday"
+     ];
+
+
     }
   }
 }]);
