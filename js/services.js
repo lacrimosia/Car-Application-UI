@@ -71,7 +71,7 @@ app.factory('timeService', ['$location', function($location){
       var d= new Date();
       var hours = d.getHours();
         if(hours > 12){
-          hours = hours - 12;
+          hours = 24 - 12;
         }else if(hours < 12){
           hours = hours + 12;
         }
