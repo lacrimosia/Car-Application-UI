@@ -100,6 +100,11 @@ app.directive('speedMonitor', function(){
 app.directive('calendarWidget', function(){
 	return{
 		restrict: 'AEC',
-		templateUrl: './partials/calendar.html'
+		templateUrl: './partials/calendar.html',
+		link: function($scope, element, attrs){
+			$(element).on('click', function(){
+				// alert("I clicked it");
+			});
+		}
 	};
 });

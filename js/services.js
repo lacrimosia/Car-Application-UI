@@ -62,3 +62,35 @@ app.factory('gotoService', ['$location', function($location){
     }
   }
 }]);
+
+
+// returns the current time for the clock
+app.factory('timeService', ['$location', function($location){
+  return{
+    getHours: function(){
+      var d= new Date();
+      var hours = d.getHours();
+        if(hours > 12){
+          hours = hours - 12;
+        }
+      return hours;
+    },
+    getMinutes: function(){
+      var d = new Date();
+      var minutes = d.getMinutes();
+      if(minutes < 10){
+        return '0'+ minutes;
+      }else{
+        return minutes;
+      }
+      
+    },
+    getType: function(hours){
+      if(hours > 12){
+        return 'AM';
+      }else{
+        return 'PM';
+      }
+    }
+  }
+}]);

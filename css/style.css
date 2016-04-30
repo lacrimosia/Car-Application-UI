@@ -225,13 +225,29 @@ div.aw-widget-36hour-inner{
 
 /* Calendar Paper */
 .paper{
-  background: #16A8F5;
+  background: #ffffff;
   width: 100%;
-  height: 60%;
-  padding: 5px;
+  height: 70%;
+  margin-bottom: 10px;
 }
 
 .paper h1{
-	font-size: 11em !important;
+	font-size: 10.5em !important;
 	text-align: center;
+	color: #585858;
+	margin: 0px !important;
+}
+
+/* month div */
+.month{
+	background: #16A8F5 !important;
+	width: 100%;
+	height: 6%;
+	padding: 5px;
+	text-transform: uppercase;
+}
+
+.month h3{
+	font-size: 2.5em !important;
+
 }

@@ -132,3 +132,15 @@ app.controller('calendar', [
         gotoService.getLink(url);
    }
 }]);
+
+
+// Time Clock
+app.controller('systemTime', [
+    '$scope', 
+    '$http',
+    'gotoService',
+    'timeService', function($scope, $http, gotoService, timeService){
+        $scope.hours = timeService.getHours();  // show the hours
+        $scope.minutes = timeService.getMinutes(); // show the minutes
+        $scope.getType = timeService.getType($scope.hours);
+}]);
