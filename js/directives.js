@@ -102,9 +102,16 @@ app.directive('calendarWidget', function(){
 		restrict: 'AEC',
 		templateUrl: './partials/calendar.html',
 		link: function($scope, element, attrs){
-			$(element).on('click', function(){
-				// alert("I clicked it");
-			});
 		}
 	};
+});
+
+app.directive('realCalendar', function(){
+	return{
+		restrict: 'AEC',
+		templateUrl: './pages/calendar.html',
+		link: function($scope, element, attrs){
+		
+		}
+	}
 });
