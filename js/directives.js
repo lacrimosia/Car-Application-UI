@@ -114,6 +114,7 @@ app.directive('realCalendar', function(){
             selected: "="
         },
         link: function(scope) {
+        	// calendar
             scope.selected = _removeTime(scope.selected || moment());
             scope.month = scope.selected.clone();
 
@@ -123,8 +124,10 @@ app.directive('realCalendar', function(){
 
             _buildMonth(scope, start, scope.month);
 
+            // select day and open dialog
             scope.select = function(day) {
                 scope.selected = day.date;  
+
             };
 
             scope.next = function() {
@@ -172,5 +175,17 @@ app.directive('realCalendar', function(){
             date.add(1, "d");
         }
         return days;
+    }
+});
+
+// keyboard component
+app.directive('autoFocus', function($timeout) {
+    return {
+        restrict: 'AC',
+        link: function(_scope, _element) {
+            $timeout(function(){
+                _element[0].focus();
+            }, 0);
+        }
     }
 });
