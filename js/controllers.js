@@ -114,7 +114,7 @@ app.controller('calendar', [
     '$http',
     'gotoService',
     'timeService', function($scope, $http, gotoService, timeService){
-    $scope.date = new Date();  // date()
+   $scope.date = new Date();  // date()
     $scope.calendarDay = $scope.date.getDate(); // get the day of the month
 
     // get and return the month
@@ -134,6 +134,9 @@ app.controller('calendar', [
 
    // get the year
    $scope.getYear = timeService.year();
+
+   // moment
+   $scope.day = moment();
 }]);
 
 
