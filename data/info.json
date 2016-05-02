@@ -134,7 +134,19 @@
 		{
 			"title": "Favorites",
 			"icon": "fa fa-star",
-			"content": "I am the favorites"
+			"content": "I am the favorites",
+			"favorites":[
+				{
+					"image": "",
+					"name": "Shatilla Prayer",
+					"link": ""
+				},
+				{
+					"image": "",
+					"name": "Beyonce",
+					"link": ""
+				}
+			]
 		},
 		{
 			"title": "Recents",

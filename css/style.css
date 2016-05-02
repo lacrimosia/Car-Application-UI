@@ -46,7 +46,7 @@ a:hover{
 .main-menu li a:hover, .main-menu li a:focus{
 	/*background: #2980B9 !important;*/
 	background: #16A8F5 !important;
-	box-shadow: inset 0 125px 0 0 #31302B;
+	box-shadow: inset 0 75px 0 0 #31302B;
     color: #16A8F5 !important;
     outline: none;
 }
