@@ -1,12 +1,39 @@
 <div class="container">
 	<div class="row">
-		<div class="col-md-12 col-lg-12">
+		<div>
 			<div class="phone" ng-controller="phone">
 				 <uib-tabset active="activeJustified" justified="true">
     				<uib-tab index="tab" ng-repeat="tab in phoneTabs">
     					 <uib-tab-heading>
     					 	<i class="{{tab.icon}}"></i> {{tab.title}}
     					 </uib-tab-heading>
+
+    			     <!--favorites-->
+    					 <p ng-repeat="x in contacts" ng-if="x.favorites==true && tab.title=='Favorites'">{{ x.name }}</p>
+
+    				
+    				 <!-- vertical categories -->
+
+    				 <!--contacts list-->
+    				<div class="col-md-8 col-lg-8">
+    				 <uib-accordion>
+    					 <uib-accordion-group ng-repeat="c in contacts" ng-if="tab.title=='Contacts'">
+    					 	<uib-accordion-heading ng-style="{'float': 'left', 'display': 'inline'}">
+    					 			<img ng-src="./images/{{c.photo}}" class="thumbnails img-circle" ng-if="c.photo != ''"/>   
+    					 		<h4>{{c.name}}</h4>
+								<button class="btn btn-primary"><i class="fa fa-phone"></i></button>
+    					 	</uib-accordion-heading>
+    					 		<p><img ng-src="./images/{{c.photo}}" class="img-responsive"/></p>
+    					 		<p><strong>Phone number:</strong> {{ c.number }}</p>
+    					 		<p><strong>Email:</strong> {{ c.email }}</p>
+    					 		<p>
+    					 			<button class="btn btn-success btn-lg"><i class="fa fa-phone"></i> Call</button>
+    					 			<button class="btn btn-danger btn-lg"><i class="fa fa-times"></i> Delete</button>
+    					 		</p>
+    					 </uib-accordion-group>
+    				</uib-accordion>
+    				</div>
+
     				</uib-tab>
   				</uib-tabset>
 			</div>

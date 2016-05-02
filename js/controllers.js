@@ -159,5 +159,6 @@ app.controller('phone', [
   contentService.then(function(data){
     $scope.data = data;   // access all data
         $scope.phoneTabs = $scope.data.phonetabs;  // list of shortcuts
+        $scope.contacts = $scope.data.contacts;  // list of contacts
   });
 }]);

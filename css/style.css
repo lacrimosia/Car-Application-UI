@@ -43,6 +43,11 @@ a:hover{
 	outline: none;
 }*/
 
+.thumbnails{
+	width:5%;
+	height: auto;
+}
+
 .main-menu li a:hover, .main-menu li a:focus{
 	/*background: #2980B9 !important;*/
 	background: #16A8F5 !important;

@@ -134,19 +134,7 @@
 		{
 			"title": "Favorites",
 			"icon": "fa fa-star",
-			"content": "I am the favorites",
-			"favorites":[
-				{
-					"image": "",
-					"name": "Shatilla Prayer",
-					"link": ""
-				},
-				{
-					"image": "",
-					"name": "Beyonce",
-					"link": ""
-				}
-			]
+			"content": "I am the favorites"
 		},
 		{
 			"title": "Recents",
@@ -156,24 +144,7 @@
 		{
 			"title": "Contacts",
 			"icon": "fa fa-phone",
-			"content": "I am the contacts",
-			"contacts":[
-				{
-					"name": "Shatilla Prayer",
-					"photo": "",
-					"number": "7024375898"
-				},
-				{
-					"name": "Beyonce",
-					"photo": "",
-					"number": "3235857850"
-				},
-				{
-					"name": "Drake",
-					"photo": "",
-					"number": "2165857452"
-				}
-			]
+			"content": "I am the contacts"
 		},
 		{
 			"title": "Keypad",
@@ -185,5 +156,52 @@
 			"icon": "fa fa-star",
 			"content": "I am the voicemail"
 		}
+	],
+	"contacts":[
+				{
+					"name": "Shatilla Prayer",
+					"photo": "",
+					"number": "702-437-5898",
+					"email": "shatillaprayer@gmail.com",
+					"favorites": false,
+					"recent": false,
+					"category": "myself"
+				},
+				{
+					"name": "Beyonce Knowles",
+					"photo": "beyonce.jpg",
+					"number": "323-585-7850",
+					"email": "beyonce@lemonade.com",
+					"favorites": true,
+					"recent": true,
+					"category": "friend"
+				},
+				{
+					"name": "Drake",
+					"photo": "drake.jpg",
+					"number": "216-857-7452",
+					"email": "drake@viewsfromthe6.com",
+					"favorites": true,
+					"recent": true,
+					"category": "friend"
+				},
+				{
+					"name": "Barack Obama",
+					"photo": "obama.jpg",
+					"number": "578-742-0214",
+					"email": "obama@thewhitehouse.gov",
+					"favorites": true,
+					"recent": true,
+					"category": "friend"
+				},
+				{
+					"name": "Tom Cruise",
+					"photo": "cruise.jpg",
+					"number": "754-875-9854",
+					"email": "tcruise@gmail.com",
+					"favorites": true,
+					"recent": true,
+					"category": "business"
+				}
 	]
 }
