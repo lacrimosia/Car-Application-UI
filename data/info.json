@@ -129,5 +129,49 @@
 			"link": "apps/amazon",
 			"description": "This is the amazon"
 		}
+	],
+	"phonetabs":[
+		{
+			"title": "Favorites",
+			"icon": "fa fa-star",
+			"content": "I am the favorites"
+		},
+		{
+			"title": "Recents",
+			"icon": "fa fa-clock",
+			"content": "I am the recents"
+		},
+		{
+			"title": "Contacts",
+			"icon": "fa fa-phone",
+			"content": "I am the contacts",
+			"contacts":[
+				{
+					"name": "Shatilla Prayer",
+					"photo": "",
+					"number": "7024375898"
+				},
+				{
+					"name": "Beyonce",
+					"photo": "",
+					"number": "3235857850"
+				},
+				{
+					"name": "Drake",
+					"photo": "",
+					"number": "2165857452"
+				}
+			]
+		},
+		{
+			"title": "Keypad",
+			"icon": "fa fa-star",
+			"content": "I am the keypad"
+		},
+		{
+			"title": "Voicemail",
+			"icon": "fa fa-star",
+			"content": "I am the voicemail"
+		}
 	]
 }

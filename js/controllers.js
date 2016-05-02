@@ -150,3 +150,14 @@ app.controller('systemTime', [
         $scope.minutes = timeService.getMinutes(); // show the minutes
         $scope.getType = timeService.getType($scope.hours); // am or pm
 }]);
+
+// phone controller
+app.controller('phone', [
+  '$scope', 
+  '$http',
+  'contentService', function($scope, $http, contentService){
+  contentService.then(function(data){
+    $scope.data = data;   // access all data
+        $scope.phoneTabs = $scope.data.phonetabs;  // list of shortcuts
+  });
+}]);

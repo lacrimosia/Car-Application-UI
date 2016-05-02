@@ -1,1 +1,15 @@
-<h1>This is the phone page</h1>
+<div class="container">
+	<div class="row">
+		<div class="col-md-12 col-lg-12">
+			<div class="phone" ng-controller="phone">
+				 <uib-tabset active="activeJustified" justified="true">
+    				<uib-tab index="tab" heading="{{tab.title}}" ng-repeat="tab in phoneTabs">
+    					 <tab-heading>
+    					 	<i class="{{tab.icon}}"></i>
+    					 </tab-heading>
+    				</uib-tab>
+  				</uib-tabset>
+			</div>
+		</div>
+	</div>
+</div>
