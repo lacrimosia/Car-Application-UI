@@ -1,16 +1,17 @@
 table.keyboardInputMaster {
   position:absolute;
   font:normal 16px Arial,sans-serif;
-  border-top:1px solid #eeeeee;
+  /*border-top:1px solid #eeeeee;
   border-right:1px solid #888888;
   border-bottom:1px solid #444444;
-  border-left:1px solid #cccccc;
+  border-left:1px solid #cccccc;*/
   -webkit-box-shadow:0px 2px 10px #444444;
   -moz-box-shadow:0px 2px 10px #444444;
   box-shadow:0px 2px 10px #444444;
   opacity:0.95;
   filter:alpha(opacity=95);
-  background-color:#dddddd;
+  /*background-color:#dddddd;*/
+  background-color: #181818;;
   text-align:left;
   z-index:1000000;
   width:auto;
@@ -34,12 +35,14 @@ table.keyboardInputMaster {
 table.keyboardInputMaster.relativeKeyboard {
   -webkit-border-radius:0.6em;
   -moz-border-radius:0.6em;
-  border-radius:0.6em;
+  /* border-radius:0.6em; */
+  border-radius: 0em;
 }
 
 table.keyboardInputMaster * {
   position:static;
-  color:#000000;
+  /*color:#000000;*/
+  color: #ffffff;
   background:transparent;
   font:normal 16px Arial,sans-serif;
   width:auto;
@@ -70,12 +73,13 @@ table.keyboardInputMaster.keyboardInputSize4 * {
 }
 table.keyboardInputMaster.keyboardInputSize5,
 table.keyboardInputMaster.keyboardInputSize5 * {
-  font-size:28px;
+  /*font-size:28px;*/
+  font-size: 38px;
 }
 
 table.keyboardInputMaster thead tr th {
   padding:0.3em 0.3em 0.1em 0.3em;
-  background-color:#999999;
+  /* background-color:#999999; */
   white-space:nowrap;
   text-align:right;
 }
@@ -209,12 +213,13 @@ table.keyboardInputMaster tbody tr td table tbody tr td {
   border-right:1px solid #5d5d5d;
   border-bottom:1px solid #5d5d5d;
   border-left:1px solid #e5e5e5;
-  background-color:#eeeeee;
+  /*background-color:#eeeeee;*/
+  background-color: #262626;
   cursor:default;
   min-width:0.75em;
-  -webkit-border-radius:0.2em;
+  /*-webkit-border-radius:0.2em;
   -moz-border-radius:0.2em;
-  border-radius:0.2em;
+  border-radius:0.2em; */
   -webkit-transition:background-color .15s ease-in-out;
   -o-transition:background-color .15s ease-in-out;
   transition:background-color .15s ease-in-out;
@@ -237,7 +242,8 @@ table.keyboardInputMaster tbody tr td table tbody tr td.hover {
   border-right:1px solid #555555;
   border-bottom:1px solid #555555;
   border-left:1px solid #d5d5d5;
-  background-color:#cccccc;
+  /*background-color:#cccccc;*/
+  background-color: #16A8F5;
 }
 table.keyboardInputMaster thead tr th span:active,
 table.keyboardInputMaster thead tr th span.pressed,

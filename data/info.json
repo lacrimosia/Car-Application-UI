@@ -7,56 +7,56 @@
 			"icon": "fa fa-folder",
 			"link": "/apps",
 			"description": "I am the apps description",
-			"background": "#16A085"
+			"background": "#181818"
 		},
 		{
 			"name": "App Store",
 			"icon": "fa fa-shopping-bag",
 			"link": "apps/store",
 			"description": "I am the App Store",
-			"background": "#8E44AD"
+			"background": "#181818"
 		},
 		{
 			"name": "Music Player",
 			"icon": "fa fa-music",
 			"link": "apps/music-player",
 			"description": "I am the music description",
-			"background": "#C0392B"
+			"background": "#181818"
 		},
 		{
 			"name": "Phone",
 			"icon": "fa fa-phone",
 			"link": "/phone",
 			"description": "Making a Phone Call",
-			"background": "#D35400"
+			"background": "#181818"
 		},
 		{
 			"name": "Browser",
 			"icon": "fa fa-internet-explorer",
 			"link": "apps/browser",
 			"description": "Lets open the browser",
-			"background": "#2980B9"
+			"background": "#181818"
 		},
 		{
 			"name": "Mail",
 			"icon": "fa fa-envelope",
 			"link": "apps/mail",
 			"description": "Lets read some mail",
-			"background": "#E74C3C"
+			"background": "#181818"
 		},
 		{
 			"name": "Spotify",
 			"icon": "fa fa-spotify",
 			"link": "apps/spotify",
 			"description": "Lets listen to spotify",
-			"background": "#1ABC9C"
+			"background": "#181818"
 		},
 		{
 			"name": "Settings",
 			"icon": "fa fa-cog",
 			"link": "apps/settings",
 			"description": "Lets edit our settings",
-			"background": "#F39C12"
+			"background": "#181818"
 		}
 	],
 	"appsList": [

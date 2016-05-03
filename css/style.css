@@ -77,6 +77,15 @@ a:hover{
 	background: #515151 !important;
 	border: none !important;
 	color: #ECF0F1;
+	-webkit-transition: all ease 0.8s;
+	-moz-transition: all ease 0.8s;
+	transition: all ease 0.8s;
+
+}
+
+.btn-primary:hover{
+	box-shadow: inset 0 75px 0 0 #16A8F5;
+
 }
 
 h5{
@@ -99,7 +108,7 @@ h5{
 	/*background: #F4F4F4;*/
 	background: #262626;
 	color: #FFFFFF;
-	min-height: 100px;
+	min-height: 200px;
 	height: auto;
 	/* height: 165px; */
 	padding:10px;
@@ -247,7 +256,7 @@ div.aw-widget-36hour-inner{
 
 /* Calendar Paper */
 .paper{
-  background: #ffffff;
+  background: #181818;;
   width: 100%;
   height: 70%;
   margin-bottom: 10px;
@@ -256,7 +265,7 @@ div.aw-widget-36hour-inner{
 .paper h1{
 	font-size: 10.5em !important;
 	text-align: center;
-	color: #585858;
+	color: #ffffff;
 	margin: 0px !important;
 }
 

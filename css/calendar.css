@@ -7,7 +7,7 @@ real-calendar {
   display: block;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  background: white;
+  background: #181818;
   width: 100%;
   /*border: solid 1px #CCC;*/
   margin-bottom: 10px;
@@ -79,21 +79,21 @@ real-calendar >div.week >span.day {
   line-height: 30px !important;
   display: inline-block;
   vertical-align: middle;
-  background: white;
+  background: #181818;
   cursor: pointer;
-  color: #585858;
+  color: #ffffff;
 }
 real-calendar >div.week >span.day:first-child {
   border-left: none;
 }
 real-calendar >div.week >span.day.today {
-  background: #E3F2FF;
+  background: #16A8F5;
 }
 real-calendar >div.week >span.day.different-month {
-  color: #C0C0C0;
+  color: #444444;
 }
 real-calendar >div.week >span.day.selected {
-  background: #2875C7;
+  background: #333333;
   color: white;
 }
 real-calendar >div.week.names>span {
