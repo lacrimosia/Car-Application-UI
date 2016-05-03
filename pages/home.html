@@ -2,19 +2,24 @@
 <div class="container animated fadeIn">
 	<div class="row">
 		<!--speed-->
-		<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+		<!-- <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
 		<div class="shortcut-background animated fadeIn"><h5> Navigation & Speed</h5>
 			<speed-monitor></speed-monitor>
 		</div>
-		</div>
+		</div>-->
 
 		<!-- weather widget -->
-<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+<div class="col-md-8 col-sm-12 col-xs-12 col-lg-8">
 		<p><button class="btn btn-primary btn-lg pull-right animated fadeIn" ng-controller="weather" ng-click="goTo('apps/weatherReport')">View Weather</button></p>
 			<div class="shortcut-background animated fadeIn"><h5> Weather</h5>
 			<weather></weather>
 			</div>
 		</div>	
+
+			<!-- calendar -->
+		<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+			<calendar-widget></calendar-widget>
+		</div>
 
 
     </div>
@@ -27,12 +32,9 @@
 	<div class="row">
 
 
-		<!-- calendar -->
-		<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
-			<calendar-widget></calendar-widget>
-		</div>
 
 
+<!--
 		<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
 			<spotify-widget></spotify-widget>
 		</div>
@@ -41,7 +43,7 @@
 
 		<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
 			<spotify-widget></spotify-widget>
-		</div>
+		</div>-->
 	</div>
 </div>
 
