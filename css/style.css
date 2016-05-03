@@ -324,4 +324,7 @@ div.aw-widget-36hour-inner{
 	background: #16A8F5 !important;
 }
 
-.
+/* dropdown menu */
+.dropdown-menu > li > a{
+	color: #ffffff;
+}
