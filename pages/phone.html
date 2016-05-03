@@ -16,7 +16,7 @@
 
     				 <!--contacts list-->
     				<div class="col-md-8 col-lg-8">
-    				 <uib-accordion>
+    				 <uib-accordion class="animated fadeIn">
     					 <uib-accordion-group ng-repeat="c in contacts" ng-if="tab.title=='Contacts'">
     					 	<uib-accordion-heading ng-style="{'float': 'left', 'display': 'inline'}">
     					 			<img ng-src="./images/{{c.photo}}" class="thumbnails img-circle" ng-if="c.photo != ''"/>   
