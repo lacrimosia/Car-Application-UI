@@ -8,10 +8,13 @@
 		</div>
 		</div>
 
-		<!-- calendar -->
-		<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
-			<calendar-widget></calendar-widget>
-		</div>
+		<!-- weather widget -->
+<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+		<p><button class="btn btn-primary btn-lg pull-right animated fadeIn" ng-controller="weather" ng-click="goTo('apps/weatherReport')">View Weather</button></p>
+			<div class="shortcut-background animated fadeIn"><h5> Weather</h5>
+			<weather></weather>
+			</div>
+		</div>	
 
 
     </div>
@@ -23,14 +26,11 @@
 <div class="container animated fadeIn">
 	<div class="row">
 
-<!-- weather widget -->
-<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
-		<p><button class="btn btn-primary btn-lg pull-right animated fadeIn" ng-controller="weather" ng-click="goTo('apps/weatherReport')">View Weather</button></p>
-			<div class="shortcut-background animated fadeIn"><h5> Weather</h5>
-			<weather></weather>
-			</div>
-		</div>	
 
+		<!-- calendar -->
+		<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+			<calendar-widget></calendar-widget>
+		</div>
 
 
 		<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
