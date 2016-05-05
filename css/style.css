@@ -13,7 +13,7 @@ a:hover{
 .mainApp{
 	/*background:url('../images/wallpaper.jpg') no-repeat top center;*/
 	/*background: #FCFCFC;*/
-	background: #181818;
+	/*background: #181818;*/
 	margin: 0 auto;
 	width: 1090px;
 	/*background-size: cover;*/
@@ -21,14 +21,37 @@ a:hover{
 	height: 1325px !important;
 	overflow: hidden;
 	/*border: 1px solid #bbb;*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#494949+0,181818+100 */
+background: #494949; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #494949 0%, #181818 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #494949 0%,#181818 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #494949 0%,#181818 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#494949', endColorstr='#181818',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+.btn-primary:focus{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#181818+47,383838+76,494949+92,3a3a3a+99;btn-primary */
+background: #181818; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #181818 47%, #383838 76%, #494949 92%, #3a3a3a 99%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #181818 47%,#383838 76%,#494949 92%,#3a3a3a 99%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #181818 47%,#383838 76%,#494949 92%,#3a3a3a 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#181818', endColorstr='#3a3a3a',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 .main-menu{
 	font-size: 20px;
 	margin-bottom: 20px;
-	background: #262626;
+	/* background: #262626;*/
 	border: none !important;
 	border-radius: 0px !important;
+	background: #3a3a3a; /* Old browsers */
+background: -moz-linear-gradient(top,  #3a3a3a 1%, #494949 8%, #383838 24%, #181818 53%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #3a3a3a 1%,#494949 8%,#383838 24%,#181818 53%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #3a3a3a 1%,#494949 8%,#383838 24%,#181818 53%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a3a', endColorstr='#181818',GradientType=0 ); /* IE6-9 */
+
 }
 
 .main-menu-background{
@@ -50,10 +73,16 @@ a:hover{
 
 .main-menu li a:hover, .main-menu li a:focus{
 	/*background: #2980B9 !important;*/
-	background: #16A8F5 !important;
-	box-shadow: inset 0 75px 0 0 #31302B;
+	/*background: #16A8F5 !important; */
+	box-shadow: inset 0 75px 0 0 #000;
     color: #16A8F5 !important;
     outline: none;
+    background: #3a3a3a; /* Old browsers */
+background: -moz-linear-gradient(top,  #3a3a3a 1%, #494949 8%, #383838 24%, #181818 53%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #3a3a3a 1%,#494949 8%,#383838 24%,#181818 53%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #3a3a3a 1%,#494949 8%,#383838 24%,#181818 53%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a3a', endColorstr='#181818',GradientType=0 ); /* IE6-9 */
+
 }
 
 .main-menu li a{
@@ -62,6 +91,12 @@ a:hover{
 	-webkit-transition: all ease 0.8s;
 	-moz-transition: all ease 0.8s;
 	transition: all ease 0.8s;
+	background: #3a3a3a; /* Old browsers */
+background: -moz-linear-gradient(top,  #3a3a3a 1%, #494949 8%, #383838 24%, #181818 53%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #3a3a3a 1%,#494949 8%,#383838 24%,#181818 53%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #3a3a3a 1%,#494949 8%,#383838 24%,#181818 53%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a3a', endColorstr='#181818',GradientType=0 ); /* IE6-9 */
+
 
 }
 
@@ -74,8 +109,18 @@ a:hover{
 }
 
 .btn-primary{
-	background: #515151 !important;
+	/* background: #515151 !important; */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3a3a3a+1,494949+8,383838+24,181818+53 */
+background: #3a3a3a; /* Old browsers */
+background: -moz-linear-gradient(top,  #3a3a3a 1%, #494949 8%, #383838 24%, #181818 53%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #3a3a3a 1%,#494949 8%,#383838 24%,#181818 53%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #3a3a3a 1%,#494949 8%,#383838 24%,#181818 53%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a3a', endColorstr='#181818',GradientType=0 ); /* IE6-9 */
+
 	border: none !important;
+	-moz-box-shadow: 1px 1px 7px #000;
+-webkit-box-shadow: 1px 1px 7px #000;
+box-shadow: 1px 1px 7px #000;
 	color: #ECF0F1;
 	-webkit-transition: all ease 0.8s;
 	-moz-transition: all ease 0.8s;
@@ -84,7 +129,15 @@ a:hover{
 }
 
 .btn-primary:hover{
-	box-shadow: inset 0 75px 0 0 #16A8F5;
+	-moz-box-shadow: inset 1px 1px 7px #000;
+-webkit-box-shadow: inset 1px 1px 7px #000;
+box-shadow: inset 1px 1px 7px #000;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#181818+47,383838+76,494949+92,3a3a3a+99 */
+background: #181818; /* Old browsers */
+background: -moz-linear-gradient(top,  #181818 47%, #383838 76%, #494949 92%, #3a3a3a 99%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #181818 47%,#383838 76%,#494949 92%,#3a3a3a 99%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #181818 47%,#383838 76%,#494949 92%,#3a3a3a 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#181818', endColorstr='#3a3a3a',GradientType=0 ); /* IE6-9 */
 
 }
 
@@ -106,7 +159,14 @@ h5{
 .shortcut-background{
 	/*border: 1px solid #bbb;*/
 	/*background: #F4F4F4;*/
-	background: #262626;
+	/*background: #262626;*/
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2b2b2b+0,181818+100 */
+background: #2b2b2b; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #2b2b2b 0%, #181818 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #2b2b2b 0%,#181818 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #2b2b2b 0%,#181818 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b2b2b', endColorstr='#181818',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 	color: #FFFFFF;
 	min-height: 200px;
 	height: auto;
@@ -114,7 +174,10 @@ h5{
 	padding:10px;
 	text-align: center;
 	margin-bottom: 30px;
-	
+	-moz-box-shadow: 1px 1px 22px #000;
+-webkit-box-shadow: 1px 1px 22px #000;
+box-shadow: 1px 1px 22px #000;
+	opacity: 0.8;
 }
 
 .shortcut-background:hover{
@@ -228,15 +291,31 @@ div.aw-widget-36hour-inner{
 }
 
 /* modal styles */
-.modalBox, .modal-body, .modal-footer{
+.modal-body, .modal-footer{
 	background: #181818;
 	border: none !important;
 	color: #CCCCCC;
 }
 
+.modalBox{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3a3a3a+1,494949+8,383838+24,181818+53;btn-primary-default */
+background: #3a3a3a; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #3a3a3a 1%, #494949 8%, #383838 24%, #181818 53%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #3a3a3a 1%,#494949 8%,#383838 24%,#181818 53%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #3a3a3a 1%,#494949 8%,#383838 24%,#181818 53%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3a3a', endColorstr='#181818',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
 /* nav dropdown for shortcuts */
 .dropdown-menu{
-	background: #515151;
+	/* background: #515151; */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#494949+0,181818+100 */
+background: #494949; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #494949 0%, #181818 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #494949 0%,#181818 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #494949 0%,#181818 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#494949', endColorstr='#181818',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	border: none !important;
 	color: #CCCCCC;
 	border: 1px solid #ccc;
@@ -297,7 +376,14 @@ div.aw-widget-36hour-inner{
 
 /* month div */
 .month{
-	background: #16A8F5 !important;
+	/*background: #16A8F5 !important; */
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#16a8f5+0,004ef7+100 */
+background: #16a8f5; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #16a8f5 0%, #004ef7 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #16a8f5 0%,#004ef7 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #16a8f5 0%,#004ef7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16a8f5', endColorstr='#004ef7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 	width: 100%;
 	height: 6%;
 	padding: 5px;
@@ -327,4 +413,10 @@ div.aw-widget-36hour-inner{
 /* dropdown menu */
 .dropdown-menu > li > a{
 	color: #ffffff;
+}
+
+/* icons */
+.fa{
+	color: #0A76F6 !important;
+
 }
