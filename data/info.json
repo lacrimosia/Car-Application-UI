@@ -66,23 +66,26 @@
 			"link": "apps/angularjs",
 			"description": "This is the Angular JS",
 			"image": "images/angular.jpg",
-			"url": "https://www.angularjs.org"
+			"url": "https://www.angularjs.org",
+			"system": false
 		},
 		{
-			"name": "Ebay",
+			"name": "Ember",
 			"icon": "fa fa-cog",
-			"link": "apps/ebay",
-			"description": "This is Ebay",
-			"image": "images/ebay.jpg",
-			"url": "http://www.ebay.com/"
+			"link": "apps/ember",
+			"description": "This is Ember",
+			"image": "images/ember.jpg",
+			"url": "http://emberjs.com/",
+			"system": false
 		},
 		{
-			"name": "Microsoft",
+			"name": "Bootstrap",
 			"icon": "fa fa-cog",
-			"link": "apps/microsoft",
-			"description": "This is the Microsoft",
-			"image": "images/microsoft.png",
-			"url": "https://www.microsoft.com/en-us/"
+			"link": "apps/bootstrap",
+			"description": "This is Bootstrap",
+			"image": "images/bootstrap.jpg",
+			"url": "http://getbootstrap.com/",
+			"system": false
 		},
 		{
 			"name": "Stack Overflow",
@@ -90,49 +93,61 @@
 			"link": "apps/stack-overflow",
 			"description": "Stack Overflow forum",
 			"image": "images/stackoverflow.jpg",
-			"url": "http://stackoverflow.com/"
+			"url": "http://stackoverflow.com/",
+			"system": false
 		},
 		{
 			"name": "Dell",
 			"icon": "fa fa-cog",
 			"link": "apps/dell",
 			"description": "Dell Shopping Area",
-			"image": "images/dell.jpg"
+			"image": "images/dell.jpg",
+			"url": "http://www.dell.com/en-us/",
+			"system": false
 		},
 		{
 			"name": "Yelp",
 			"icon": "fa fa-cog",
 			"link": "apps/yelp",
 			"description": "This is Yelp",
-			"image": "images/yelp.jpg"
+			"image": "images/yelp.jpg",
+			"url": "http://www.yelp.com/las-vegas",
+			"system": false
 		},
 		{
 			"name": "Weather",
 			"icon": "fa fa-cog",
 			"link": "apps/amazon",
 			"description": "This is the Weather app",
-			"image": "images/weatherchannel.jpg"
+			"image": "images/weatherchannel.jpg",
+			"url": "https://weather.com/?cm_ven=PS_GGL_Channel_9102015_1",
+			"system": false
 		},
 		{
 			"name": "ESPN",
 			"icon": "fa fa-cog",
 			"link": "apps/amazon",
 			"description": "This is the amazon",
-			"image": "images/espn.png"
+			"image": "images/espn.png", 
+			"url": "http://espn.go.com/",
+			"system": false
 		},
 		{
 			"name": "Calendar",
 			"icon": "fa fa-cog",
 			"link": "/apps/calendar",
 			"description": "This is the Calendar",
-			"image": "images/calendar.jpg"
+			"image": "images/calendar.jpg",
+			"url": "apps/calendar",
+			"system": true
 		},
 		{
 			"name": "Music Player",
 			"icon": "fa fa-cog",
 			"link": "apps/musicplayer",
 			"description": "This is the amazon",
-			"image": "images/music.jpg"
+			"image": "images/music.jpg",
+			"system": true
 		}
 	],
 	"phonetabs":[

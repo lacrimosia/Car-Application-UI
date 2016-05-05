@@ -1,6 +1,15 @@
 <div class="container-fluid animated fadeIn">
   <div class="row">
-	<div class="col-md-4" ng-repeat="a in appsList">
+
+  <uib-tabset active="activePill" justified="true" type="pills">
+
+  <uib-tab index="0">
+    	<uib-tab-heading>
+    		<h1><i class="fa fa-list"></i> All</h1>
+    	</uib-tab-heading>
+
+    <!-- apps -->
+	<div class="col-md-4 col-lg-4" ng-repeat="a in appsList">
 	<div class="apps-background" ng-click="goTo(a.link+'/'+$index); getIndex($index);" ng-style="{'background-image':'url('+ a.image + ')', 'background-repeat': 'no-repeat', 'background-size': 'cover'}">
 
 	<button class="btn btn-primary addBox" ng-click="deleteBox($index, 'Delete Shortcut', s.name, 'partials/modal.html', shortcutList, sm)"><i class="fa fa-plus"></i></button>
@@ -11,6 +20,49 @@
 	</div>
 	</div>
   </div>
+</uib-tab>
+
+    <uib-tab index="1">
+    	<uib-tab-heading>
+    		<h1><i class="fa fa-desktop"></i> Downloaded</h1>
+    	</uib-tab-heading>
+
+    <!-- apps -->
+	<div class="col-md-4 col-lg-4" ng-repeat="a in appsList" ng-if="a.system==false">
+	<div class="apps-background" ng-click="goTo(a.link+'/'+$index); getIndex($index);" ng-style="{'background-image':'url('+ a.image + ')', 'background-repeat': 'no-repeat', 'background-size': 'cover'}">
+
+	<button class="btn btn-primary addBox" ng-click="deleteBox($index, 'Delete Shortcut', s.name, 'partials/modal.html', shortcutList, sm)"><i class="fa fa-plus"></i></button>
+	<div class="overlay-dark">
+		<!--<p><h1><i class="{{a.icon}}"></i></h1></p>
+		<h3>{{ a.name }}</h3>
+		<p><small>{{ a.link }}</small></p>-->
+	</div>
+	</div>
+  </div>
+</uib-tab>
+
+    <uib-tab index="2">
+    	<uib-tab-heading>
+    		<h1><i class="fa fa-system"></i> System</h1>
+    	</uib-tab-heading>
+
+    	<div class="col-md-4 col-lg-4" ng-repeat="a in appsList" ng-if="a.system==true">
+	<div class="apps-background" ng-click="goTo(a.link+'/'+$index); getIndex($index);" ng-style="{'background-image':'url('+ a.image + ')', 'background-repeat': 'no-repeat', 'background-size': 'cover'}">
+
+	<button class="btn btn-primary addBox" ng-click="deleteBox($index, 'Delete Shortcut', s.name, 'partials/modal.html', shortcutList, sm)"><i class="fa fa-plus"></i></button>
+	<div class="overlay-dark">
+		<!--<p><h1><i class="{{a.icon}}"></i></h1></p>
+		<h3>{{ a.name }}</h3>
+		<p><small>{{ a.link }}</small></p>-->
+	</div>
+	</div>
+  </div>
+
+    </uib-tab>
+  </uib-tabset>
+
+
+
 
 </div>
 </div>

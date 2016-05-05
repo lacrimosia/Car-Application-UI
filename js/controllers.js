@@ -73,6 +73,8 @@ app.controller('apps', [
             $scope.indexRoute = $routeParams.index;
            return $sce.trustAsResourceUrl($scope.appsList[$scope.indexRoute].url);
         }
+
+        $scope.system == false;
     });
 
 }]);

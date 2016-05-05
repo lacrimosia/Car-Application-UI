@@ -6,6 +6,10 @@ a{
 
 }
 
+iframe{
+	border: none !important;
+}
+
 a:hover{
 	cursor: pointer !important;
 }
