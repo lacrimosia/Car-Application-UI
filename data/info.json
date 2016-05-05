@@ -138,7 +138,7 @@
 			"link": "/apps/calendar",
 			"description": "This is the Calendar",
 			"image": "images/calendar.jpg",
-			"url": "apps/calendar",
+			"url": "/apps/calendar",
 			"system": true
 		},
 		{
@@ -147,6 +147,16 @@
 			"link": "apps/musicplayer",
 			"description": "This is the amazon",
 			"image": "images/music.jpg",
+			"url": "/apps/music-player",
+			"system": true
+		},
+		{
+			"name": "App Store",
+			"icon": "fa fa-cog",
+			"link": "apps/store",
+			"description": "This is the App store",
+			"image": "images/appstore.jpg",
+			"url": "/apps/store",
 			"system": true
 		}
 	],
