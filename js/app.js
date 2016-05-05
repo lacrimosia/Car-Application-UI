@@ -40,6 +40,10 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
       templateUrl: 'pages/calendar.html'
    }).
 
+   when('/apps/:name/:index', {
+      templateUrl: 'pages/frame.html'
+   }).
+
    otherwise({
       redirectTo: '/404', templateUrl: 'partials/404.html'
    });

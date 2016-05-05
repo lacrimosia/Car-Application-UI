@@ -49,13 +49,29 @@ app.controller('apps', [
     '$scope', 
     '$http', 
     'contentService',
-    'gotoService', function($scope, $http, contentService, gotoService){
+    'gotoService',
+    'getIndex', 
+    '$routeParams', function($scope, $http, contentService, gotoService, getIndex, $routeParams){
  contentService.then(function(data){
         $scope.data = data;   // access all data
         $scope.data = data;   // access all data
         $scope.appsList = $scope.data.appsList;  // list of shortcuts
 
+        // change url to links
+        $scope.goTo= function(url){
+            gotoService.getLink(url);
+        }
 
+        // get index
+        $scope.getIndex = function(index){
+            getIndex.current(index);
+        }
+
+        // embed in iframe
+        $scope.link = function(){
+            $scope.indexRoute = $routeParams.index;
+           return $scope.appsList[$scope.indexRoute].url;
+        }
     });
 
 }]);

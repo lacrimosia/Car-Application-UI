@@ -65,21 +65,24 @@
 			"icon": "fa fa-cog",
 			"link": "apps/amazon",
 			"description": "This is the amazon",
-			"image": "images/amazon.png"
+			"image": "images/amazon.png",
+			"url": "http://www.amazon.com/"
 		},
 		{
 			"name": "Ebay",
 			"icon": "fa fa-cog",
 			"link": "apps/ebay",
 			"description": "This is Ebay",
-			"image": "images/ebay.jpg"
+			"image": "images/ebay.jpg",
+			"url": "http://www.ebay.com/"
 		},
 		{
 			"name": "Microsoft",
 			"icon": "fa fa-cog",
 			"link": "apps/microsoft",
 			"description": "This is the Microsoft",
-			"image": "images/microsoft.png"
+			"image": "images/microsoft.png",
+			"url": "https://www.microsoft.com/en-us/"
 		},
 		{
 			"name": "Stack Overflow",

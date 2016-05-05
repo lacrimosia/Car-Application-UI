@@ -132,3 +132,13 @@ app.factory('timeService', ['$location', function($location){
 }
 
 }]);
+
+// get Index
+app.factory('getIndex', function(){
+  return{
+    current: function(index){
+      console.log(index);
+      return index;
+    }
+  }
+});
