@@ -121,13 +121,14 @@
 			"icon": "fa fa-cog",
 			"link": "/apps/calendar",
 			"description": "This is the Calendar",
-			"image": "images/espn.png"
+			"image": "images/calendar.jpg"
 		},
 		{
-			"name": "Amazon",
+			"name": "Music Player",
 			"icon": "fa fa-cog",
-			"link": "apps/amazon",
-			"description": "This is the amazon"
+			"link": "apps/musicplayer",
+			"description": "This is the amazon",
+			"image": "images/music.jpg"
 		}
 	],
 	"phonetabs":[
