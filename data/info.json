@@ -61,12 +61,12 @@
 	],
 	"appsList": [
 		{
-			"name": "Amazon",
+			"name": "AngularJS",
 			"icon": "fa fa-cog",
-			"link": "apps/amazon",
-			"description": "This is the amazon",
-			"image": "images/amazon.png",
-			"url": "http://www.amazon.com/"
+			"link": "apps/angularjs",
+			"description": "This is the Angular JS",
+			"image": "images/angular.jpg",
+			"url": "https://www.angularjs.org"
 		},
 		{
 			"name": "Ebay",
@@ -89,7 +89,8 @@
 			"icon": "fa fa-cog",
 			"link": "apps/stack-overflow",
 			"description": "Stack Overflow forum",
-			"image": "images/stackoverflow.jpg"
+			"image": "images/stackoverflow.jpg",
+			"url": "http://stackoverflow.com/"
 		},
 		{
 			"name": "Dell",

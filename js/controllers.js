@@ -51,7 +51,8 @@ app.controller('apps', [
     'contentService',
     'gotoService',
     'getIndex', 
-    '$routeParams', function($scope, $http, contentService, gotoService, getIndex, $routeParams){
+    '$routeParams', 
+    '$sce', function($scope, $http, contentService, gotoService, getIndex, $routeParams, $sce){
  contentService.then(function(data){
         $scope.data = data;   // access all data
         $scope.data = data;   // access all data
@@ -70,7 +71,7 @@ app.controller('apps', [
         // embed in iframe
         $scope.link = function(){
             $scope.indexRoute = $routeParams.index;
-           return $scope.appsList[$scope.indexRoute].url;
+           return $sce.trustAsResourceUrl($scope.appsList[$scope.indexRoute].url);
         }
     });
 
