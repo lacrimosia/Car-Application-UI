@@ -299,6 +299,18 @@
 			]
 		},
 		{
+			"name": "The Weeknd",
+			"artistPicture":"images/theweeknd.jpg",
+			"tracks": [
+				{
+					"songName": "Wicked Games",
+					"audio": "./audio/music/wickedgames.mp3",
+					"albumName": "House of Balloons",
+					"albumCover": "./images/albums/houseofballoons.jpg"
+				}
+			]
+		},
+		{
 			"name": "Ariana Grande",
 			"artistPicture":"images/arianagrande.jpg",
 			"tracks": [
