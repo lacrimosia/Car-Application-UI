@@ -1,4 +1,4 @@
-var app = angular.module('myApp', ['ngRoute', 'ui.bootstrap', 'ngResource', 'angular-virtual-keyboard']);
+var app = angular.module('myApp', ['ngRoute', 'ui.bootstrap', 'ngResource', 'angular-virtual-keyboard', 'ngAudio']);
 
 app.config(['$routeProvider','$locationProvider', function($routeProvider, $locationProvider) {
    $routeProvider.

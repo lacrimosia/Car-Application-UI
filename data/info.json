@@ -168,7 +168,7 @@
 		},
 		{
 			"title": "Recents",
-			"icon": "fa fa-clock",
+			"icon": "fa fa-clock-o",
 			"content": "I am the recents"
 		},
 		{
@@ -178,12 +178,12 @@
 		},
 		{
 			"title": "Keypad",
-			"icon": "fa fa-star",
+			"icon": "fa fa-keyboard-o",
 			"content": "I am the keypad"
 		},
 		{
 			"title": "Voicemail",
-			"icon": "fa fa-star",
+			"icon": "fa fa-phone-square",
 			"content": "I am the voicemail"
 		}
 	],
@@ -233,5 +233,19 @@
 					"recent": true,
 					"category": "business"
 				}
+	],
+	"musicplaylist": [
+		{
+			"name": "Michael Jackson",
+			"artistPicture":"images/michaejackson.jpg",
+			"tracks": [
+				{
+					"songName": "Rock with You",
+					"audio": "audio/rockwithyou.mp3",
+					"albumName": "Name of Album",
+					"albumCover": "images/albums/mj.jpg"
+				}
+			]
+		}
 	]
 }

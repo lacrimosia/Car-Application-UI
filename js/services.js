@@ -150,10 +150,18 @@ app.factory('arrayService', function(){
       var currentIndex = index;
         if(currentIndex != -1){
           array.splice(currentIndex, 1);
-          console.log('current Index', currentIndex);
         }else{
           console.log("nothing to delete");
         }
+    },
+    addTo: function(index, currentArray, newArray){
+      var currentIndex = index;
+      if(currentIndex != -1){
+          newArray.push(currentArray.splice(currentIndex, 1));
+        }else{
+          console.log("nothing to add");
+        }
+
     }
   }
 });

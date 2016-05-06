@@ -170,7 +170,8 @@ app.controller('phone', [
   '$scope', 
   '$http',
   'contentService',
-  'arrayService', function($scope, $http, contentService, arrayService){
+  'arrayService',
+  'ngAudio', function($scope, $http, contentService, arrayService, ngAudio){
   contentService.then(function(data){
     $scope.data = data;   // access all data
         $scope.phoneTabs = $scope.data.phonetabs;  // list of shortcuts
@@ -180,5 +181,7 @@ app.controller('phone', [
         $scope.deleteFavorites = function(index, array){
           arrayService.deleteCurrent(index, array);
         };
+
+        
   });
 }]);
