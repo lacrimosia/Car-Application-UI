@@ -122,7 +122,7 @@ app.controller('musicPlayer', [
           pauseAudio: function(song){
             $scope.song.pause();
           },
-          nextTrack: function(){
+          nextTrack: function(song){
             if($scope.Song >= $scope.musicList.length -1) {
               // auto restart if $scope.Song=0;
               $scope.Song = $scope.musicList.length -1;

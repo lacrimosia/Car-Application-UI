@@ -11,8 +11,8 @@
 					<button class="btn btn-primary btn-lg" ng-click="audio.loadAudio(t.audio)"><i class="fa fa-play"></i></button>
 					<button class="btn btn-primary btn-lg" ng-click="audio.pauseAudio(t.audio)"><i class="fa fa-pause"></i></button>
 					<button class="btn btn-primary btn-lg" ng-click="audio.stopAudio(t.audio)"><i class="fa fa-stop"></i></button>
-					<button class="btn btn-primary btn-lg" ng-click="audio.prevTrack($index)"><i class="fa fa-step-backward"></i></button>
-					<button class="btn btn-primary btn-lg" ng-click="audio.nextTrack($index)"><i class="fa fa-step-forward"></i></button>
+					<button class="btn btn-primary btn-lg" ng-click="audio.prevTrack($index); audio.stopAudio(t.audio);"><i class="fa fa-step-backward"></i></button>
+					<button class="btn btn-primary btn-lg" ng-click="audio.nextTrack($index); audio.stopAudio(t.audio);"><i class="fa fa-step-forward"></i></button>
 					<hr/>
 				</div>
 			</div>
