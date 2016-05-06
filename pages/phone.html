@@ -9,11 +9,11 @@
     					 </uib-tab-heading>
 
     			     <!--favorites-->
-    					 <div ng-repeat="x in contacts" ng-if="x.favorites==true && tab.title=='Favorites'" class="shortcut-background col-md-12 col-lg-12 animated fadeIn" ng-style="{'min-height': '30px !important'}">
+    					 <div ng-repeat="x in contacts" ng-if="x.favorites==true && tab.title=='Favorites'" class="shortcut-background col-md-12 col-lg-12" ng-style="{'min-height': '30px !important'}">
                             <div class="col-md-8 col-lg-8">
-                            <img ng-src="./images/{{x.photo}}" class="thumbnails img-circle pull-left"/>
-                            <h2 class="text-left">{{ x.name }}</h2></div>
-                            <div class="col-md-4 col-lg-4">
+                            <img ng-src="./images/{{x.photo}}" class="thumbnails img-circle pull-left animated fadeIn"/>
+                            <h2 class="text-left animated fadeIn">{{ x.name }}</h2></div>
+                            <div class="col-md-4 col-lg-4 animated fadeIn">
                                 <button class="btn btn-primary btn-lg"><i class="fa fa-phone pull-right"></i></button>
                                 <button class="btn btn-primary btn-lg"><i class="fa fa-envelope pull-right"></i></button>
                                 <button class="btn btn-primary btn-lg"><i class="fa fa-info pull-right"></i></button>

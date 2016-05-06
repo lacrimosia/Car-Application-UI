@@ -187,6 +187,33 @@
 			"content": "I am the voicemail"
 		}
 	],
+	"musictabs":[
+		{
+			"title": "Music",
+			"icon": "fa fa-music",
+			"content": "I am the favorites"
+		},
+		{
+			"title": "Spotify",
+			"icon": "fa fa-spotify",
+			"content": "I am the recents"
+		},
+		{
+			"title": "Pandora",
+			"icon": "fa fa-pandora",
+			"content": "I am the contacts"
+		},
+		{
+			"title": "Radio",
+			"icon": "fa fa-radio",
+			"content": "I am the keypad"
+		},
+		{
+			"title": "Sirius XM",
+			"icon": "fa fa-radio",
+			"content": "I am the voicemail"
+		}
+	],
 	"contacts":[
 				{
 					"name": "Shatilla Prayer",
@@ -236,8 +263,8 @@
 	],
 	"musicplaylist": [
 		{
-			"name": "Michael Jackson",
-			"artistPicture":"images/michaejackson.jpg",
+			"name": "Beyonce",
+			"artistPicture":"./images/beyonce.jpg",
 			"tracks": [
 				{
 					"songName": "Rock with You",
@@ -248,11 +275,11 @@
 			]
 		},
 		{
-			"name": "Janet Jackson",
-			"artistPicture":"images/janetjackson.jpg",
+			"name": "Drake",
+			"artistPicture":"images/drake.jpg",
 			"tracks": [
 				{
-					"songName": "All for you",
+					"songName": "Started From the bottom",
 					"audio": "./audio/techno.wav",
 					"albumName": "Name of Album",
 					"albumCover": "./images/albums/jj.jpg"

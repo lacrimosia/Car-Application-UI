@@ -103,6 +103,7 @@ app.controller('musicPlayer', [
   contentService.then(function(data){
     $scope.data = data;   // access all data
         $scope.musicList = $scope.data.musicplaylist;
+        $scope.musicTabs = $scope.data.musictabs;
         $scope.Song = 0;
 
         // delete current item

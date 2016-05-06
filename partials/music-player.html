@@ -1,11 +1,17 @@
 <div class="container">
-	<div class="row" ng-style="{'margin': '15px'}">
+	<div class="row">
 		<div ng-controller="musicPlayer">
-			<div class="largeDisplay" class="col-md-12 col-lg-12">
-			</div>
 
-			<div class="playlist" class="col-md-12 col-lg-12" ng-repeat="m in musicList" ng-if="Song == $index">
+			<uib-tabset active="activeJustified" justified="true" type="pills">
+    				<uib-tab index="tab" ng-repeat="tab in musicTabs">
+    					 <uib-tab-heading>
+    					 	<h2><i class="white {{tab.icon}}"></i> {{tab.title}}</h2>
+    					 </uib-tab-heading>
+
+    			     <!--music-->
+    			     <div class="playlist animated fadeIn" ng-style="{'margin': '15px'}" class="col-md-12 col-lg-12" ng-repeat="m in musicList" ng-if="Song == $index && tab.title=='Music'">
 				<h3><strong>Artist:</strong> {{ m.name }}</h3>
+				<p><img ng-src="{{m.artistPicture}}" class="img-responsive"/></p>
 				<div ng-repeat="t in m.tracks"> 
 					<p><strong>Song:</strong> {{ t.songName }}</p>
 					<button class="btn btn-primary btn-lg" ng-click="audio.loadAudio(t.audio)"><i class="fa fa-play"></i></button>
@@ -13,9 +19,16 @@
 					<button class="btn btn-primary btn-lg" ng-click="audio.stopAudio(t.audio)"><i class="fa fa-stop"></i></button>
 					<button class="btn btn-primary btn-lg" ng-click="audio.prevTrack($index); audio.stopAudio(t.audio);"><i class="fa fa-step-backward"></i></button>
 					<button class="btn btn-primary btn-lg" ng-click="audio.nextTrack($index); audio.stopAudio(t.audio);"><i class="fa fa-step-forward"></i></button>
-					<hr/>
+					<button class="btn btn-primary btn-lg" ng-click="audio.nextTrack($index); audio.stopAudio(t.audio);"><i class="fa fa-volume-up"></i></button>
 				</div>
 			</div>
+    				
+
+    				</uib-tab>
+  				</uib-tabset>
+			
+		</div>
 </div>
-	</div>
 </div>
+
+
