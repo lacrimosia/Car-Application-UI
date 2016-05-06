@@ -263,14 +263,26 @@
 	],
 	"musicplaylist": [
 		{
-			"name": "Beyonce",
-			"artistPicture":"./images/beyonce.jpg",
+			"name": "Prince",
+			"artistPicture":"./images/prince.jpg",
 			"tracks": [
 				{
-					"songName": "Rock with You",
-					"audio": "./audio/techno.wav",
-					"albumName": "Name of Album",
-					"albumCover": "./images/albums/mj.jpg"
+					"songName": "When Doves Cry",
+					"audio": "./audio/music/whendovescry.mp3",
+					"albumName": "When Doves Cry",
+					"albumCover": "./images/albums/whendovescry.jpg"
+				}
+			]
+		},
+		{
+			"name": "Prince",
+			"artistPicture":"./images/prince.jpg",
+			"tracks": [
+				{
+					"songName": "Purple Rain",
+					"audio": "./audio/music/purplerain.mp3",
+					"albumName": "Purple Rain",
+					"albumCover": "./images/albums/purplerain.jpg"
 				}
 			]
 		},
@@ -280,9 +292,45 @@
 			"tracks": [
 				{
 					"songName": "Started From the bottom",
-					"audio": "./audio/techno.wav",
-					"albumName": "Name of Album",
-					"albumCover": "./images/albums/jj.jpg"
+					"audio": "./audio/music/startedfromthebottom.mp3",
+					"albumName": "Nothing was the Same",
+					"albumCover": "./images/albums/nothingwasthesame.jpg"
+				}
+			]
+		},
+		{
+			"name": "Ariana Grande",
+			"artistPicture":"images/arianagrande.jpg",
+			"tracks": [
+				{
+					"songName": "The Way (feat. Mac Miller) ",
+					"audio": "./audio/music/theway.mp3",
+					"albumName": "The Way",
+					"albumCover": "./images/albums/theway.jpg"
+				}
+			]
+		},
+		{
+			"name": "Miley Cyrus",
+			"artistPicture":"images/mileycyrus.jpg",
+			"tracks": [
+				{
+					"songName": "Wrecking Ball",
+					"audio": "./audio/music/wreckingball.mp3",
+					"albumName": "Wrecking Ball",
+					"albumCover": "./images/albums/wreckingball.png"
+				}
+			]
+		},
+		{
+			"name": "Ray J",
+			"artistPicture":"images/rayj.jpg",
+			"tracks": [
+				{
+					"songName": "One Wish",
+					"audio": "./audio/music/onewish.mp3",
+					"albumName": "Raydiation",
+					"albumCover": "./images/albums/raydiation.jpg"
 				}
 			]
 		}
