@@ -93,8 +93,56 @@ app.controller('store', [
 }]);
 
 // music player controller
-app.controller('musicPlayer', ['$scope', '$http', function($scope, $http){
+// phone controller
+app.controller('musicPlayer', [
+  '$scope', 
+  '$http',
+  'contentService',
+  'arrayService',
+  'ngAudio', function($scope, $http, contentService, arrayService, ngAudio){
+  contentService.then(function(data){
+    $scope.data = data;   // access all data
+        $scope.musicList = $scope.data.musicplaylist;
+        $scope.Song = 0;
 
+        // delete current item
+        $scope.deleteFavorites = function(index, array){
+          arrayService.deleteCurrent(index, array);
+        };
+
+        // audio settings 
+        $scope.audio = {
+          loadAudio: function(song){
+            $scope.song = ngAudio.load(song);
+            $scope.song.play();
+          },
+          stopAudio: function(song){
+            $scope.song.stop();
+          },
+          pauseAudio: function(song){
+            $scope.song.pause();
+          },
+          nextTrack: function(){
+            if($scope.Song >= $scope.musicList.length -1) {
+              // auto restart if $scope.Song=0;
+              $scope.Song = $scope.musicList.length -1;
+            }
+            else {
+              $scope.Song++;
+            }
+          },
+          prevTrack: function(){
+            if($scope.Song === 0){
+              $scope.Song=0;
+            }else{
+              $scope.Song--;
+            }
+            
+          }
+        };
+
+        
+  });
 }]);
 
 
@@ -182,6 +230,6 @@ app.controller('phone', [
           arrayService.deleteCurrent(index, array);
         };
 
-        
+
   });
 }]);

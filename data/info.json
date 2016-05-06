@@ -241,9 +241,21 @@
 			"tracks": [
 				{
 					"songName": "Rock with You",
-					"audio": "audio/rockwithyou.mp3",
+					"audio": "./audio/techno.wav",
 					"albumName": "Name of Album",
-					"albumCover": "images/albums/mj.jpg"
+					"albumCover": "./images/albums/mj.jpg"
+				}
+			]
+		},
+		{
+			"name": "Janet Jackson",
+			"artistPicture":"images/janetjackson.jpg",
+			"tracks": [
+				{
+					"songName": "All for you",
+					"audio": "./audio/techno.wav",
+					"albumName": "Name of Album",
+					"albumCover": "./images/albums/jj.jpg"
 				}
 			]
 		}
