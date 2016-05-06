@@ -142,3 +142,18 @@ app.factory('getIndex', function(){
     }
   }
 });
+
+// delete current item from array
+app.factory('arrayService', function(){
+  return{
+    deleteCurrent: function(index, array){
+      var currentIndex = index;
+        if(currentIndex != -1){
+          array.splice(currentIndex, 1);
+          console.log('current Index', currentIndex);
+        }else{
+          console.log("nothing to delete");
+        }
+    }
+  }
+});

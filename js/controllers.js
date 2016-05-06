@@ -79,11 +79,6 @@ app.controller('apps', [
 
 }]);
 
-// phone controller
-app.controller('phone', ['$scope', '$http', function($scope, $http){
-
-}]);
-
 // mail controller
 app.controller('mail', ['$scope', '$http', function($scope, $http){
 
@@ -174,10 +169,16 @@ app.controller('systemTime', [
 app.controller('phone', [
   '$scope', 
   '$http',
-  'contentService', function($scope, $http, contentService){
+  'contentService',
+  'arrayService', function($scope, $http, contentService, arrayService){
   contentService.then(function(data){
     $scope.data = data;   // access all data
         $scope.phoneTabs = $scope.data.phonetabs;  // list of shortcuts
         $scope.contacts = $scope.data.contacts;  // list of contacts
+
+        // delete current item
+        $scope.deleteFavorites = function(index, array){
+          arrayService.deleteCurrent(index, array);
+        };
   });
 }]);

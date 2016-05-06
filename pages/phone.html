@@ -9,7 +9,17 @@
     					 </uib-tab-heading>
 
     			     <!--favorites-->
-    					 <p ng-repeat="x in contacts" ng-if="x.favorites==true && tab.title=='Favorites'">{{ x.name }}</p>
+    					 <div ng-repeat="x in contacts" ng-if="x.favorites==true && tab.title=='Favorites'" class="shortcut-background col-md-12 col-lg-12 animated fadeIn" ng-style="{'height': '30px !important'}">
+                            <div class="col-md-8 col-lg-8">
+                            <img ng-src="./images/{{x.photo}}" class="thumbnails img-circle pull-left"/>
+                            <h2 class="text-left">{{ x.name }}</h2></div>
+                            <div class="col-md-4 col-lg-4">
+                                <button class="btn btn-primary btn-lg"><i class="fa fa-phone pull-right"></i></button>
+                                <button class="btn btn-primary btn-lg"><i class="fa fa-envelope pull-right"></i></button>
+                                <button class="btn btn-primary btn-lg"><i class="fa fa-info pull-right"></i></button>
+                                <button class="btn btn-primary btn-lg" ng-click="deleteFavorites($index, contacts)"><i class="fa fa-times pull-right"></i></button>
+                            </div>
+                         </div>
 
     				
     				 <!-- vertical categories -->

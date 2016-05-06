@@ -448,6 +448,6 @@ background: -webkit-radial-gradient(center, ellipse cover,  #494949 0%,#181818 1
 background: radial-gradient(ellipse at center,  #494949 0%,#181818 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#494949', endColorstr='#181818',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	border: none !important;
-	color: #CCCCCC;
+	color: #ffffff;
 	border: 1px solid #ccc;
 }
