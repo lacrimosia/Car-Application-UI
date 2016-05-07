@@ -15,6 +15,10 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
       templateUrl: 'pages/mail.html', controller: 'mail'
    }).
 
+   when('/mail/message/:index', {
+      templateUrl: 'partials/message.html', controller: 'mail'
+   }).
+
    when('/phone', {
       templateUrl: 'pages/phone.html', controller: 'phone'
    }).

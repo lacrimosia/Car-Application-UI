@@ -1,5 +1,6 @@
 body {
     background: #000000;
+    font-family: 'Raleway', sans-serif !important;
 }
 
 a {}
@@ -55,21 +56,43 @@ a:hover {
 
 .selected {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#16a8f5+0,004ef7+100;blue+color */
-background: #0665F6 !important; /* Old browsers */
+    background: #0665F6 !important;
+    /* Old browsers */
 }
 
-.thumbnails2x{
-	width: 13%;
-	height: auto;
+.thumbnails2x {
+    width: 13%;
+    height: auto;
 }
 
-.musicbutton{
-	padding: 25px !important;
+.musicbutton {
+    padding: 25px !important;
 }
 
-.musicbutton i{
-	font-size: 1.7em;
+.musicbutton i {
+    font-size: 1.7em;
 }
+
+
+/* table */
+
+.table {
+    background: #282828 !important;
+    color: #ffffff;
+}
+
+.inboxArea {
+    height: 50px;
+}
+
+
+/* inbox rows */
+
+.inboxArea:hover {
+    cursor: pointer !important;
+    background: #0A76F6 !important;
+}
+
 
 /* music list */
 
@@ -92,12 +115,17 @@ background: #0665F6 !important; /* Old browsers */
 }
 
 .musiclist:hover {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#16a8f5+0,004ef7+100;blue+color */
-background: #16a8f5; /* Old browsers */
-background: -moz-radial-gradient(center, ellipse cover,  #16a8f5 0%, #004ef7 100%); /* FF3.6-15 */
-background: -webkit-radial-gradient(center, ellipse cover,  #16a8f5 0%,#004ef7 100%); /* Chrome10-25,Safari5.1-6 */
-background: radial-gradient(ellipse at center,  #16a8f5 0%,#004ef7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16a8f5', endColorstr='#004ef7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#16a8f5+0,004ef7+100;blue+color */
+    background: #16a8f5;
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #16a8f5 0%, #004ef7 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #16a8f5 0%, #004ef7 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #16a8f5 0%, #004ef7 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#16a8f5', endColorstr='#004ef7', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
 }
 
 .main-menu {
@@ -136,8 +164,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16a8f5', end
     height: auto;
 }
 
-.main-menu li a:hover,
-.main-menu li a:focus {
+.btn-primary:hover {
     /*background: #2980B9 !important;*/
     /*background: #16A8F5 !important; */
     box-shadow: inset 0 75px 0 0 #000;
@@ -155,7 +182,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16a8f5', end
     /* IE6-9 */
 }
 
+.main-menu li a:hover,
+.main-menu li a:focus {
+    /*background: #2980B9 !important;*/
+    /*background: #16A8F5 !important; */
+    box-shadow: inset 0 150px 0 0 #000;
+    color: #16A8F5 !important;
+    outline: none;
+    background: #3a3a3a;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #3a3a3a 1%, #494949 8%, #383838 24%, #181818 53%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #3a3a3a 1%, #494949 8%, #383838 24%, #181818 53%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #3a3a3a 1%, #494949 8%, #383838 24%, #181818 53%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3a3a3a', endColorstr='#181818', GradientType=0);
+    /* IE6-9 */
+}
+
 .main-menu li a {
+    padding: 40px !important;
+}
+
+.main-menu li a,
+.btn-primary {
     color: #E1E1E1 !important;
     box-shadow: inset 0 0 0 0 #31302B;
     -webkit-transition: all ease 0.8s;
@@ -171,6 +222,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16a8f5', end
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3a3a3a', endColorstr='#181818', GradientType=0);
     /* IE6-9 */
+    border: none !important;
 }
 
 
@@ -181,46 +233,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16a8f5', end
     width: 100%;
     color: #16A8F5;
     height: 40px;
-}
-
-.btn-primary {
-    /* background: #515151 !important; */
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3a3a3a+1,494949+8,383838+24,181818+53 */
-    background: #3a3a3a;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #3a3a3a 1%, #494949 8%, #383838 24%, #181818 53%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #3a3a3a 1%, #494949 8%, #383838 24%, #181818 53%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #3a3a3a 1%, #494949 8%, #383838 24%, #181818 53%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3a3a3a', endColorstr='#181818', GradientType=0);
-    /* IE6-9 */
-    border: none !important;
-    -moz-box-shadow: 1px 1px 7px #000;
-    -webkit-box-shadow: 1px 1px 7px #000;
-    box-shadow: 1px 1px 7px #000;
-    color: #ECF0F1;
-    -webkit-transition: all ease 0.8s;
-    -moz-transition: all ease 0.8s;
-    transition: all ease 0.8s;
-}
-
-.btn-primary:hover {
-    -moz-box-shadow: inset 1px 1px 7px #000;
-    -webkit-box-shadow: inset 1px 1px 7px #000;
-    box-shadow: inset 1px 1px 7px #000;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#181818+47,383838+76,494949+92,3a3a3a+99 */
-    background: #181818;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #181818 47%, #383838 76%, #494949 92%, #3a3a3a 99%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #181818 47%, #383838 76%, #494949 92%, #3a3a3a 99%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #181818 47%, #383838 76%, #494949 92%, #3a3a3a 99%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#181818', endColorstr='#3a3a3a', GradientType=0);
-    /* IE6-9 */
 }
 
 h5 {
@@ -515,6 +527,14 @@ div.aw-widget-36hour-inner {
 .month h3 {
     font-size: 2.5em !important;
     color: #ffffff;
+}
+
+
+/* menu nav */
+
+.nav-justified {
+    height: 50px !important;
+    margin-bottom: 60px !important;
 }
 
 

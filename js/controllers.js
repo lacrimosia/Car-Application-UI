@@ -84,9 +84,43 @@ app.controller('apps', [
 ]);
 
 // mail controller
-app.controller('mail', ['$scope', '$http', function($scope, $http) {
+// phone controller
+app.controller('mail', [
+    '$scope',
+    '$http',
+    'contentService',
+    'arrayService',
+    'ngAudio',
+    'gotoService',
+    '$routeParams',
+    function($scope, $http, contentService, arrayService, ngAudio, gotoService, $routeParams) {
+        contentService.then(function(data) {
+            $scope.data = data; // access all data
+            $scope.inbox = $scope.data.inbox; // list of shortcuts
+            $scope.contacts = $scope.data.contacts; // list of contacts
+            $scope.mailsTabs = $scope.data.mailtabs; // mail tabs
+            $scope.message = 0;
+            $scope.selected = $routeParams.index;
 
-}]);
+            // delete current item
+            $scope.deleteFavorites = function(index, array) {
+                arrayService.deleteCurrent(index, array);
+            };
+
+            // open selected message
+            $scope.openMessage = function(params){
+                return params;
+            }
+
+            // change url to links
+            $scope.goTo = function(url) {
+                gotoService.getLink(url);
+            };
+
+
+        });
+    }
+]);
 
 // store controller
 app.controller('store', [

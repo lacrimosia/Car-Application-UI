@@ -1,0 +1,33 @@
+<div class="messagesAreas" ng-controller="mail">
+    <div class="col-md-2 col-lg-2">
+        <button class="btn btn-primary btn-lg">Compose</button>
+        <ul class="nav nav-pills nav-stacked">
+            <li ng-repeat="m in mailsTabs">
+                <h3><a ng-href="{{m.link}}"><i class="{{m.icon}}"></i> {{ m.title }}</a></h3></li>
+        </ul>
+    </div>
+    <div class="col-md-10 col-lg-10">
+        <div class="menu-mail">
+<button class="btn btn-primary btn-md"><i class="fa fa-trash"></i>
+            </button>
+            <button class="btn btn-primary btn-md"><i class="fa fa-download"></i>
+            </button>
+            <button class="btn btn-primary btn-md"><i class="fa fa-info"></i>
+            </button>
+        </div>
+
+        <!-- view message -->
+        <div class="mails animated fadeIn white" ng-repeat="i in inbox" ng-if="selected==$index">
+            <div class="col-md-7 col-lg-7">
+                <h3>{{i.title}}</h3>
+                <h6>From: <{{i.fromEmail}}></h6></div>
+            <div class="col-md-3 col-lg-3">
+                <h4 class="pull-right">Date: {{i.date}}</h4></div>
+            <div class="col-md-10 col-lg-10">
+                <hr/>
+                <h3> {{ i.date }}</h3>
+                <p> {{ i.message }}</p>
+            </div>
+        </div>
+    </div>
+</div>
