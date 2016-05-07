@@ -11,7 +11,7 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
       templateUrl: 'pages/apps.html', controller: 'apps'
    }).
 
-   when('/mail', {
+   when('/apps/mail', {
       templateUrl: 'pages/mail.html', controller: 'mail'
    }).
 

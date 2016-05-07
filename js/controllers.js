@@ -100,21 +100,20 @@ app.controller('mail', [
             $scope.contacts = $scope.data.contacts; // list of contacts
             $scope.mailsTabs = $scope.data.mailtabs; // mail tabs
             $scope.message = 0;
-            $scope.selected = $routeParams.index;
 
             // delete current item
             $scope.deleteFavorites = function(index, array) {
                 arrayService.deleteCurrent(index, array);
             };
 
-            // open selected message
-            $scope.openMessage = function(params){
-                return params;
-            }
-
             // change url to links
             $scope.goTo = function(url) {
                 gotoService.getLink(url);
+            };
+
+            $scope.getIndex = function(index){
+                $scope.message = index;
+                return $scope.message;
             };
 
 

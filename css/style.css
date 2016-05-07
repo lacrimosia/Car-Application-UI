@@ -3,8 +3,6 @@ body {
     font-family: 'Raleway', sans-serif !important;
 }
 
-a {}
-
 iframe {
     border: none !important;
 }
@@ -73,16 +71,50 @@ a:hover {
     font-size: 1.7em;
 }
 
+.blue{
+	color: #0A76F6 !important;
+}
+
+.gray{
+	color: #404040;
+}
 
 /* table */
 
 .table {
-    background: #282828 !important;
-    color: #ffffff;
+    background: #1F1F1F !important;
+    color: #bbbbbb;
 }
 
 .inboxArea {
-    height: 50px;
+    height: 75px;
+}
+
+.table th,
+.table td {
+    border-top: #000 !important;
+    border-bottom: #000 !important;
+}
+
+.mails{
+	background: #ffffff;
+	color: #181818 !important;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+
+}
+
+.inside{
+	padding: 10px !important;
+}
+
+.mail-light{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#16a8f5+0,004ef7+100;blue+color */
+background: #16a8f5; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #16a8f5 0%, #004ef7 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #16a8f5 0%,#004ef7 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #16a8f5 0%,#004ef7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16a8f5', endColorstr='#004ef7',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 
@@ -223,6 +255,17 @@ a:hover {
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3a3a3a', endColorstr='#181818', GradientType=0);
     /* IE6-9 */
     border: none !important;
+    border-radius: 0px !important;
+}
+
+.clickArea {
+    background: #181818;
+    height: 1325px !important;
+    padding: 0px !important;
+}
+
+.button-wide {
+    width: 100% !important;
 }
 
 

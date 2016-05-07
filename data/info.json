@@ -217,12 +217,13 @@
 	"contacts":[
 				{
 					"name": "Shatilla Prayer",
-					"photo": "",
+					"photo": "myself.jpg",
 					"number": "702-437-5898",
 					"email": "shatillaprayer@gmail.com",
 					"favorites": false,
 					"recent": false,
-					"category": "myself"
+					"category": "myself",
+					"me": true
 				},
 				{
 					"name": "Beyonce Knowles",
@@ -349,7 +350,7 @@
 	],
 	"inbox":[
 		{
-			"title": "FREE Food at Olive Garden",
+			"title": "FREE Lunch at Olive Garden",
 			"message": "Hello, We are giving a free meal from olive garden for your birthday.",
 			"to": "programmer@gmail.com",
 			"fromEmail": "sales@olivegarden.com",
@@ -364,8 +365,8 @@
 			]
 		},
 		{
-			"title": "Request for Application Status",
-			"message": "Hello, the status of your application is pending.",
+			"title": "Grant Award",
+			"message": "Hello, Congratulations, you won the $17,000 grant award from SOSO College. Please contract the award group for accept your award. Thanks again for apply, and congratulations on your award. -SOSO College.",
 			"to": "programmer@gmail.com",
 			"from": "Stackoverflow Careers",
 			"fromEmail": "sales@olivegarden.com",
@@ -379,12 +380,12 @@
 			]
 		},
 		{
-			"title": "FREE Food at Olive Garden",
-			"message": "Hello, We are giving a free meal from olive garden for your birthday.",
+			"title": "Congratulations! Albertsons winner",
+			"message": "Hello, Shatilla. Congratulations! You won the $1million dollar sweepstakes. Please call us at 1-800-albertsons to claim your prize. Thanks again for being an Albertsons customer.",
 			"to": "programmer@gmail.com",
-			"from": "olivegarden@sales.com",
-			"fromEmail": "sales@olivegarden.com",
-			"date": "5/6/16",
+			"from": "Albertsons",
+			"fromEmail": "sweepstakes@albertsons.com",
+			"date": "5/4/16",
 			"starred": false,
 			"images":[
 				{

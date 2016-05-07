@@ -9,7 +9,7 @@
     	</uib-tab-heading>
 
     <!-- apps -->
-	<div class="col-md-4 col-lg-4" ng-repeat="a in appsList" ng-if="a.system==false">
+	<div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 animated zoomIn" ng-repeat="a in appsList" ng-if="a.system==false">
 	<div class="apps-background" ng-click="goTo(a.link+'/'+$index); getIndex($index);" ng-style="{'background-image':'url('+ a.image + ')', 'background-repeat': 'no-repeat', 'background-size': 'cover'}">
 
 	<button class="btn btn-primary addBox" ng-click="deleteBox($index, 'Delete Shortcut', s.name, 'partials/modal.html', shortcutList, sm)"><i class="fa fa-plus"></i></button>
@@ -27,7 +27,7 @@
     		<h1><i class="fa fa-desktop white"></i> System</h1>
     	</uib-tab-heading>
 
-    	<div class="col-md-4 col-lg-4" ng-repeat="a in appsList" ng-if="a.system==true">
+    	<div class="col-md-4 col-lg-4 animated zoomIn" ng-repeat="a in appsList" ng-if="a.system==true">
 	<div class="apps-background" ng-click="goTo(a.url);" ng-style="{'background-image':'url('+ a.image + ')', 'background-repeat': 'no-repeat', 'background-size': 'cover'}">
 
 	<button class="btn btn-primary addBox" ng-click="deleteBox($index, 'Delete Shortcut', s.name, 'partials/modal.html', shortcutList, sm)"><i class="fa fa-plus"></i></button>

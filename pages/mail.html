@@ -2,40 +2,43 @@
     <div class="row">
         <div class="mailAreas" ng-controller="mail">
             <div class="tabbing">
-                <div class="col-md-2 col-lg-2">
-                    <button class="btn btn-primary btn-lg">Compose</button>
+                <div class="col-md-2 col-lg-2 clickArea animated fadeIn">
+                    <button class="btn btn-primary btn-lg button-wide">Compose</button>
+                    <div class="profile" ng-repeat="p in contacts" ng-if="p.me">
+                        <h4>{{p.name}}</h4>
+                        <img ng-src="./images/{{p.photo}}" class="img-responsive img-circle"/>
+                    </div>
                     <ul class="nav nav-pills nav-stacked">
                         <li ng-repeat="m in mailsTabs">
-                            <h3><a ng-href="{{m.link}}"><i class="{{m.icon}}"></i> {{ m.title }}</a></h3></li>
+                            <h3 class="text-center"><a ng-href="{{m.link}}" class="white"><i class="{{m.icon}} blue"></i> {{ m.title }}</a></h3></li>
                     </ul>
                 </div>
-                <div class="col-md-10 col-lg-10 animated fadeIn">
-                    <div class="menu-mail">
-                        <button class="btn btn-primary btn-md">
-                            <input type="checkbox" />
-                        </button>
-                        <button class="btn btn-primary btn-md"><i class="fa fa-refresh"></i>
-                        </button>
-                    </div>
+                <!--email-->
+                <div class="col-md-4 col-lg-4 animated fadeIn">
                     <table class="table">
-                        <thead>
-                            <tr class="white">
-                                <th>Select</th>
-                                <th>From</th>
-                                <th>Message</th>
-                                <th>Date</th>
-                            </tr>
-                        </thead>
                         <tbody>
-                            <tr ng-repeat="i in inbox" class="inboxArea">
+                            <tr ng-repeat="i in inbox" class="inboxArea" ng-click="getIndex($index)" ng-class="{'mail-light': message==$index}">
                                 <td>
-                                    <input type="checkbox" /> <i class="fa fa-star"></i></td>
-                                <td><strong  ng-click="goTo('mail/message/'+$index)">{{ i.from }}</strong></td>
-                                <td><strong  ng-click="goTo('mail/message/'+$index)">{{ i.title }}</strong></td>
-                                <td>{{ i.date }}</td>
+                                    <strong>{{ i.title }}</strong>
+                                    <br/>
+                                    <strong class="gray">{{ i.from }}</strong>
+                                </td>
+                                <td><strong>{{ i.date }}</strong>
+                                    <br/>
+                                    <button class="btn btn-primary btn-sm"><i class="fa fa-reply"></i></button>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
+                </div>
+                <!-- view message -->
+                <div class="col-md-6 col-lg-6 mails ">
+                    <div class="animated fadeIn inside" ng-repeat="i in inbox" ng-if="message==$index">
+                        <h2>{{i.title}}</h2>
+                        <h6>From: {{i.from}} <{{i.fromEmail}}></h6>
+                        <hr/>
+                        <p>{{i.message }}</p>
+                    </div>
                 </div>
             </div>
         </div>
