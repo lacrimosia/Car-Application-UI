@@ -25,7 +25,7 @@
                             <h2 class="white"><strong>Artist:</strong> {{ m.name }}</h2>
                         </p>
                         <div ng-repeat="t in m.tracks">
-                            <p><img ng-src="{{t.albumCover}}" class="img-responsive" />
+                            <p><img ng-src="{{t.albumCover}}" class="img-responsive center-block" />
                             </p>
                             <p class="white"><strong>Song:</strong> {{ t.songName }}</p>
                             <p class="white"><strong>Album:</strong> {{ t.albumName }}</p>
@@ -36,7 +36,16 @@
                             <button class="btn btn-primary musicbutton" ng-click="audio.nextTrack($index); audio.stopAudio(t.audio);"><i class="fa fa-step-forward"></i></button>
                             <button class="btn btn-primary musicbutton" ng-click="audio.nextTrack($index); audio.stopAudio(t.audio);"><i class="fa fa-volume-up"></i></button>
                         </div>
+
+                        
                     </div>
+
+                    <!-- Radio -->
+                    <div class="playlist animated fadeIn col-md-5 col-lg-5 shortcut-background" ng-style="{'margin': '15px'}" class="col-md-12 col-lg-12" ng-if="tab.title=='Radio'">
+                        	werrw
+                        </div>
+
+
                 </uib-tab>
             </uib-tabset>
         </div>
