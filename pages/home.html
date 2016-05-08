@@ -1,66 +1,47 @@
 <!-- weather  and navigation Widget -->
 <div class="container animated fadeIn">
-	<div class="row">
-		<!--speed-->
-		<!-- <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+    <div class="row">
+        <!--speed-->
+        <!-- <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
 		<div class="shortcut-background animated fadeIn"><h5> Navigation & Speed</h5>
 			<speed-monitor></speed-monitor>
 		</div>
 		</div>-->
-
-		<!-- weather widget -->
-<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
-		<p><button class="btn btn-primary btn-lg pull-right animated fadeIn" ng-controller="weather" ng-click="goTo('apps/weatherReport')">View Weather</button></p>
-			<div class="shortcut-background animated fadeIn"><h5> Weather</h5>
-			<weather></weather>
-			</div>
-		</div>	
-
-			<!-- calendar -->
-		<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
-			<calendar-widget></calendar-widget>
-		</div>
-
-			<!-- calendar -->
-		<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
-			<calendar-widget></calendar-widget>
-		</div>
-
-
+        <!-- weather widget -->
+        <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+            <p>
+                <button class="btn btn-primary btn-lg pull-right animated fadeIn" ng-controller="weather" ng-click="goTo('apps/weatherReport')">View Weather</button>
+            </p>
+            <div class="shortcut-background animated fadeIn">
+                <h5> Weather</h5>
+                <weather></weather>
+            </div>
+        </div>
+        <!-- calendar -->
+        <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+            <calendar-widget></calendar-widget>
+        </div>
+        <!-- calendar -->
+        <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+            <calendar-widget></calendar-widget>
+        </div>
     </div>
 </div>
-
-
-
 <!--spotify-->
 <div class="container animated fadeIn">
-	<div class="row">
-
-
-
-
-<!--
-		<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
-			<spotify-widget></spotify-widget>
-		</div>
-
-		
-
-		<div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
-			<spotify-widget></spotify-widget>
-		</div>-->
-	</div>
+    <div class="row">
+        <!--ac/heat-->
+            <ac-heat></ac-heat>
+    </div>
 </div>
-
-
 <!--shortcuts -->
 <div class="container animated fadeIn">
-	<div class="row">
-		<div class="containment shortcut-background col-md-12 col-sm-12 col-xs-12 col-lg-12">
-			<h5>Shortcuts</h5>
-			<div class="col-md-4 col-lg-4" ng-repeat="s in shortcutList">
-				<home-shortcuts></home-shortcuts>
-			</div>
-</div>
-	</div>
+    <div class="row">
+        <div class="containment shortcut-background col-md-12 col-sm-12 col-xs-12 col-lg-12">
+            <h5>Shortcuts</h5>
+            <div class="col-md-3 col-lg-3" ng-repeat="s in shortcutList">
+                <home-shortcuts></home-shortcuts>
+            </div>
+        </div>
+    </div>
 </div>

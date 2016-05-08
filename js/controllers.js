@@ -133,7 +133,6 @@ app.controller('store', [
 ]);
 
 // music player controller
-// phone controller
 app.controller('musicPlayer', [
     '$scope',
     '$http',
