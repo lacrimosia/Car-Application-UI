@@ -504,5 +504,46 @@
 			"content": "I am starred",
 			"link": "#/starred"
 		}
+	],
+	"directionsList":[
+		{
+			"direction": "Head North",
+			"icon": "fa fa-arrow-up",
+			"text": "Head northeast on N Las Vegas Blvd toward E Ogden Ave",
+			"distance": "0.3 miles"
+		},
+		{
+			"direction": "Turn Left",
+			"icon": "fa fa-arrow-left",
+			"text": "Turn left to merge onto I-515 N/US-93 N/US-95 N",
+			"distance": "0.3 miles",
+			"default": true
+		},
+		{
+			"direction": "Merge",
+			"icon": "fa fa-arrow-up",
+			"text": "Merge onto I-515 N/US-93 N/US-95 N",
+			"distance": "0.3 miles"
+		},
+		{
+			"direction": "Merge Right",
+			"icon": "fa fa-arrow-right",
+			"text": "Use the right 2 lanes to take exit 76A to merge onto I-15 S toward Los Angeles",
+			"distance": "213 miles"
+		}
+	],
+	"toggleList": [
+		{
+			"name": "Full Auto",
+			"image": "./images/settings/fullauto.jpg"
+		},
+		{
+			"name": "Traction Control",
+			"image": "./images/settings/traction.jpg"
+		},
+		{
+			"name": "Brake Torque",
+			"image": "./images/settings/brakes.jpg"
+		}
 	]
 }

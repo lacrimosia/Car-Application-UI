@@ -1,0 +1,23 @@
+<div class="carsettings" ng-controller="settings">
+    <img src="./images/settings/carsettings.jpg" class="img-responsive" />
+    <h6>Quick Settings </h6>
+    <table class="table" ng-controller="driving">
+        <tbody>
+            <tr class="inboxArea" ng-repeat="s in settingToggle">
+                <td>
+                    <!--<img ng-src="{{s.image}}" class="img-responsive" />
+                    <br/>-->
+                    <strong class="white">{{s.name}}</strong>
+                </td>
+                <td class="text-left">
+                    <div class="btn-group">
+                        <label class="btn btn-primary" ng-model="checkModel.left" uib-btn-checkbox btn-checkbox-true="1">ON</label>
+                        <label class="btn btn-primary" ng-model="checkModel.middle" uib-btn-checkbox>OFF</label>
+                        <label class="btn btn-primary" ng-model="checkModel.right" uib-btn-checkbox>AUTO</label>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-primary btn-lg">View Settings</button>
+</div>

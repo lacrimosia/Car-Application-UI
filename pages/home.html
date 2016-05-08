@@ -1,20 +1,11 @@
 <!-- weather  and navigation Widget -->
 <div class="container animated fadeIn">
     <div class="row">
-        <!--speed-->
-        <!-- <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-		<div class="shortcut-background animated fadeIn"><h5> Navigation & Speed</h5>
-			<speed-monitor></speed-monitor>
-		</div>
-		</div>-->
-        <!-- weather widget -->
+        <!-- car widget -->
         <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
-            <p>
-                <button class="btn btn-primary btn-lg pull-right animated fadeIn" ng-controller="weather" ng-click="goTo('apps/weatherReport')">View Weather</button>
-            </p>
             <div class="shortcut-background animated fadeIn">
-                <h5> Weather</h5>
-                <weather></weather>
+                <h5> Car Settings</h5>
+                <car-settings></car-settings>
             </div>
         </div>
         <!-- navigation -->
@@ -22,37 +13,7 @@
             <speed-monitor></speed-monitor>
         </div>
         <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
-            <div class="shortcut-background">
-                <h5> Directions </h5>
-                <table class="table">
-                    <tbody>
-                        <tr class="inboxArea">
-                            <td>
-                                <strong>Directins</strong>
-                                <br/>
-                                <strong class="gray">Directions</strong>
-                            </td>
-                            <td>
-                                <strong>Directins</strong>
-                                <br/>
-                                <strong class="gray">Directions</strong>
-                            </td>
-                        </tr>
-                        <tr class="inboxArea">
-                            <td>
-                                <strong>Directins</strong>
-                                <br/>
-                                <strong class="gray">Directions</strong>
-                            </td>
-                            <td>
-                                <strong>Directins</strong>
-                                <br/>
-                                <strong class="gray">Directions</strong>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+            <driving-directions></driving-directions>
         </div>
     </div>
 </div>
@@ -67,7 +28,7 @@
 <div class="container animated fadeIn">
     <div class="row">
         <div class="containment shortcut-background col-md-12 col-sm-12 col-xs-12 col-lg-12">
-            <h5>Shortcuts</h5>
+            <h5>Dashboard</h5>
             <div class="col-md-3 col-lg-3" ng-repeat="s in shortcutList">
                 <home-shortcuts></home-shortcuts>
             </div>

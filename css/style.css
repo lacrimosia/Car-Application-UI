@@ -19,7 +19,7 @@ a:hover {
     width: 1090px;
     /*background-size: cover;*/
     /* height: 1265px !important; */
-    height: 1325px !important;
+    height: 1750px !important;
     overflow: hidden;
     /*border: 1px solid #bbb;*/
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#494949+0,181818+100 */
@@ -83,7 +83,7 @@ a:hover {
 /* table */
 
 .table {
-    background: #1F1F1F !important;
+    background: #1F1F1F;
     color: #bbbbbb;
 }
 
@@ -127,11 +127,15 @@ a:hover {
 
 .inboxArea:hover {
     cursor: pointer !important;
-    background: #6E8299 !important;
+    background: #000000 !important;
 }
 
 .padding {
     padding: 15px !important;
+}
+
+.black{
+	background: #000000 !important;
 }
 
 

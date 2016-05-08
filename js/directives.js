@@ -290,3 +290,17 @@ app.directive('knob', function() {
         }
     }
 });
+
+app.directive('drivingDirections', function() {
+    return {
+        restrict: 'AEC',
+        templateUrl: './partials/driving.html'
+    };
+});
+
+app.directive('carSettings', function() {
+    return {
+        restrict: 'AEC',
+        templateUrl: './partials/carsettings.html'
+    };
+});

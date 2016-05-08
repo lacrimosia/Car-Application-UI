@@ -1,0 +1,21 @@
+<div class="shortcut-background">
+    <h5>Driving Directions </h5>
+    <h6 class="text-left">From Las Vegas, NV to Newport Beach, CA (5hr 4min)</h6>
+    <table class="table" ng-controller="driving">
+        <tbody>
+            <tr class="inboxArea" ng-repeat="d in driving" ng-class="{'black': d.default==true}">
+                <td>
+                    <strong><i class="{{d.icon}}"></i></strong>
+                    <br/>
+                    <strong class="white">{{d.direction}}</strong>
+                </td>
+                <td class="text-left">
+                    <strong>{{ d.text}}</strong>
+                    <br/>
+                    <strong class="white">{{d.distance}}</strong>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-primary btn-lg">View Directions</button>
+</div>

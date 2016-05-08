@@ -208,17 +208,6 @@ app.controller('weather', [
     }
 ]);
 
-//weather Report
-app.controller('weather', [
-    '$scope',
-    '$http',
-    'weatherService',
-    '$location',
-    function($scope, $http, weatherService, $location) {
-
-    }
-]);
-
 
 // calendar controller
 app.controller('calendar', [
@@ -279,6 +268,54 @@ app.controller('phone', [
             $scope.data = data; // access all data
             $scope.phoneTabs = $scope.data.phonetabs; // list of shortcuts
             $scope.contacts = $scope.data.contacts; // list of contacts
+
+            // delete current item
+            $scope.deleteFavorites = function(index, array) {
+                arrayService.deleteCurrent(index, array);
+            };
+
+
+        });
+    }
+]);
+
+// phone controller
+app.controller('driving', [
+    '$scope',
+    '$http',
+    'contentService',
+    'arrayService',
+    'ngAudio',
+    function($scope, $http, contentService, arrayService, ngAudio) {
+        contentService.then(function(data) {
+            $scope.data = data; // access all data
+            $scope.phoneTabs = $scope.data.phonetabs; // list of shortcuts
+            $scope.contacts = $scope.data.contacts; // list of contacts
+            $scope.driving = $scope.data.directionsList; // list of contacts
+
+            // delete current item
+            $scope.deleteFavorites = function(index, array) {
+                arrayService.deleteCurrent(index, array);
+            };
+
+
+        });
+    }
+]);
+
+// phone controller
+app.controller('settings', [
+    '$scope',
+    '$http',
+    'contentService',
+    'arrayService',
+    'ngAudio',
+    function($scope, $http, contentService, arrayService, ngAudio) {
+        contentService.then(function(data) {
+            $scope.data = data; // access all data
+            $scope.phoneTabs = $scope.data.phonetabs; // list of shortcuts
+            $scope.contacts = $scope.data.contacts; // list of contacts
+            $scope.settingToggle = $scope.data.toggleList; // list of toggles for short home
 
             // delete current item
             $scope.deleteFavorites = function(index, array) {
