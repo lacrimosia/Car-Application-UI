@@ -202,31 +202,57 @@ app.directive('acHeat', function() {
 app.directive('knob', function() {
     return {
         restrict: 'AEC',
-        scope:{
+        scope: {
 
         },
         templateUrl: './partials/knobs.html',
         link: function($scope, element, attrs) {
-           // var interval = setInterval(increment, 200);
+            // var interval = setInterval(increment, 200);
             var cool = 53;
             var heat = 0;
+            var degrees = 0;
             $('#text-readout').html(cool + '&deg;');
             $('#text-readout-heat').html(heat + '&deg;');
 
-            $('.ups').click(function(){
+            $('.ups').click(function() {
                 coolIncrement();
+
+                degrees-=10;
+                $('.color-circle').css({
+                    "-webkit-transform": "rotate("+degrees+"deg)",
+                    "-moz-transform": "rotate("+degrees+"deg)",
+                    "transform": "rotate("+degrees+"deg)" /* For modern browsers(CSS3)  */
+                });
             });
 
-            $('.ups-heat').click(function(){
+            $('.ups-heat').click(function() {
                 heatIncrement();
+                degrees-=10;
+                 $('.color-circle-heat').css({
+                    "-webkit-transform": "rotate("+degrees+"deg)",
+                    "-moz-transform": "rotate("+degrees+"deg)",
+                    "transform": "rotate("+degrees+"deg)" /* For modern browsers(CSS3)  */
+                });
             });
 
-            $('.downs').click(function(){
+            $('.downs').click(function() {
                 coolDecrement();
+                 degrees+=10;
+                $('.color-circle').css({
+                    "-webkit-transform": "rotate("+degrees+"deg)",
+                    "-moz-transform": "rotate("+degrees+"deg)",
+                    "transform": "rotate("+degrees+"deg)" /* For modern browsers(CSS3)  */
+                });
             });
 
-            $('.downs-heat').click(function(){
+            $('.downs-heat').click(function() {
                 heatDecrement();
+                 degrees+=10;
+                $('.color-circle-heat').css({
+                    "-webkit-transform": "rotate("+degrees+"deg)",
+                    "-moz-transform": "rotate("+degrees+"deg)",
+                    "transform": "rotate("+degrees+"deg)" /* For modern browsers(CSS3)  */
+                });
             });
 
             function coolIncrement() {
@@ -237,10 +263,10 @@ app.directive('knob', function() {
 
             function coolDecrement() {
                 $('#text-readout').html(cool + '&deg;');
-                if (cool < 1) { 
-                    cool = 0; 
+                if (cool < 1) {
+                    cool = 0;
                     return;
-                }else{
+                } else {
                     cool--;
                 }
             }
@@ -252,12 +278,12 @@ app.directive('knob', function() {
             }
 
             function heatDecrement() {
-                
+
                 $('#text-readout-heat').html(heat + '&deg;');
-                if (heat < 1) { 
-                    heat = 0; 
+                if (heat < 1) {
+                    heat = 0;
                     return;
-                }else{
+                } else {
                     heat--;
                 }
             }
