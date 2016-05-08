@@ -153,7 +153,20 @@ table.keyboardInputMaster thead tr th big {
     border-right: 1px solid #5d5d5d;
     border-bottom: 1px solid #5d5d5d;
     border-left: 1px solid #e5e5e5;
-    background-color: #cccccc;
+   /* background-color: #cccccc; */
+   box-shadow: inset 0 150px 0 0 #000;
+    color: #16A8F5 !important;
+    outline: none;
+    background: #3a3a3a;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #3a3a3a 1%, #494949 8%, #383838 24%, #181818 53%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #3a3a3a 1%, #494949 8%, #383838 24%, #181818 53%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #3a3a3a 1%, #494949 8%, #383838 24%, #181818 53%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3a3a3a', endColorstr='#181818', GradientType=0);
+    /* IE6-9 */
     cursor: pointer;
     margin: 0px 0px 0px 0.3em;
     -webkit-border-radius: 0.3em;

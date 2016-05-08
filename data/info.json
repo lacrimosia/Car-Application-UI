@@ -395,11 +395,11 @@
 			]
 		},
 		{
-			"title": "FREE Food at Olive Garden",
-			"message": "Hello, We are giving a free meal from olive garden for your birthday.",
+			"title": "Checking Account Activation",
+			"message": "Hello Customer, thanks for making account ending in 4423. You will receive your new card in 7-10 days. Thanks for being a Bank of America customer.",
 			"to": "programmer@gmail.com",
-			"from": "olivegarden@sales.com",
-			"fromEmail": "sales@olivegarden.com",
+			"from": "Bank of America",
+			"fromEmail": "sales@bankofamerica.com",
 			"date": "5/6/16",
 			"starred": false,
 			"images":[

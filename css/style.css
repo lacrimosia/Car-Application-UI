@@ -122,7 +122,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#16a8f5', end
 
 .inboxArea:hover {
     cursor: pointer !important;
-    background: #0A76F6 !important;
+    background: #6E8299 !important;
+
+}
+
+.padding{
+	padding: 15px !important;
 }
 
 

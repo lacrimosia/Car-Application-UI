@@ -100,6 +100,7 @@ app.controller('mail', [
             $scope.contacts = $scope.data.contacts; // list of contacts
             $scope.mailsTabs = $scope.data.mailtabs; // mail tabs
             $scope.message = 0;
+            $scope.show = false;
 
             // delete current item
             $scope.deleteFavorites = function(index, array) {
