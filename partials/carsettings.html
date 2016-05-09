@@ -1,5 +1,11 @@
 <div class="carsettings" ng-controller="settings">
     <img src="./images/settings/carsettings.jpg" class="img-responsive" />
+    <!--pulse -->
+    <div class="pulsingArea" ng-repeat="t in settingToggle" ng-if="t.active==true">
+        <div class="load" ng-style="{'top': t.pulse.y+'px', 'left': t.pulse.x+'px'}">
+        </div>
+        <h4 class="carText">{{t.name}}</h4>
+    </div>
     <h6>Quick Settings </h6>
     <table class="table" ng-controller="driving">
         <tbody>
@@ -11,9 +17,9 @@
                 </td>
                 <td class="text-left">
                     <div class="btn-group">
-                        <label class="btn btn-primary" ng-model="checkModel.left" uib-btn-checkbox btn-checkbox-true="1">ON</label>
-                        <label class="btn btn-primary" ng-model="checkModel.middle" uib-btn-checkbox>OFF</label>
-                        <label class="btn btn-primary" ng-model="checkModel.right" uib-btn-checkbox>AUTO</label>
+                        <label class="btn btn-success" ng-model="radioModel" uib-btn-radio="'Left'" uncheckable uib-btn-checkbox btn-checkbox-true="!s.active" btn-checkbox-false="s.active">ON</label>
+                        <label class="btn btn-success" ng-model="radioModel" uib-btn-radio="'Middle'" uncheckable uib-btn-checkbox btn-checkbox-true="!s.active" btn-checkbox-false="s.active">OFF</label>
+                        <label class="btn btn-success" ng-model="radioModel" uib-btn-radio="'Right'" uib-uncheckable="uncheckable" uib-btn-checkbox btn-checkbox-true="!s.active" btn-checkbox-false="s.active">AUTO</label>
                     </div>
                 </td>
             </tr>

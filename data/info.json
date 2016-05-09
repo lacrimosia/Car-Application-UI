@@ -535,15 +535,30 @@
 	"toggleList": [
 		{
 			"name": "Full Auto",
-			"image": "./images/settings/fullauto.jpg"
+			"image": "./images/settings/fullauto.jpg",
+			"pulse":{
+				"x": 15,
+				"y": -50
+			},
+			"active": false
 		},
 		{
 			"name": "Traction Control",
-			"image": "./images/settings/traction.jpg"
+			"image": "./images/settings/traction.jpg",
+			"pulse":{
+				"x": 50,
+				"y": 10
+			},
+			"active": true
 		},
 		{
 			"name": "Brake Torque",
-			"image": "./images/settings/brakes.jpg"
+			"image": "./images/settings/brakes.jpg",
+			"pulse":{
+				"x": 50,
+				"y": 40
+			},
+			"active": false
 		}
 	]
 }
