@@ -1,0 +1,79 @@
+<div class="settings" ng-controller="settings">
+    <div class="col-md-12 col-lg-12">
+        <div class="elements">
+        <div class="elementsTop">
+                <h2 class="white">Vehicle Customization Settings</h2>
+                <button class="btn btn-primary btn-lg" ng-click="tooltipIsOpen = !tooltipIsOpen">Show Labels</button>
+            </div>
+            <img src="./images/settings/carsettings.jpg" class="img-responsive center-block animated fadeIn" ng-style="{'width': '1060px !important'}" />
+            
+        </div>
+    </div>
+    <!--pulse -->
+    <div class="pulsingArea animated fadeIn" ng-repeat="t in settingToggle" ng-show="t.active==true">
+        <div class="load" ng-style="{'position': 'absolute', 'top': t.pulseLarge.y+'px', 'left': t.pulseLarge.x+'px', 'background-color': t.color}" uib-tooltip="{{t.name}}" tooltip-is-open="tooltipIsOpen">
+        </div>
+    </div>
+    <!--end pulse-->
+    <!--table of settings -->
+    <div class="col-md-4 col-lg-4">
+        <h3 class="white redBack"><i class="fa fa-cog white"></i> Performance Settings</h3>
+        <table class="table" ng-controller="driving">
+            <tbody>
+                <tr class="inboxArea" ng-repeat="s in settingToggle" ng-if="s.type=='performance'" ng-style="{'border-left-color': s.color, 'border-left-width': '3px', 'border-left-style': 'solid'}">
+                    <td>
+                        <!--<img ng-src="{{s.image}}" class="img-responsive" />
+                    <br/>-->
+                        <strong class="white">{{s.name}}</strong>
+                    </td>
+                    <td class="text-left">
+                        <div class="btn-group">
+                            <label class="btn btn-primary btn-lg" ng-model="radioModel" uib-btn-radio="'ON'" uib-uncheckable="uncheckable" ng-click="s.active=!s.active" ng-class="{'active': s.active==true}">ON</label>
+                            <label class="btn btn-primary btn-lg" ng-model="radioModel" uib-btn-radio="'OFF'" uib-uncheckable="uncheckable" ng-click="s.active=!s.active" ng-class="{'active': s.active==false}">OFF</label>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-4 col-lg-4">
+        <h3 class="white yellowBack"><i class="fa fa-car white"></i> Vehicle Settings</h3>
+        <table class="table" ng-controller="driving">
+            <tbody>
+                <tr class="inboxArea" ng-repeat="s in settingToggle" ng-if="s.type=='vehicle'" ng-style="{'border-left-color': s.color, 'border-left-width': '3px', 'border-left-style': 'solid'}">
+                    <td>
+                        <!--<img ng-src="{{s.image}}" class="img-responsive" />
+                    <br/>-->
+                        <strong class="white">{{s.name}}</strong>
+                    </td>
+                    <td class="text-left">
+                        <div class="btn-group">
+                            <label class="btn btn-primary btn-lg" ng-model="radioModel" uib-btn-radio="'ON'" uib-uncheckable="uncheckable" ng-click="s.active=!s.active" ng-class="{'active': s.active==true}">ON</label>
+                            <label class="btn btn-primary btn-lg" ng-model="radioModel" uib-btn-radio="'OFF'" uib-uncheckable="uncheckable" ng-click="s.active=!s.active" ng-class="{'active': s.active==false}">OFF</label>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-4 col-lg-4">
+        <h3 class="white blueBack"><i class="fa fa-user-secret white"></i> Security Settings</h3>
+        <table class="table" ng-controller="driving">
+            <tbody>
+                <tr class="inboxArea" ng-repeat="s in settingToggle" ng-if="s.type=='security'" ng-style="{'border-left-color': s.color, 'border-left-width': '3px', 'border-left-style': 'solid'}">
+                    <td>
+                        <!--<img ng-src="{{s.image}}" class="img-responsive" />
+                    <br/>-->
+                        <strong class="white">{{s.name}}</strong>
+                    </td>
+                    <td class="text-center">
+                        <div class="btn-group">
+                            <label class="btn btn-primary btn-lg" ng-model="radioModel" uib-btn-radio="'ON'" uib-uncheckable="uncheckable" ng-click="s.active=!s.active" ng-class="{'active': s.active==true}">ON</label>
+                            <label class="btn btn-primary btn-lg" ng-model="radioModel" uib-btn-radio="'OFF'" uib-uncheckable="uncheckable" ng-click="s.active=!s.active" ng-class="{'active': s.active==false}">OFF</label>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -48,6 +48,10 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
       templateUrl: 'pages/frame.html'
    }).
 
+   when('/settings', {
+      templateUrl: 'pages/settings.html'
+   }).
+
    otherwise({
       redirectTo: '/404', templateUrl: 'partials/404.html'
    });

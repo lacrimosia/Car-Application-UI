@@ -1,14 +1,14 @@
-<div class="carsettings" ng-controller="settings">
-    <img src="./images/settings/carsettings.jpg" class="img-responsive" />
+<div class="carsettings animated fadeIn" ng-controller="settings">
+    <img src="./images/settings/carsettings.jpg" class="img-responsive"/>
     <!--pulse -->
-    <div class="pulsingArea animated fadeIn" ng-repeat="t in settingToggle" ng-show="t.active==true">
-        <div class="load" ng-style="{'position': 'absolute', 'top': t.pulse.y+'px', 'left': t.pulse.x+'px'}">
+    <div class="pulsingArea animated fadeIn" ng-repeat="t in settingToggle" ng-show="t.active==true && t.intro">
+        <div class="load" ng-style="{'position': 'absolute', 'top': t.pulse.y+'px', 'left': t.pulse.x+'px', 'background-color': t.color}" uib-tooltip="{{t.name}}" tooltip-trigger="outsideClick" tooltip-is-open="outsideClick">
         </div>
     </div>
     <h6>Quick Settings </h6>
     <table class="table" ng-controller="driving">
         <tbody>
-            <tr class="inboxArea" ng-repeat="s in settingToggle" ng-if="$index < 3">
+            <tr class="inboxArea" ng-repeat="s in settingToggle" ng-if="s.intro" ng-style="{'border-left-color': s.color, 'border-left-width': '3px', 'border-left-style': 'solid'}">
                 <td>
                     <!--<img ng-src="{{s.image}}" class="img-responsive" />
                     <br/>-->
@@ -16,12 +16,12 @@
                 </td>
                 <td class="text-left">
                     <div class="btn-group">
-                        <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'ON'" uib-uncheckable="uncheckable" ng-click="s.active=!s.active" ng-class="{'active': s.active==true}">ON</label>
-                        <label class="btn btn-primary" ng-model="radioModel" uib-btn-radio="'OFF'" uib-uncheckable="uncheckable" ng-click="s.active=!s.active" ng-class="{'active': s.active==false}">OFF</label>
+                        <label class="btn btn-primary btn-lg" ng-model="radioModel" uib-btn-radio="'ON'" uib-uncheckable="uncheckable" ng-click="s.active=!s.active" ng-class="{'active': s.active==true}">ON</label>
+                        <label class="btn btn-primary btn-lg" ng-model="radioModel" uib-btn-radio="'OFF'" uib-uncheckable="uncheckable" ng-click="s.active=!s.active" ng-class="{'active': s.active==false}">OFF</label>
                     </div>
                 </td>
             </tr>
         </tbody>
     </table>
-    <button class="btn btn-primary btn-lg">View Settings</button>
+    <button class="btn btn-primary btn-lg" ng-click="goTo('/settings')">View Settings</button>
 </div>

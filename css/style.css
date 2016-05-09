@@ -49,6 +49,10 @@ a:hover {
     /* IE6-9 fallback on horizontal gradient */
 }
 
+.container {
+    width: 1080px !important;
+}
+
 
 /* selected class */
 
@@ -79,23 +83,28 @@ a:hover {
     color: #404040;
 }
 
+
 /* car icons */
-.cars{
-	width: 100px !important;
-	opacity: 0.3;
-	 -webkit-transition: opacity ease 0.8s;
+
+.cars {
+    width: 100px !important;
+    opacity: 0.3;
+    -webkit-transition: opacity ease 0.8s;
     -moz-transition: opacity ease 0.8s;
     transition: opacity ease 0.8s;
 }
 
-.reg{
-	opacity: 1 !important;
+.reg {
+    opacity: 1 !important;
 }
 
+
 /* car settings active */
-.active{
-	background: #0A76F6 !important;
+
+.active {
+    background: #0A76F6 !important;
 }
+
 
 /* table */
 
@@ -151,8 +160,8 @@ a:hover {
     padding: 15px !important;
 }
 
-.black{
-	background: #000000 !important;
+.black {
+    background: #000000 !important;
 }
 
 
@@ -902,240 +911,267 @@ div.aw-widget-36hour-inner {
     opacity: 0.5;
 }
 
-.heats{
-	position: relative;
-	top: 0px;
-	left: 160px;
+.heats {
+    position: relative;
+    top: 0px;
+    left: 160px;
 }
 
+
 /* car text */
-.carText{
+
+.carText {
     background: #181818;
     color: #ffffff;
     padding: 5px;
     width: 70%;
 }
 
+
 /* pulse */
 
 .load {
-  margin: 0px auto;
-  width: 20px;
-  height: 20px;
-  /** height is required as absolute value **/
-  background-color: red;
-  border-radius: 60px;
-  position:relative;
-  animation: pulse 2000ms linear infinite;
-  -webkit-animation: pulse 2000ms linear infinite;
-  -moz-animation: pulse 2000ms linear infinite;
+    margin: 0px auto;
+    width: 40px;
+    height: 40px;
+    /** height is required as absolute value **/
+    background-color: #08E0CE;
+    border-radius: 60px;
+    position: relative;
+    animation: pulse 2000ms linear infinite;
+    -webkit-animation: pulse 2000ms linear infinite;
+    -moz-animation: pulse 2000ms linear infinite;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
 }
 
 .load:after,
 .load:before {
-  display: inline-block;
-  margin: auto;
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 100px;
-  background-color: #CD5C5C;
-  top: 0px;
-  left: 0px;
+    display: inline-block;
+    margin: auto;
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: inherit;
+    top: 0px;
+    left: 0px;
 }
 
 .load:after {
-  z-index: -100;
-  -webkit-animation: outer-ripple 2000ms linear infinite;
-  -moz-animation: outer-ripple 2000ms linear infinite;
-  animation: outer-ripple 2000ms linear infinite;
+    z-index: -100;
+    -webkit-animation: outer-ripple 2000ms linear infinite;
+    -moz-animation: outer-ripple 2000ms linear infinite;
+    animation: outer-ripple 2000ms linear infinite;
 }
 
 .load:before {
-  z-index: -200;
-  -webkit-animation: inner-ripple 2000ms linear infinite;
-  -moz-animation: inner-ripple 2000ms linear infinite;
-  animation: inner-ripple 2000ms linear infinite;
+    z-index: -200;
+    -webkit-animation: inner-ripple 2000ms linear infinite;
+    -moz-animation: inner-ripple 2000ms linear infinite;
+    animation: inner-ripple 2000ms linear infinite;
 }
+
+/* car colors */
+.redBack{
+	background-color: #B20312 !important;
+	padding: 15px;
+	text-align: center;
+}
+
+.yellowBack{
+	background-color: #E5B700 !important;
+	padding: 15px;
+	text-align: center;
+}
+
+.blueBack{
+	background-color: #008DF2 !important;
+	padding: 15px;
+	text-align: center;
+}
+
+
 /* outer ripple */
 
-
-@keyframes pulse{
-  0% {
-    transform: scale(0.8);
-    filter: alpha(opacity=50);
-    opacity: 0.5;
-  }
-  10% {
-    transform: scale(1.1);
-    filter: alpha(opacity=1);
-    opacity: 1;
-  }
-  20% {
-    transform: scale(0.9);
-    filter: alpha(opacity=1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0.8);
-    filter: alpha(opacity=50);
-    opacity: 0.5;
-  }
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+    }
+    10% {
+        transform: scale(1.1);
+        filter: alpha(opacity=1);
+        opacity: 1;
+    }
+    20% {
+        transform: scale(0.9);
+        filter: alpha(opacity=1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.8);
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+    }
 }
 
-@-moz-keyframes pulse{
-  0% {
-    transform: scale(0.8);
-    filter: alpha(opacity=50);
-    opacity: 0.5;
-  }
-  10% {
-    transform: scale(1.1);
-    filter: alpha(opacity=1);
-    opacity: 1;
-  }
-  20% {
-    transform: scale(0.9);
-    filter: alpha(opacity=1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0.8);
-    filter: alpha(opacity=50);
-    opacity: 0.5;
-  }
+@-moz-keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+    }
+    10% {
+        transform: scale(1.1);
+        filter: alpha(opacity=1);
+        opacity: 1;
+    }
+    20% {
+        transform: scale(0.9);
+        filter: alpha(opacity=1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.8);
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+    }
 }
 
-@-webkit-keyframes pulse{
-  0% {
-    transform: scale(0.8);
-    filter: alpha(opacity=50);
-    opacity: 0.5;
-  }
-  10% {
-    transform: scale(1.1);
-    filter: alpha(opacity=1);
-    opacity: 1;
-  }
-  20% {
-    transform: scale(0.9);
-    filter: alpha(opacity=1);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(0.8);
-    filter: alpha(opacity=50);
-    opacity: 0.5;
-  }
+@-webkit-keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+    }
+    10% {
+        transform: scale(1.1);
+        filter: alpha(opacity=1);
+        opacity: 1;
+    }
+    20% {
+        transform: scale(0.9);
+        filter: alpha(opacity=1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.8);
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+    }
 }
-
 
 @keyframes outer-ripple {
-  0% {
-    transform: scale(1);
-    filter: alpha(opacity=50);
-    opacity: 0.5;
-  }
-  80% {
-    transform: scale(3.5);
-    filter: alpha(opacity=0);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(3.5);
-    filter: alpha(opacity=0);
-    opacity: 0;
-  }
+    0% {
+        transform: scale(1);
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+    }
+    80% {
+        transform: scale(3.5);
+        filter: alpha(opacity=0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(3.5);
+        filter: alpha(opacity=0);
+        opacity: 0;
+    }
 }
 
 @-webkit-keyframes outer-ripple {
-  0% {
-    transform: scale(1);
-    filter: alpha(opacity=50);
-    opacity: 0.5;
-  }
-  80% {
-    transform: scale(3.5);
-    filter: alpha(opacity=0);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(3.5);
-    filter: alpha(opacity=0);
-    opacity: 0;
-  }
+    0% {
+        transform: scale(1);
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+    }
+    80% {
+        transform: scale(3.5);
+        filter: alpha(opacity=0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(3.5);
+        filter: alpha(opacity=0);
+        opacity: 0;
+    }
 }
 
 @-moz-keyframes outer-ripple {
-  0% {
-    transform: scale(1);
-    filter: alpha(opacity=50);
-    opacity: 0.5;
-  }
-  80% {
-    transform: scale(3.5);
-    filter: alpha(opacity=0);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(3.5);
-    filter: alpha(opacity=0);
-    opacity: 0;
-  }
+    0% {
+        transform: scale(1);
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+    }
+    80% {
+        transform: scale(3.5);
+        filter: alpha(opacity=0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(3.5);
+        filter: alpha(opacity=0);
+        opacity: 0;
+    }
 }
+
+
 /* inner ripple */
 
 @keyframes inner-ripple {
-  0% {
-    transform: scale(1);
-    filter: alpha(opacity=50);
-    opacity: 0.5;
-  }
-  30% {
-    transform: scale(1);
-    filter: alpha(opacity=50);
-    opacity: 0.5;
-  }
-  100% {
-    transform: scale(2.5);
-    filter: alpha(opacity=0);
-    opacity: 0;
-  }
+    0% {
+        transform: scale(1);
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+    }
+    30% {
+        transform: scale(1);
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(2.5);
+        filter: alpha(opacity=0);
+        opacity: 0;
+    }
 }
 
 @-webkit-keyframes inner-ripple {
-  0% {
-    transform: scale(1);
-    filter: alpha(opacity=50);
-    opacity: 0.5;
-  }
-  30% {
-    transform: scale(1);
-    filter: alpha(opacity=50);
-    opacity: 0.5;
-  }
-  100% {
-    transform: scale(2.5);
-    filter: alpha(opacity=0);
-    opacity: 0;
-  }
+    0% {
+        transform: scale(1);
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+    }
+    30% {
+        transform: scale(1);
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(2.5);
+        filter: alpha(opacity=0);
+        opacity: 0;
+    }
 }
 
 @-moz-keyframes inner-ripple {
-  0% {
-    transform: scale(1);
-    filter: alpha(opacity=50);
-    opacity: 0.5;
-  }
-  30% {
-    transform: scale(1);
-    filter: alpha(opacity=50);
-    opacity: 0.5;
-  }
-  100% {
-    transform: scale(2.5);
-    filter: alpha(opacity=0);
-    opacity: 0;
-  }
+    0% {
+        transform: scale(1);
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+    }
+    30% {
+        transform: scale(1);
+        filter: alpha(opacity=50);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(2.5);
+        filter: alpha(opacity=0);
+        opacity: 0;
+    }
 }

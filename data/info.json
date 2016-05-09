@@ -490,7 +490,7 @@
 			"title": "Inbox",
 			"icon": "fa fa-envelope",
 			"content": "I am the inbox",
-			"link": "#/mail"
+			"link": "#/apps/mail"
 		},
 		{
 			"title": "Sent",
@@ -541,10 +541,13 @@
 				"y": 125
 			},
 			"pulseLarge":{
-				"x": -55,
-				"y": -95
+				"x": 755,
+				"y": 525
 			},
-			"active": true
+			"active": true,
+			"intro": true,
+			"type": "performance",
+			"color": "#B20312"
 		},
 		{
 			"name": "Traction Control",
@@ -553,7 +556,14 @@
 				"x": 160,
 				"y": 185
 			},
-			"active": false
+			"pulseLarge":{
+				"x": 890,
+				"y": 700
+			},
+			"active": false,
+			"intro": true,
+			"type": "performance",
+			"color": "#B20312"
 		},
 		{
 			"name": "Brake Torque",
@@ -562,7 +572,270 @@
 				"x": 275,
 				"y": 140
 			},
-			"active": true
+			"pulseLarge":{
+				"x": 888,
+				"y": 750
+			},
+			"active": true,
+			"intro": true,
+			"type": "performance",
+			"color": "#B20312"
+		},
+		{
+			"name": "Manual",
+			"image": "./images/settings/fullauto.jpg",
+			"pulse":{
+				"x": 110,
+				"y": 125
+			},
+			"pulseLarge":{
+				"x": 855,
+				"y": 600
+			},
+			"active": false,
+			"type": "performance",
+			"color": "#B20312"
+		},
+		{
+			"name": "Automatic",
+			"image": "./images/settings/fullauto.jpg",
+			"pulse":{
+				"x": 110,
+				"y": 125
+			},
+			"pulseLarge":{
+				"x": 860,
+				"y": 610
+			},
+			"active": true,
+			"type": "performance",
+			"color": "#B20312"
+		},
+		{
+			"name": "Headlights",
+			"image": "./images/settings/fullauto.jpg",
+			"pulse":{
+				"x": 110,
+				"y": 125
+			},
+			"pulseLarge":{
+				"x": 675,
+				"y": 685
+			},
+			"active": true,
+			"type": "vehicle",
+			"color": "#E5B700"
+
+		},
+		{
+			"name": "Power Windows",
+			"image": "./images/settings/fullauto.jpg",
+			"pulse":{
+				"x": 110,
+				"y": 125
+			},
+			"pulseLarge":{
+				"x": 1130,
+				"y": 475
+			},
+			"active": true,
+			"type": "vehicle",
+			"color": "#E5B700"
+		},
+		{
+			"name": "Power Locks",
+			"image": "./images/settings/fullauto.jpg",
+			"pulse":{
+				"x": 110,
+				"y": 125
+			},
+			"pulseLarge":{
+				"x": -55,
+				"y": -95
+			},
+			"active": true,
+			"type": "vehicle",
+			"color": "#E5B700"
+		},
+		{
+			"name": "Cruise Control",
+			"image": "./images/settings/fullauto.jpg",
+			"pulse":{
+				"x": 110,
+				"y": 125
+			},
+			"pulseLarge":{
+				"x": -55,
+				"y": -95
+			},
+			"active": false,
+			"type": "vehicle",
+			"color": "#E5B700"
+		},
+		{
+			"name": "Collision Cam",
+			"image": "./images/settings/fullauto.jpg",
+			"pulse":{
+				"x": 110,
+				"y": 125
+			},
+			"pulseLarge":{
+				"x": -55,
+				"y": -95
+			},
+			"active": true,
+			"type": "vehicle",
+			"color": "#E5B700"
+		},
+		{
+			"name": "USB Enabled",
+			"image": "./images/settings/fullauto.jpg",
+			"pulse":{
+				"x": 110,
+				"y": 125
+			},
+			"pulseLarge":{
+				"x": -55,
+				"y": -95
+			},
+			"active": true,
+			"type": "vehicle",
+			"color": "#E5B700"
+		},
+		{
+			"name": "Maintenance Alerts",
+			"image": "./images/settings/fullauto.jpg",
+			"pulse":{
+				"x": 110,
+				"y": 125
+			},
+			"pulseLarge":{
+				"x": -55,
+				"y": -95
+			},
+			"active": false,
+			"type": "vehicle",
+			"color": "#E5B700"
+		},
+		{
+			"name": "BLink Alerts",
+			"image": "./images/settings/fullauto.jpg",
+			"pulse":{
+				"x": 110,
+				"y": 125
+			},
+			"pulseLarge":{
+				"x": -55,
+				"y": -95
+			},
+			"active": true,
+			"type": "security",
+			"color":"#008DF2"
+		},
+		{
+			"name": "Automatic Collision Alerts",
+			"image": "./images/settings/fullauto.jpg",
+			"pulse":{
+				"x": 110,
+				"y": 125
+			},
+			"pulseLarge":{
+				"x": -55,
+				"y": -95
+			},
+			"active": true,
+			"type": "security",
+			"color":"#008DF2"
+		},
+		{
+			"name": "SOS Emergency Alerts",
+			"image": "./images/settings/fullauto.jpg",
+			"pulse":{
+				"x": 110,
+				"y": 125
+			},
+			"pulseLarge":{
+				"x": -55,
+				"y": -95
+			},
+			"active": false,
+			"type": "security",
+			"color":"#008DF2"
+		},
+		{
+			"name": "Road Side Assistance",
+			"image": "./images/settings/fullauto.jpg",
+			"pulse":{
+				"x": 110,
+				"y": 125
+			},
+			"pulseLarge":{
+				"x": -55,
+				"y": -95
+			},
+			"active": false,
+			"type": "vehicle",
+			"color": "#E5B700"
+		},
+		{
+			"name": "WI-FI",
+			"image": "./images/settings/fullauto.jpg",
+			"pulse":{
+				"x": 110,
+				"y": 125
+			},
+			"pulseLarge":{
+				"x": -55,
+				"y": -95
+			},
+			"active": true,
+			"type": "vehicle",
+			"color": "#E5B700"
+		},
+		{
+			"name": "Satellite Radio",
+			"image": "./images/settings/fullauto.jpg",
+			"pulse":{
+				"x": 110,
+				"y": 125
+			},
+			"pulseLarge":{
+				"x": -55,
+				"y": -95
+			},
+			"active": true,
+			"type": "vehicle",
+			"color": "#E5B700"
+		},
+		{
+			"name": "BLink Security",
+			"image": "./images/settings/fullauto.jpg",
+			"pulse":{
+				"x": 110,
+				"y": 125
+			},
+			"pulseLarge":{
+				"x": -55,
+				"y": -95
+			},
+			"active": true,
+			"type": "security",
+			"color":"#008DF2"
+		},
+		{
+			"name": "Stolen Vehicle Recovery",
+			"image": "./images/settings/fullauto.jpg",
+			"pulse":{
+				"x": 110,
+				"y": 125
+			},
+			"pulseLarge":{
+				"x": -55,
+				"y": -95
+			},
+			"active": false,
+			"type": "security",
+			"color":"#008DF2"
 		}
 	]
 }

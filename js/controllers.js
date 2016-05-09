@@ -112,7 +112,7 @@ app.controller('mail', [
                 gotoService.getLink(url);
             };
 
-            $scope.getIndex = function(index){
+            $scope.getIndex = function(index) {
                 $scope.message = index;
                 return $scope.message;
             };
@@ -310,18 +310,26 @@ app.controller('settings', [
     'contentService',
     'arrayService',
     'ngAudio',
-    function($scope, $http, contentService, arrayService, ngAudio) {
+    'gotoService',
+    function($scope, $http, contentService, arrayService, ngAudio, gotoService) {
         contentService.then(function(data) {
             $scope.data = data; // access all data
             $scope.phoneTabs = $scope.data.phonetabs; // list of shortcuts
             $scope.contacts = $scope.data.contacts; // list of contacts
             $scope.settingToggle = $scope.data.toggleList; // list of toggles for short home
+            $scope.performance = "red !important";
+            $scope.vehicle = "yellow !important";
+            $scope.security = "#05958A !important";
 
             // delete current item
             $scope.deleteFavorites = function(index, array) {
                 arrayService.deleteCurrent(index, array);
             };
 
+            // go to a link
+            $scope.goTo = function(url) {
+                gotoService.getLink(url);
+            }
 
         });
     }
