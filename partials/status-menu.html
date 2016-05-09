@@ -2,14 +2,14 @@
 	<div class="row">
 		<div class="statusbar">
 		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-			<h4><i class="fa fa-wifi"></i> <i class="fa fa-ellipsis-h"></i></h4>
+			<h4><i class="fa fa-wifi" uib-tooltip="Wifi" tooltip-placement="bottom"></i> <i class="fa fa-signal" uib-tooltip="Signal" tooltip-placement="bottom"></i>  <i class="fa fa-usb" uib-tooltip="USB" tooltip-placement="bottom"></i></h4>
 		</div>
 		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-			<h4 class="text-center">BINAR Technologies</h4>
+			<h4 class="text-center"><strong>BINAR</strong></h4>
 		</div>
 		<!-- the time -->
 		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-			<h4 class="text-right" ng-controller="systemTime">{{hours}}:{{minutes}} {{getType}}</h4>
+			<h4 class="text-right" ng-controller="systemTime">Weather: 98&deg; &nbsp; <i class="fa fa-clock-o"></i> {{hours}}:{{minutes}} {{getType}}</h4>
 		</div>
 		</div>
 	</div>

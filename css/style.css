@@ -28,16 +28,7 @@ a:hover {
 
 .btn-primary:focus {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#181818+47,383838+76,494949+92,3a3a3a+99;btn-primary */
-    background: #181818;
-    /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover, #181818 47%, #383838 76%, #494949 92%, #3a3a3a 99%);
-    /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover, #181818 47%, #383838 76%, #494949 92%, #3a3a3a 99%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center, #181818 47%, #383838 76%, #494949 92%, #3a3a3a 99%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#181818', endColorstr='#3a3a3a', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
+    background: #00327F;
 }
 
 .container {
