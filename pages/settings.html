@@ -3,7 +3,7 @@
         <div class="elements">
         <div class="elementsTop">
                 <h2 class="white">Vehicle Customization Settings</h2>
-                <button class="btn btn-primary btn-lg" ng-click="tooltipIsOpen = !tooltipIsOpen">Show Labels</button>
+                <button class="btn btn-primary btn-lg" ng-click="open = !open">Show Labels</button>
             </div>
             <img src="./images/settings/carsettings.jpg" class="img-responsive center-block animated fadeIn" ng-style="{'width': '1060px !important'}" />
             
@@ -11,7 +11,7 @@
     </div>
     <!--pulse -->
     <div class="pulsingArea animated fadeIn" ng-repeat="t in settingToggle" ng-show="t.active==true">
-        <div class="load" ng-style="{'position': 'absolute', 'top': t.pulseLarge.y+'px', 'left': t.pulseLarge.x+'px', 'background-color': t.color}" uib-tooltip="{{t.name}}" tooltip-is-open="tooltipIsOpen" ng-mouseover="voice.speak(t.name)">
+        <div class="load" ng-style="{'position': 'absolute', 'top': t.pulseLarge.y+'px', 'left': t.pulseLarge.x+'px', 'background-color': t.color}" uib-tooltip="{{t.name}}" tooltip-is-open="open" ng-mouseover="voice.speak(t.name)">
         </div>
     </div>
     <!--end pulse-->
