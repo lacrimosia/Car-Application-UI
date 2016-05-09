@@ -92,6 +92,11 @@ a:hover {
 	opacity: 1 !important;
 }
 
+/* car settings active */
+.active{
+	background: #0A76F6 !important;
+}
+
 /* table */
 
 .table {
@@ -919,7 +924,7 @@ div.aw-widget-36hour-inner {
   height: 20px;
   /** height is required as absolute value **/
   background-color: red;
-  border-radius: 30px;
+  border-radius: 60px;
   position:relative;
   animation: pulse 2000ms linear infinite;
   -webkit-animation: pulse 2000ms linear infinite;

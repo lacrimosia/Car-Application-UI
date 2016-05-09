@@ -537,6 +537,10 @@
 			"name": "Full Auto",
 			"image": "./images/settings/fullauto.jpg",
 			"pulse":{
+				"x": 110,
+				"y": 125
+			},
+			"pulseLarge":{
 				"x": -55,
 				"y": -95
 			},
@@ -546,8 +550,8 @@
 			"name": "Traction Control",
 			"image": "./images/settings/traction.jpg",
 			"pulse":{
-				"x": 0,
-				"y": 0
+				"x": 160,
+				"y": 185
 			},
 			"active": false
 		},
@@ -555,10 +559,10 @@
 			"name": "Brake Torque",
 			"image": "./images/settings/brakes.jpg",
 			"pulse":{
-				"x": 0,
-				"y": 0
+				"x": 275,
+				"y": 140
 			},
-			"active": false
+			"active": true
 		}
 	]
 }

@@ -1,10 +1,9 @@
 <div class="carsettings" ng-controller="settings">
     <img src="./images/settings/carsettings.jpg" class="img-responsive" />
     <!--pulse -->
-    <div class="pulsingArea" ng-repeat="t in settingToggle" ng-if="t.active==true">
-        <div class="load" ng-style="{'position': 'relative', 'top': t.pulse.y+'px', 'left': t.pulse.x+'px'}">
+    <div class="pulsingArea animated fadeIn" ng-repeat="t in settingToggle" ng-show="t.active==true">
+        <div class="load" ng-style="{'position': 'absolute', 'top': t.pulse.y+'px', 'left': t.pulse.x+'px'}">
         </div>
-        <h4 class="carText">{{t.name}}</h4>
     </div>
     <h6>Quick Settings </h6>
     <table class="table" ng-controller="driving">
