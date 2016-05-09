@@ -292,6 +292,7 @@ app.controller('driving', [
             $scope.phoneTabs = $scope.data.phonetabs; // list of shortcuts
             $scope.contacts = $scope.data.contacts; // list of contacts
             $scope.driving = $scope.data.directionsList; // list of contacts
+            $scope.voice = responsiveVoice;
 
             // delete current item
             $scope.deleteFavorites = function(index, array) {
