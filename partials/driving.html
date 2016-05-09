@@ -3,7 +3,7 @@
     <h6 class="text-left">From Las Vegas, NV to Newport Beach, CA (5hr 4min)</h6>
     <table class="table" ng-controller="driving">
         <tbody>
-            <tr class="inboxArea" ng-repeat="d in driving" ng-class="{'black': d.default==true}">
+            <tr class="inboxArea" ng-repeat="d in driving" ng-class="{'black': d.default==true}" ng-style="{'border-left-color': '#0A76F6', 'border-left-width': '3px', 'border-left-style': 'solid'}">
                 <td>
                     <strong><i class="{{d.icon}}"></i></strong>
                     <br/>
