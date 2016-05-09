@@ -14,7 +14,7 @@
       </ul>
     </div>
 
-		<h1><i class="{{s.icon}}" ng-style="{'font-size': '3em'}"></i></h1>
+		<h1><i class="{{s.icon}}" ng-style="{'font-size': '3em'}" ng-mouseover="voice.speak(s.name)"></i></h1>
 		<h6 class="text-center">{{ s.name }}</h6>
 		<!--<p><small>{{ s.link }}</small></p>-->
     <button class="btn btn-primary btn-lg" ng-click="goTo(s.link)"><i class="fa fa-desktop"></i> View App </button>

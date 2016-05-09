@@ -21,6 +21,7 @@ app.controller('home', [
             $scope.userThumb = $scope.data.userThumb; // user thumbnail image
             $scope.deleted = false; // Checks if shortcut is deleted
             $scope.backup = []; // when deleted, goes here in case of undo or reset
+            $scope.voice = responsiveVoice;
 
             // change url to links
             $scope.goTo = function(url) {
@@ -321,6 +322,7 @@ app.controller('settings', [
             $scope.performance = "red !important";
             $scope.vehicle = "yellow !important";
             $scope.security = "#05958A !important";
+            $scope.voice = responsiveVoice;
 
             // delete current item
             $scope.deleteFavorites = function(index, array) {
@@ -335,3 +337,42 @@ app.controller('settings', [
         });
     }
 ]);
+
+// menu controller
+app.controller('mainMenu', [
+    '$scope',
+    '$http',
+    'contentService',
+    'arrayService',
+    'ngAudio',
+    'gotoService',
+    function($scope, $http, contentService, arrayService, ngAudio, gotoService) {
+        contentService.then(function(data) {
+            $scope.data = data; // access all data
+            $scope.phoneTabs = $scope.data.phonetabs; // list of shortcuts
+            $scope.contacts = $scope.data.contacts; // list of contacts
+            $scope.voice = responsiveVoice;
+
+        });
+    }
+]);
+
+// ac heat controls
+app.controller('controls', [
+    '$scope',
+    '$http',
+    'contentService',
+    'arrayService',
+    'ngAudio',
+    'gotoService',
+    function($scope, $http, contentService, arrayService, ngAudio, gotoService) {
+        contentService.then(function(data) {
+            $scope.data = data; // access all data
+            $scope.phoneTabs = $scope.data.phonetabs; // list of shortcuts
+            $scope.contacts = $scope.data.contacts; // list of contacts
+            $scope.voice = responsiveVoice;
+
+        });
+    }
+]);
+

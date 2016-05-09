@@ -11,7 +11,7 @@
     </div>
     <!--pulse -->
     <div class="pulsingArea animated fadeIn" ng-repeat="t in settingToggle" ng-show="t.active==true">
-        <div class="load" ng-style="{'position': 'absolute', 'top': t.pulseLarge.y+'px', 'left': t.pulseLarge.x+'px', 'background-color': t.color}" uib-tooltip="{{t.name}}" tooltip-is-open="tooltipIsOpen">
+        <div class="load" ng-style="{'position': 'absolute', 'top': t.pulseLarge.y+'px', 'left': t.pulseLarge.x+'px', 'background-color': t.color}" uib-tooltip="{{t.name}}" tooltip-is-open="tooltipIsOpen" ng-mouseover="voice.speak(t.name)">
         </div>
     </div>
     <!--end pulse-->
