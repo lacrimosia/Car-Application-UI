@@ -9,7 +9,7 @@
     <h6>Quick Settings </h6>
     <table class="table" ng-controller="driving">
         <tbody>
-            <tr class="inboxArea" ng-repeat="s in settingToggle">
+            <tr class="inboxArea" ng-repeat="s in settingToggle" ng-if="$index < 3">
                 <td>
                     <!--<img ng-src="{{s.image}}" class="img-responsive" />
                     <br/>-->
