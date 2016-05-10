@@ -22,6 +22,7 @@ app.controller('home', [
             $scope.deleted = false; // Checks if shortcut is deleted
             $scope.backup = []; // when deleted, goes here in case of undo or reset
             $scope.voice = responsiveVoice;
+            $scope.voice.setDefaultVoice("US English Female");
 
             // change url to links
             $scope.goTo = function(url) {
@@ -30,16 +31,16 @@ app.controller('home', [
 
             //$scope.reload();
             // remove desktop shortcut on click
-            $scope.deleteBox = function(index, title, description, templateLink, array, size) {
-                $scope.selected = index;
-                if ($scope.selected != -1) {
-                    $scope.shortcutList.splice($scope.selected, 1);
-                    modalService.openMenuModal(index, title, description, templateLink, array, size);
+            $scope.deleteBox = function(index, title, description, templateLink, array, size, voice, type) {
+             //   $scope.selected = index;
+               // if ($scope.selected != -1) {
+                 //   $scope.shortcutList.splice($scope.selected, 1);
+                    modalService.openMenuModal(index, title, description, templateLink, array, size, voice, type);
                     //$scope.backup.push($scope.shortcutList[$scope.selected]);
                     //console.log($scope.backup);
-                } else {
-                    console.log("Nothing to delete");
-                }
+              //  } else {
+              //      console.log("Nothing to delete");
+              //  }
 
             };
         });
@@ -61,6 +62,8 @@ app.controller('apps', [
             $scope.data = data; // access all data
             $scope.data = data; // access all data
             $scope.appsList = $scope.data.appsList; // list of shortcuts
+            $scope.voice = responsiveVoice;
+            $scope.voice.setDefaultVoice("US English Female");
 
             // change url to links
             $scope.goTo = function(url) {
@@ -102,6 +105,8 @@ app.controller('mail', [
             $scope.mailsTabs = $scope.data.mailtabs; // mail tabs
             $scope.message = 0;
             $scope.show = false;
+            $scope.voice = responsiveVoice;
+            $scope.voice.setDefaultVoice("US English Female");
 
             // delete current item
             $scope.deleteFavorites = function(index, array) {
@@ -129,6 +134,8 @@ app.controller('store', [
     '$http',
     'gotoService',
     function($scope, $http, gotoService) {
+        $scope.voice = responsiveVoice;
+            $scope.voice.setDefaultVoice("US English Female");
 
     }
 ]);
@@ -147,6 +154,8 @@ app.controller('musicPlayer', [
             $scope.musicTabs = $scope.data.musictabs;
             $scope.Song = 0;
             $scope.playing = false;
+            $scope.voice = responsiveVoice;
+            $scope.voice.setDefaultVoice("US English Female");
 
             // delete current item
             $scope.deleteFavorites = function(index, array) {
@@ -203,6 +212,8 @@ app.controller('weather', [
     function($scope, $http, weatherService, $location, gotoService) {
         // $scope.weather = weatherService.get({cityname: 'Las Vegas'});
         // $scope.weather = weatherService.getWeather();
+        $scope.voice = responsiveVoice;
+            $scope.voice.setDefaultVoice("US English Female");
         $scope.goTo = function(url) {
             gotoService.getLink(url);
         }
@@ -240,6 +251,9 @@ app.controller('calendar', [
 
         // moment
         $scope.day = moment();
+
+        $scope.voice = responsiveVoice;
+            $scope.voice.setDefaultVoice("US English Female");
     }
 ]);
 
@@ -254,6 +268,8 @@ app.controller('systemTime', [
         $scope.hours = timeService.getHours(); // show the hours
         $scope.minutes = timeService.getMinutes(); // show the minutes
         $scope.getType = timeService.getType($scope.hours); // am or pm
+        $scope.voice = responsiveVoice;
+            $scope.voice.setDefaultVoice("US English Female");
     }
 ]);
 
@@ -269,6 +285,8 @@ app.controller('phone', [
             $scope.data = data; // access all data
             $scope.phoneTabs = $scope.data.phonetabs; // list of shortcuts
             $scope.contacts = $scope.data.contacts; // list of contacts
+            $scope.voice = responsiveVoice;
+            $scope.voice.setDefaultVoice("US English Female");
 
             // delete current item
             $scope.deleteFavorites = function(index, array) {
@@ -294,6 +312,7 @@ app.controller('driving', [
             $scope.contacts = $scope.data.contacts; // list of contacts
             $scope.driving = $scope.data.directionsList; // list of contacts
             $scope.voice = responsiveVoice;
+            $scope.voice.setDefaultVoice("US English Female");
 
             // delete current item
             $scope.deleteFavorites = function(index, array) {
@@ -323,6 +342,7 @@ app.controller('settings', [
             $scope.vehicle = "yellow !important";
             $scope.security = "#05958A !important";
             $scope.voice = responsiveVoice;
+            $scope.voice.setDefaultVoice("US English Female");
 
             // delete current item
             $scope.deleteFavorites = function(index, array) {
@@ -352,6 +372,7 @@ app.controller('mainMenu', [
             $scope.phoneTabs = $scope.data.phonetabs; // list of shortcuts
             $scope.contacts = $scope.data.contacts; // list of contacts
             $scope.voice = responsiveVoice;
+            $scope.voice.setDefaultVoice("US English Female");
 
         });
     }
@@ -371,6 +392,39 @@ app.controller('controls', [
             $scope.phoneTabs = $scope.data.phonetabs; // list of shortcuts
             $scope.contacts = $scope.data.contacts; // list of contacts
             $scope.voice = responsiveVoice;
+            $scope.voice.setDefaultVoice("US English Female");
+
+            // go to a link
+            $scope.goTo = function(url) {
+                gotoService.getLink(url);
+            };
+
+        });
+    }
+]);
+
+
+// ac heat controls
+app.controller('gps', [
+    '$scope',
+    '$http',
+    'contentService',
+    'arrayService',
+    'ngAudio',
+    'gotoService',
+    function($scope, $http, contentService, arrayService, ngAudio, gotoService) {
+        contentService.then(function(data) {
+            $scope.data = data; // access all data
+            $scope.phoneTabs = $scope.data.phonetabs; // list of shortcuts
+            $scope.contacts = $scope.data.contacts; // list of contacts
+            $scope.driving = $scope.data.directionsList; // list of contacts
+            $scope.voice = responsiveVoice;
+            $scope.voice.setDefaultVoice("US English Female");
+
+            // go to a link
+            $scope.goTo = function(url) {
+                gotoService.getLink(url);
+            };
 
         });
     }

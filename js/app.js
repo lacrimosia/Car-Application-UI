@@ -52,6 +52,10 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
       templateUrl: 'pages/settings.html'
    }).
 
+   when('/apps/gps', {
+      templateUrl: 'pages/gps.html'
+   }).
+
    otherwise({
       redirectTo: '/404', templateUrl: 'partials/404.html'
    });

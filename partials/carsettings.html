@@ -16,8 +16,8 @@
                 </td>
                 <td class="text-left">
                     <div class="btn-group">
-                        <label class="btn btn-primary btn-lg" ng-model="radioModel" uib-btn-radio="'ON'" uib-uncheckable="uncheckable" ng-click="s.active=!s.active" ng-class="{'active': s.active==true}">ON</label>
-                        <label class="btn btn-primary btn-lg" ng-model="radioModel" uib-btn-radio="'OFF'" uib-uncheckable="uncheckable" ng-click="s.active=!s.active" ng-class="{'active': s.active==false}">OFF</label>
+                        <label class="btn btn-primary btn-lg" ng-model="radioModel" uib-btn-radio="'ON'" uib-uncheckable="uncheckable" ng-click="s.active=true; voice.speak(s.name+' On.')" ng-class="{'active': s.active==true}">ON</label>
+                        <label class="btn btn-primary btn-lg" ng-model="radioModel" uib-btn-radio="'OFF'" uib-uncheckable="uncheckable" ng-click="s.active=false; voice.speak(s.name+' Off.')" ng-class="{'active': s.active==false}">OFF</label>
                     </div>
                 </td>
             </tr>

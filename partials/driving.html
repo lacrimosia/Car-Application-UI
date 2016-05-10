@@ -3,7 +3,7 @@
     <h6 class="text-left">From Las Vegas, NV to Newport Beach, CA (5hr 4min)</h6>
     <table class="table" ng-controller="driving">
         <tbody>
-            <tr class="inboxArea" ng-repeat="d in driving" ng-class="{'black': d.default==true}" ng-style="{'border-left-color': d.color, 'border-left-width': '3px', 'border-left-style': 'solid'}" ng-mouseover="voice.speak(d.text)">
+            <tr class="inboxArea" ng-repeat="d in driving" ng-class="{'black': d.default==true}" ng-style="{'border-left-color': d.color, 'border-left-width': '3px', 'border-left-style': 'solid'}" ng-if="$index < 4">
                 <td>
                     <strong><i class="{{d.icon}}"></i></strong>
                     <br/>
@@ -15,10 +15,11 @@
                     <strong class="white">{{d.distance}}</strong>
                 </td>
                 <td class="text-left">
-                    <button class="btn btn-primary btn-sm" ng-click="voice.speak(d.text)"><i class="fa fa-volume-up"></i></button>
+                    <button class="btn btn-primary btn-sm" ng-click="voice.speak('In '+d.distance+', '+d.text)"><i class="fa fa-volume-up"></i></button>
+                    <!-- ng-mouseover="voice.speak('In '+d.distance+', '+d.text)" -->
                 </td>
             </tr>
         </tbody>
     </table>
-    <button class="btn btn-primary btn-lg">View Directions</button>
+    <button class="btn btn-primary btn-lg" ng-click="goTo('/apps/gps')">View Directions</button>
 </div>

@@ -509,7 +509,7 @@
 		{
 			"direction": "Head North",
 			"icon": "fa fa-arrow-up",
-			"text": "Head northeast on N Las Vegas Blvd toward E Ogden Ave",
+			"text": "Starting route to Newport Beach. Head northeast on Las Vegas Blvd toward Ogden Ave",
 			"distance": "0.3 miles", 
 			"color": "#00EF47"
 		},
@@ -534,6 +534,62 @@
 			"text": "Use the right 2 lanes to take exit 76A to merge onto I-15 S toward Los Angeles",
 			"distance": "213 miles",
 			"color": "#00EF47"
+		},
+		{
+			"direction": "Keep Right",
+			"icon": "fa fa-arrow-right",
+			"text": "Keep right to stay on I-15 S",
+			"distance": "0.2 miles",
+			"color": "#00EF47"
+		},
+		{
+			"direction": "Keep Right",
+			"icon": "fa fa-arrow-right",
+			"text": "Keep right at the fork to stay on I-15 S",
+			"distance": "8.5 miles",
+			"color": "#00EF47"
+		},
+		{
+			"direction": "Keep Right",
+			"icon": "fa fa-arrow-right",
+			"text": "Use the right 2 lanes to take exit 96A for California 91W toward Beach Cities",
+			"distance": "0.5 miles",
+			"color": "#00EF47"
+		},
+		{
+			"direction": "Merge",
+			"icon": "fa fa-arrow-up",
+			"text": "Merge onto CA-91 West",
+			"distance": "4.9 miles",
+			"color": "#00EF47"
+		},
+		{
+			"direction": "Keep Left",
+			"icon": "fa fa-arrow-left",
+			"text": "Keep left to stay on CA-91 West",
+			"distance": "11.7 miles",
+			"color": "#00EF47"
+		},
+		{
+			"direction": "Keep Left",
+			"icon": "fa fa-arrow-left",
+			"text": "Keep left at the fork to continue on CA-55 South, follow signs for Newport Beach",
+			"distance": "0.5 miles",
+			"color": "#E5B700"
+		},
+		{
+			"direction": "Continue",
+			"icon": "fa fa-arrow-up",
+			"text": "Continue onto CA-55 South",
+			"distance": "17.5 miles",
+			"color": "#00EF47"
+		},
+		{
+			"direction": "Turn Left",
+			"icon": "fa fa-arrow-left",
+			"text": "Use the left 2 lanes to turn left onto Via Lido. Arrived.",
+			"distance": "0.1 miles",
+			"color": "#B20312"
 		}
 	],
 	"toggleList": [

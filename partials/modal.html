@@ -1,13 +1,14 @@
 <div ng-controller="home">
-<div class="modalBox">
+<div class="modalBox" ng-init="voice.speak('Are you sure you want to delete the '+description+' shortcut?')">
 <!--<div class="modal-header">
 <button class="btn btn-primary closeMe"><i class="fa fa-times"></i></button>  
  </div>-->
-        <div class="modal-body">
-            <h2 class="modal-title">{{description}} deleted</h2>
+        <div class="modal-body" >
+            <h2 class="modal-title">Are you sure you want to delete the {{description}} shortcut?</h2>
         </div>
         <div class="modal-footer">
-            <button class="btn btn-danger" ng-click="ok()">Ok</button>
+            <button class="btn btn-danger" ng-click="delete(); voice.speak(description+' shortcut deleted.')">Yes</button>
+            <button class="btn btn-danger" ng-click="cancel(); voice.speak('Deletion Cancelled');">No</button>
 </div>
 </div>
 </div>
