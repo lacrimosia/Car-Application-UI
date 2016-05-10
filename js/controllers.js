@@ -129,10 +129,32 @@ app.controller('mail', [
 app.controller('store', [
     '$scope',
     '$http',
+    'contentService',
     'gotoService',
-    function($scope, $http, gotoService) {
-        $scope.voice = responsiveVoice;
+    'getIndex',
+    '$routeParams',
+    '$sce',
+    'modalService',
+    function($scope, $http, contentService, gotoService, getIndex, $routeParams, $sce, modalService) {
+        contentService.then(function(data) {
+            $scope.data = data; // access all data
+            $scope.data = data; // access all data
+            $scope.appsList = $scope.data.appsList; // list of apps
+            $scope.shortcutList = $scope.data.shortcuts;  // list of shortcuts
+            $scope.voice = responsiveVoice;
             $scope.voice.setDefaultVoice("US English Female");
+
+            // change url to links
+            $scope.goTo = function(url) {
+                gotoService.getLink(url);
+            }
+
+            $scope.addBox = function(index, title, description, templateLink, array, size, voice, type, link) {
+                modalService.openMenuModal(index, title, description, templateLink, array, size, voice, type, link);
+            };
+
+            $scope.system == false;
+        });
 
     }
 ]);

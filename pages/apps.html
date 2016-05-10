@@ -16,7 +16,8 @@
                         <li role="menuitem"><a ng-click="goTo(s.link)"><i class="fa fa-desktop"></i> Go to App</a></li>
                     </ul>
                 </div>
-                <button class="btn btn-primary btn-lg" ng-click="goTo(a.link+'/'+$index); getIndex($index);"><i class="fa fa-desktop"></i> View App </button>
+                <button class="btn btn-primary btn-lg" ng-if="!a.special" ng-click="goTo(a.link+'/'+$index); getIndex($index); voice.speak('Viewing '+a.name);"><i class="fa fa-desktop"></i> View App </button>
+                <button class="btn btn-primary btn-lg" ng-if="a.special" ng-click="goTo(a.link); getIndex($index); voice.speak('Viewing '+a.name);"><i class="fa fa-desktop"></i> View App </button>
                 <button class="btn btn-primary btn-lg" ng-click="voice.speak(a.name)"><i class="fa fa-volume-up"></i></button>
             </div>
         </div>

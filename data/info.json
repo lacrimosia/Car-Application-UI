@@ -157,7 +157,8 @@
 			"description": "This is the App store",
 			"image": "images/appstore.jpg",
 			"url": "/apps/store",
-			"system": true
+			"system": true,
+			"special": true
 		}
 	],
 	"phonetabs":[

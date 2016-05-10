@@ -1,1 +1,25 @@
-<h1>This is the app store</h1>
+<div class="container-fluid animated fadeIn" ng-controller="store">
+    <div class="row">
+        <!-- apps -->
+        <div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 animated zoomIn" ng-repeat="a in appsList">
+            <div class="apps-background" ng-style="{'background-image':'url('+ a.image + ')', 'background-repeat': 'no-repeat', 'background-size': 'cover'}">
+                <!-- Single button -->
+                <div class="btn-group deleteBox" uib-dropdown dropdown-append-to-body>
+                    <button id="btn-append-to-body" type="button" class="btn btn-primary" uib-dropdown-toggle>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu animated fadeIn" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-body">
+                        <li role="menuitem"><a ng-click="addBox($index, a.name, a.name, 'partials/modalAdd.html', shortcutList, sm, voice, 'US English Female', a.link+'/'+$index)"><i class="fa fa-plus"></i> Add Shortcut</a></li>
+                        <li role="menuitem"><a href="#">View in App Store</a></li>
+                        <li role="menuitem"><a href="#">Properties</a></li>
+                        <li class="divider"></li>
+                        <li role="menuitem"><a ng-click="goTo(s.link)"><i class="fa fa-desktop"></i> Go to App</a></li>
+                    </ul>
+                </div>
+                <button class="btn btn-primary btn-lg" ng-click="goTo(a.link); voice.speak('Viewing '+a.name);"><i class="fa fa-desktop"></i> View App </button>
+                <button class="btn btn-primary btn-lg" ng-click="voice.speak(a.name)"><i class="fa fa-volume-up"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
