@@ -1,5 +1,17 @@
 <div class="container-fluid animated fadeIn" ng-controller="store">
     <div class="row">
+        <!--search-->
+        <div class="search">
+            <div class="col-md-12 col-lg-12">
+            <h3 class="white">BINAR App Store</h3>
+                <div class="input-group" ng-style="{'margin-bottom': '30px'}">
+                    <input type="text" class="form-control" placeholder="Search App Store...">
+                    <span class="input-group-btn">
+        				<button class="btn btn-primary btn-md" type="button">Go!</button>
+      				</span>
+                </div>
+            </div>
+        </div>
         <!-- apps -->
         <div class="col-md-4 col-lg-4 col-sm-6 col-xs-6 animated zoomIn" ng-repeat="a in appsList">
             <div class="apps-background" ng-style="{'background-image':'url('+ a.image + ')', 'background-repeat': 'no-repeat', 'background-size': 'cover'}">

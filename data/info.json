@@ -88,15 +88,6 @@
 			"system": false
 		},
 		{
-			"name": "Stack Overflow",
-			"icon": "fa fa-cog",
-			"link": "apps/stack-overflow",
-			"description": "Stack Overflow forum",
-			"image": "images/stackoverflow.jpg",
-			"url": "http://stackoverflow.com/",
-			"system": false
-		},
-		{
 			"name": "Dell",
 			"icon": "fa fa-cog",
 			"link": "apps/dell",
@@ -139,16 +130,18 @@
 			"description": "This is the Calendar",
 			"image": "images/calendar.jpg",
 			"url": "/apps/calendar",
-			"system": true
+			"system": true,
+			"special": true
 		},
 		{
 			"name": "Music Player",
 			"icon": "fa fa-cog",
-			"link": "apps/musicplayer",
+			"link": "apps/music-player",
 			"description": "This is the amazon",
 			"image": "images/music.jpg",
 			"url": "/apps/music-player",
-			"system": true
+			"system": true,
+			"special": true
 		},
 		{
 			"name": "App Store",
