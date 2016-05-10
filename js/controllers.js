@@ -32,16 +32,7 @@ app.controller('home', [
             //$scope.reload();
             // remove desktop shortcut on click
             $scope.deleteBox = function(index, title, description, templateLink, array, size, voice, type) {
-             //   $scope.selected = index;
-               // if ($scope.selected != -1) {
-                 //   $scope.shortcutList.splice($scope.selected, 1);
                     modalService.openMenuModal(index, title, description, templateLink, array, size, voice, type);
-                    //$scope.backup.push($scope.shortcutList[$scope.selected]);
-                    //console.log($scope.backup);
-              //  } else {
-              //      console.log("Nothing to delete");
-              //  }
-
             };
         });
 
@@ -57,11 +48,13 @@ app.controller('apps', [
     'getIndex',
     '$routeParams',
     '$sce',
-    function($scope, $http, contentService, gotoService, getIndex, $routeParams, $sce) {
+    'modalService',
+    function($scope, $http, contentService, gotoService, getIndex, $routeParams, $sce, modalService) {
         contentService.then(function(data) {
             $scope.data = data; // access all data
             $scope.data = data; // access all data
-            $scope.appsList = $scope.data.appsList; // list of shortcuts
+            $scope.appsList = $scope.data.appsList; // list of apps
+            $scope.shortcutList = $scope.data.shortcuts;  // list of shortcuts
             $scope.voice = responsiveVoice;
             $scope.voice.setDefaultVoice("US English Female");
 
@@ -80,6 +73,10 @@ app.controller('apps', [
                 $scope.indexRoute = $routeParams.index;
                 return $sce.trustAsResourceUrl($scope.appsList[$scope.indexRoute].url);
             }
+
+            $scope.addBox = function(index, title, description, templateLink, array, size, voice, type, link) {
+                modalService.openMenuModal(index, title, description, templateLink, array, size, voice, type, link);
+            };
 
             $scope.system == false;
         });

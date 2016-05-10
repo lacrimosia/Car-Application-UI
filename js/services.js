@@ -25,7 +25,7 @@ app.factory('weatherService', ['$resource', function($resource) {
 // modal popup service
 app.factory('modalService', ['$uibModal', function($uibModal) {
     return {
-        openMenuModal: function(index, title, description, templateLink, array, size, voice, type) {
+        openMenuModal: function(index, title, description, templateLink, array, size, voice, type, link) {
             var modalObj = $uibModal.open({
                 templateUrl: templateLink,
                 backdrop: 'static',
@@ -39,6 +39,7 @@ app.factory('modalService', ['$uibModal', function($uibModal) {
                     $scope.array = array;
                     $scope.voice = voice;
                     $scope.type = type;
+                    $scope.link = link;
 
                     $scope.ok = function(id) {
                         //Process Close Button Click
@@ -57,6 +58,21 @@ app.factory('modalService', ['$uibModal', function($uibModal) {
                                 console.log("Nothing to delete");
                             }
                         };
+                    }
+
+                    $scope.add = function() {
+                        //Process Close Button Click
+                        $uibModalInstance.close();
+                        if ($scope.array) {
+                            $scope.array.push({
+                                name: $scope.title,
+                                icon: "fa fa-folder",
+                                link: $scope.link,
+                                background: "#181818"
+                            });
+                        } else {
+                            console.log("Nothing to add");
+                        }
                     }
 
                     $scope.cancel = function() {

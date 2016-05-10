@@ -61,7 +61,7 @@
 	],
 	"appsList": [
 		{
-			"name": "AngularJS",
+			"name": "Angular JS",
 			"icon": "fa fa-cog",
 			"link": "apps/angularjs",
 			"description": "This is the Angular JS",

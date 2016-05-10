@@ -1,0 +1,16 @@
+<div ng-controller="home">
+<div class="modalBox" ng-init="voice.speak('Are you sure you want to add the '+description+' shortcut?')">
+<!--<div class="modal-header">
+<button class="btn btn-primary closeMe"><i class="fa fa-times"></i></button>  
+ </div>-->
+        <div class="modal-body" >
+            <h2 class="modal-title">Are you sure you want to add the {{description}} shortcut?</h2>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-danger" ng-click="voice.speak(description+' shortcut added.'); add();">Yes</button>
+            <button class="btn btn-danger" ng-click="cancel(); voice.speak('Action Cancelled');">No</button>
+</div>
+</div>
+</div>
+
+
