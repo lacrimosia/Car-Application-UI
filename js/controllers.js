@@ -306,6 +306,8 @@ app.controller('phone', [
             $scope.contacts = $scope.data.contacts; // list of contacts
             $scope.voice = responsiveVoice;
             $scope.voice.setDefaultVoice("US English Female");
+            $scope.phone = $scope.data.phonePad; // key numbers
+            $scope.voicemail = $scope.data.voiceMail; // voicemail
 
             // delete current item
             $scope.deleteFavorites = function(index, array) {

@@ -891,5 +891,87 @@
 			"type": "security",
 			"color":"#008DF2"
 		}
+	],
+	"phonePad":[
+		{
+			"num": 0,
+			"text": "",
+			"icon": "fa fa-home"
+		},
+		{
+			"num": 1,
+			"text": "Voicemail",
+			"icon": "fa fa-home"
+		},
+		{
+			"num": 2,
+			"text": "ABC",
+			"icon": "fa fa-home"
+		},
+		{
+			"num": 3,
+			"text": "DEF",
+			"icon": "fa fa-home"
+		},
+		{
+			"num": 4,
+			"text": "GHI",
+			"icon": "fa fa-home"
+		},
+		{
+			"num": 5,
+			"text": "JKL",
+			"icon": "fa fa-home"
+		},
+		{
+			"num": 6,
+			"text": "MNO",
+			"icon": "fa fa-home"
+		},
+		{
+			"num": 7,
+			"text": "PQRS",
+			"icon": "fa fa-home"
+		},
+		{
+			"num": 8,
+			"text": "TUV",
+			"icon": "fa fa-home"
+		},
+		{
+			"num": 9,
+			"text": "WXYZ",
+			"icon": "fa fa-home"
+		}
+	],
+	"voiceMail":[
+		{
+			"name": "Verizon Wireless",
+			"icon": "fa fa-envelope",
+			"text": "Hello, This is Verizon Wireless calling to see if your service is working well. Please call us at 1-800-verizon.",
+			"number": "8005347583", 
+			"color": "#00EF47"
+		},
+		{
+			"name": "Verizon Wireless",
+			"icon": "fa fa-envelope",
+			"text": "Hello, This is Verizon Wireless calling to see if your service is working well. Please call us at 1-800-verizon.",
+			"number": "8005347583", 
+			"color": "#00EF47"
+		},
+		{
+			"name": "Verizon Wireless",
+			"icon": "fa fa-envelope",
+			"text": "Hello, This is Verizon Wireless calling to see if your service is working well. Please call us at 1-800-verizon.",
+			"number": "8005347583", 
+			"color": "#00EF47"
+		},
+		{
+			"name": "Verizon Wireless",
+			"icon": "fa fa-envelope",
+			"text": "Hello, This is Verizon Wireless calling to see if your service is working well. Please call us at 1-800-verizon.",
+			"number": "8005347583", 
+			"color": "#00EF47"
+		}
 	]
 }

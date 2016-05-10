@@ -35,6 +35,11 @@ a:hover {
     width: 1080px !important;
 }
 
+/* key numbers 8 */
+
+.keyNum{
+
+}
 
 /* selected class */
 
@@ -220,7 +225,7 @@ a:hover {
 .btn-primary:hover {
     /*background: #2980B9 !important;*/
     /*background: #16A8F5 !important; */
-    box-shadow: inset 0 75px 0 0 #000;
+    box-shadow: inset 0 150px 0 0 #000;
     color: #16A8F5 !important;
     outline: none;
     background: #001C63;

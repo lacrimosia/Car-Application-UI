@@ -20,8 +20,48 @@
                         </ul>
                     </div>
                 </div>
-                <!-- vertical categories -->
-                
+                <!-- keypad -->
+                <div class="keypad">
+                    <div class="col-md-6 col-lg-6">
+                        <!-- keypad buttons -->
+                        <div class="input-group col-md-12 col-lg-12">
+                            <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2" />
+                        </div>
+                        <key-area number="{{x.num}}" ng-repeat="x in phone" ng-if="x.num>0" text="{{x.text}}"></key-area>
+                        <key-area number="&#42;" ng-style="{'width': '100% !important'}"></key-area>
+                        <key-area number="0" ng-style="{'width': '100% !important'}"></key-area>
+                        <key-area number="&#35;" ng-style="{'width': '100% !important'}"></key-area>
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="button" class="btn btn-primary btn-lg" style="width: 241px; height:125px;">
+                                <h1><i class="fa fa-phone"></i> Call</h1></button>
+                            <button type="button" class="btn btn-primary btn-lg" style="width: 241px; height:125px;">
+                                <h1><i class="fa fa-times"></i> End</h1></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-12">
+                    <h3 class="white">Voicemail</h3>
+                    <table class="table" ng-controller="phone">
+                        <tbody>
+                            <tr class="inboxArea" ng-repeat="d in voicemail" ng-class="{'black': d.default==true}" ng-style="{'border-left-color': d.color, 'border-left-width': '3px', 'border-left-style': 'solid'}">
+                                <td>
+                                    <strong><i class="{{d.icon}}"></i></strong>
+                                    <br/>
+                                    <strong class="white">{{d.name}}</strong>
+                                </td>
+                                <td class="text-left">
+                                    <strong>{{ d.text}}</strong>
+                                    <br/>
+                                    <strong class="white">{{d.number}}</strong>
+                                </td>
+                                <td class="text-left">
+                                    <button class="btn btn-primary btn-sm" ng-click="voice.speak(d.text)"><i class="fa fa-volume-up"></i></button>
+                                    <!-- ng-mouseover="voice.speak('In '+d.distance+', '+d.text)" -->
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

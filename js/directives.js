@@ -304,3 +304,19 @@ app.directive('carSettings', function() {
         templateUrl: './partials/carsettings.html'
     };
 });
+
+app.directive('keyArea', function() {
+    return {
+        restrict: 'AE',
+        templateUrl: './partials/keypad.html',
+        scope:{
+            number: "@",
+            text: "@"
+        },
+        link: function(scope, element, attrs){
+            scope.number = attrs.number;
+            scope.text = attrs.text;
+             
+        }
+    }
+});
