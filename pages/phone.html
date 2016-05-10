@@ -1,56 +1,28 @@
 <div class="container">
-	<div class="row">
-		<div>
-			<div class="phone" ng-controller="phone">
-				 <uib-tabset active="activeJustified" justified="true" type="pills">
-    				<uib-tab index="tab" ng-repeat="tab in phoneTabs">
-    					 <uib-tab-heading>
-    					 	<h2><i class="white {{tab.icon}}"></i> {{tab.title}}</h2>
-    					 </uib-tab-heading>
-
-    			     <!--favorites-->
-    					 <div ng-repeat="x in contacts" ng-if="x.favorites==true && tab.title=='Favorites'" class="shortcut-background col-md-12 col-lg-12" ng-style="{'min-height': '30px !important'}">
-                            <div class="col-md-8 col-lg-8">
-                            <img ng-src="./images/{{x.photo}}" class="thumbnails img-circle pull-left animated fadeIn"/>
-                            <h2 class="text-left animated fadeIn">{{ x.name }}</h2></div>
-                            <div class="col-md-4 col-lg-4 animated fadeIn">
-                                <button class="btn btn-primary btn-lg"><i class="fa fa-phone pull-right"></i></button>
-                                <button class="btn btn-primary btn-lg"><i class="fa fa-envelope pull-right"></i></button>
-                                <button class="btn btn-primary btn-lg"><i class="fa fa-info pull-right"></i></button>
-                                <button class="btn btn-primary btn-lg" ng-click="deleteFavorites($index, contacts)"><i class="fa fa-times pull-right"></i></button>
-                            </div>
-                         </div>
-
-    				
-    				 <!-- vertical categories -->
-
-    				 <!--contacts list-->
-    				<div class="col-md-12 col-lg-12">
-    				 <uib-accordion class="animated fadeIn">
-    					 <uib-accordion-group ng-repeat="c in contacts" ng-if="tab.title=='Contacts'">
-    					 	<uib-accordion-heading ng-style="{'float': 'left', 'display': 'inline'}">
-                               <img ng-src="./images/{{c.photo}}" class="thumbnails img-circle" ng-if="c.photo != ''"/>   
-    					 		<h4>{{c.name}}</h4>
-                                <button class="btn btn-primary btn-lg"><i class="fa fa-phone pull-right"></i></button>
-    					 	</uib-accordion-heading>
-    					 		<p><img ng-src="./images/{{c.photo}}" class="img-responsive"/></p>
-    					 		<p><strong>Phone number:</strong> {{ c.number }}</p>
-    					 		<p><strong>Email:</strong> {{ c.email }}</p>
-    					 		<p>
-    					 			<button class="btn btn-primary btn-lg"><i class="fa fa-phone"></i> Call</button>
-                                     <button class="btn btn-primary btn-lg"><i class="fa fa-envelope"></i></button>
-    					 			<button class="btn btn-primary btn-lg" ng-click="deleteFavorites($index, contacts)"><i class="fa fa-star"></i></button>
-                                <button class="btn btn-primary btn-lg" ng-click="deleteFavorites($index, contacts)"><i class="fa fa-times"></i></button>
-    					 		</p>
-    					 </uib-accordion-group>
-    				</uib-accordion>
-    				</div>
-
-                    
-
-    				</uib-tab>
-  				</uib-tabset>
-			</div>
-		</div>
-	</div>
+    <div class="row">
+        <div>
+            <div class="phone" ng-controller="phone">
+                <!--favorites-->
+                <div class="favorites">
+                    <h5 class="white">Contacts</h5>
+                    <div class="col-md-6 col-lg-6">
+                        <ul class="list-group">
+                            <li class="list-group-item inboxArea" ng-repeat="x in contacts" ng-style="{'min-height': '30% !important'}">
+                                <img ng-src="./images/{{x.photo}}" class="img-circle animated fadeIn" ng-style="{'width': '10%'}" />
+                                <strong class="gray">{{ x.name }}</strong>
+                                <div class="animated fadeIn pull-right">
+                                    <button class="btn btn-primary btn-lg"><i class="fa fa-phone pull-right" ng-click="voice.speak('Call '+x.name+'?')"></i></button>
+                                    <button class="btn btn-primary btn-lg"><i class="fa fa-envelope pull-right"></i></button>
+                                    <button class="btn btn-primary btn-lg"><i class="fa fa-info pull-right"></i></button>
+                                    <button class="btn btn-primary btn-lg" ng-click="deleteFavorites($index, contacts)"><i class="fa fa-times pull-right"></i></button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- vertical categories -->
+                
+            </div>
+        </div>
+    </div>
 </div>
