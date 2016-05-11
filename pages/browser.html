@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="row">
+        <div class="statusbar2">
+            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                <button class="btn btn-primary btn-lg"><i class="fa fa-home" uib-tooltip="Wifi" tooltip-placement="bottom"></i></button>
+                <button class="btn btn-primary btn-lg"><i class="fa fa-arrow-left" uib-tooltip="Wifi" tooltip-placement="bottom"></i></button>
+                <button class="btn btn-primary btn-lg"><i class="fa fa-arrow-right" uib-tooltip="Wifi" tooltip-placement="bottom"></i></button>
+            </div>
+            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+                <div class="input-group" ng-controller="browser">
+                    <span class="input-group-addon" id="basic-addon3">Website</span>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" ng-style="{'margin-top': '9px', 'margin-bottom': '9px'}" ng-model="links" placeholder="{{links}}"/>
+                    <span class="input-group-btn">
+        				<button class="btn btn-primary btn-lg" type="button" ng-click="go()">Go!</button>
+      				</span>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" ng-controller="browser">
+                <div class="areaFrame" ng-style="{'width': '100%', 'height': '1300px', 'background': '#ffffff'}">
+                	<iframe ng-src="{{links}}" width="1060" height="1325"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

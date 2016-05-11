@@ -309,16 +309,58 @@ app.controller('phone', [
             $scope.voice.setDefaultVoice("US English Female");
             $scope.phone = $scope.data.phonePad; // key numbers
             $scope.voicemail = $scope.data.voiceMail; // voicemail
+            $scope.number;
 
             // delete current item
             $scope.deleteFavorites = function(index, array) {
                 arrayService.deleteCurrent(index, array);
             };
 
+            $scope.getNum = function(number){
+              $scope.number = number;
+              console.log(number);
+              return $scope.number;
+            };
+
 
         });
     }
 ]);
+
+// browser controller
+app.controller('browser', [
+    '$scope',
+    '$http',
+    'contentService',
+    'arrayService',
+    'ngAudio',
+    '$sce',
+    function($scope, $http, contentService, arrayService, ngAudio, $sce) {
+        contentService.then(function(data) {
+            $scope.data = data; // access all data
+            $scope.phoneTabs = $scope.data.phonetabs; // list of shortcuts
+            $scope.contacts = $scope.data.contacts; // list of contacts
+            $scope.voice = responsiveVoice;
+            $scope.voice.setDefaultVoice("US English Female");
+            $scope.phone = $scope.data.phonePad; // key numbers
+            $scope.voicemail = $scope.data.voiceMail; // voicemail
+            $scope.links = $sce.trustAsResourceUrl("http://www.dell.com/");
+
+            // delete current item
+            $scope.deleteFavorites = function(index, array) {
+                arrayService.deleteCurrent(index, array);
+            };
+
+            $scope.go = function(){
+              $scope.links = $sce.trustAsResourceUrl("http://www.yelp.com/");
+                return $scope.links;
+            };
+
+
+        });
+    }
+]);
+
 
 // phone controller
 app.controller('driving', [

@@ -3,12 +3,12 @@
         <div>
             <!--favorites-->
             <div class="favorites">
-                <h5 class="white">Contacts</h5>
-                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6 shortcut-background">
+                    <h5 class="white">Contacts</h5>
                     <ul class="list-group" ng-controller="phone">
                         <li class="list-group-item inboxArea" ng-repeat="x in contacts" ng-style="{'min-height': '30% !important'}">
-                            <img ng-src="./images/{{x.photo}}" class="img-circle animated fadeIn" ng-style="{'width': '10%'}" />
-                            <strong class="gray">{{ x.name }}</strong>
+                            <img ng-src="./images/{{x.photo}}" class="img-circle animated fadeIn pull-left" ng-style="{'width': '10%'}" />
+                            <strong class="white pull-left">{{ x.name }}</strong>
                             <div class="animated fadeIn pull-right">
                                 <button class="btn btn-primary btn-lg"><i class="fa fa-phone pull-right" ng-click="voice.speak('Call '+x.name+'?')"></i></button>
                                 <button class="btn btn-primary btn-lg"><i class="fa fa-envelope pull-right"></i></button>
@@ -23,19 +23,15 @@
             <div class="keypad" ng-controller="phone">
                 <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
                     <!-- keypad buttons -->
-                    <div class="input-group col-md-12 col-lg-12">
-                        <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2" />
+                    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                        <h2 class="white numKey" keyTop number="{{number}}"></h2>
                     </div>
-                    <key-area number="{{x.num}}" ng-repeat="x in phone" ng-if="x.num>0" text="{{x.text}}"></key-area>
-                    <key-area number="&#42;" ng-style="{'width': '100% !important'}"></key-area>
-                    <key-area number="0" ng-style="{'width': '100% !important'}"></key-area>
-                    <key-area number="&#35;" ng-style="{'width': '100% !important'}"></key-area>
-                    <div class="btn-group" role="group" aria-label="...">
-                        <button type="button" class="btn btn-primary btn-lg" style="width: 241px; height:125px;">
-                            <h1><i class="fa fa-phone"></i> Call</h1></button>
-                        <button type="button" class="btn btn-primary btn-lg" style="width: 241px; height:125px;">
-                            <h1><i class="fa fa-times"></i> End</h1></button>
-                    </div>
+                    <key-area number="{{x.num}}" ng-repeat="x in phone" ng-if="x.num>0" text="{{x.text}}" ng-click="getNum(x.num)"></key-area>
+                    <key-area number="&#42;" ng-style="{'width': '100% !important'}" ng-click="getNum(x.num)"></key-area>
+                    <key-area number="0" ng-style="{'width': '100% !important'}" ng-click="getNum(x.num)"></key-area>
+                    <key-area number="&#35;" ng-style="{'width': '100% !important'}" ng-click="getNum(x.num)"></key-area>
+                    <key-area number="Call" called="Call" ng-style="{'width': '100% !important'}" ng-click="getNum(x.num)"></key-area>
+                    <key-area number="Erase" ng-style="{'width': '100% !important'}" ng-click="getNum(x.num)" full="not"></key-area>
                 </div>
             </div>
             <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
@@ -63,7 +59,7 @@
             </div>
             <!--email-->
             <div class="mail" ng-controller="mail">
-                <div class="col-md-5 col-lg-5 col-sm-5 col-xs-5 animated fadeIn">
+                <div class="col-md-5 col-lg-5 col-sm-5 col-xs-5 animated fadeIn shortcut-background">
                     <h5 class="white">Mail</h5>
                     <table class="table">
                         <tbody>

@@ -52,6 +52,10 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
       templateUrl: 'pages/settings.html'
    }).
 
+   when('/apps/browser', {
+      templateUrl: 'pages/browser.html'
+   }).
+
    when('/apps/gps', {
       templateUrl: 'pages/gps.html'
    }).

@@ -9,8 +9,8 @@
                     <!--music list-->
                     <div class="col-md-6 col-lg-6" ng-if="tab.title=='Music'">
                         <!--music-->
-                        <div class="playlist animated fadeIn musiclist"  class="col-md-12 col-lg-12" ng-repeat="m in musicList" ng-if="tab.title=='Music'" ng-click="audio.playSelectedTrack($index)" ng-class="{'selected': $index==Song}">
-                        <img ng-src="{{m.artistPicture}}" class="thumbnails2x" ng-style="{'float': 'left', 'margin-right': '10px'}"/>
+                        <div class="playlist animated fadeIn musiclist" class="col-md-12 col-lg-12 col-sm-5 col-xs-5" ng-repeat="m in musicList" ng-if="tab.title=='Music'" ng-click="audio.playSelectedTrack($index)" ng-class="{'selected': $index==Song}">
+                            <img ng-src="{{m.artistPicture}}" class="thumbnails2x" ng-style="{'float': 'left', 'margin-right': '10px'}" />
                             <p>
                                 <h3 class="white"><strong>{{ m.name }}</strong></h3>
                             </p>
@@ -19,10 +19,11 @@
                             </div>
                         </div>
                     </div>
+
                     <!--music-->
-                    <div class="playlist animated fadeIn col-md-5 col-lg-5 shortcut-background" ng-style="{'margin': '15px'}" class="col-md-12 col-lg-12" ng-repeat="m in musicList" ng-if="Song == $index && tab.title=='Music'">
+                    <div class="playlist animated fadeIn col-md-5 col-lg-5 col-sm-5 col-xs-5 shortcut-background" ng-style="{'margin': '15px'}" class="col-md-12 col-lg-12" ng-repeat="m in musicList" ng-if="Song == $index && tab.title=='Music'">
                         <!--<p><img ng-src="{{m.artistPicture}}" class="thumbnails img-responsive" />-->
-                            <h2 class="white"><strong>Artist:</strong> {{ m.name }}</h2>
+                        <h2 class="white"><strong>Artist:</strong> {{ m.name }}</h2>
                         </p>
                         <div ng-repeat="t in m.tracks">
                             <p><img ng-src="{{t.albumCover}}" class="img-responsive center-block" />
@@ -36,18 +37,33 @@
                             <button class="btn btn-primary musicbutton" ng-click="audio.nextTrack($index); audio.stopAudio(t.audio);"><i class="fa fa-step-forward"></i></button>
                             <button class="btn btn-primary musicbutton" ng-click="audio.nextTrack($index); audio.stopAudio(t.audio);"><i class="fa fa-volume-up"></i></button>
                         </div>
-
-                        
                     </div>
 
-                    <!-- Radio -->
-                    <div class="playlist animated fadeIn col-md-12 col-lg-12" ng-style="{'margin': '15px'}" class="col-md-12 col-lg-12" ng-if="tab.title=='Radio'">
-                        	<!-- Muziic Embed Code // Get yours at http://embed.muziic.com --><iframe src="http://embed.muziic.com/player/?color1=121212&color2=ffffff" height="835" width="1080" scrolling="no" allowtransparency="true" border="0" frameborder="0"></iframe>
+                    <!--Spotify-->
+                    <div class="spot" ng-if="tab.title=='Spotify'">
+                        <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12" ng-if="tab.title=='Spotify'">
+                            <div class="animated fadeIn" class="col-md-12 col-lg-12 col-sm-12 col-xs-12" ng-if="tab.title=='Spotify'">
+                                <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Aspotify%3Aplaylist%3A3rgsDhGHZxZ9sB9DQWQfuf" width="1050" height="800" frameborder="0" allowtransparency="true"></iframe>
+                            </div>
+                            <!--shortcuts -->
+                            <div class="container animated fadeIn" ng-controller="home">
+                                <div class="row">
+                                    <div class="containment shortcut-background col-md-12 col-sm-12 col-xs-12 col-lg-12">
+                                        <h5>Dashboard</h5>
+                                        <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3" ng-repeat="s in shortcutList">
+                                            <home-shortcuts></home-shortcuts>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-</div>
+                    </div>
 
-                </uib-tab>
-            </uib-tabset>
+                        
         </div>
     </div>
+    </uib-tab>
+    </uib-tabset>
+</div>
+</div>
 </div>

@@ -217,41 +217,41 @@ app.directive('knob', function() {
             $('.ups').click(function() {
                 coolIncrement();
 
-                degrees-=10;
+                degrees -= 10;
                 $('.color-circle').css({
-                    "-webkit-transform": "rotate("+degrees+"deg)",
-                    "-moz-transform": "rotate("+degrees+"deg)",
-                    "transform": "rotate("+degrees+"deg)" /* For modern browsers(CSS3)  */
+                    "-webkit-transform": "rotate(" + degrees + "deg)",
+                    "-moz-transform": "rotate(" + degrees + "deg)",
+                    "transform": "rotate(" + degrees + "deg)" /* For modern browsers(CSS3)  */
                 });
             });
 
             $('.ups-heat').click(function() {
                 heatIncrement();
-                degrees-=10;
-                 $('.color-circle-heat').css({
-                    "-webkit-transform": "rotate("+degrees+"deg)",
-                    "-moz-transform": "rotate("+degrees+"deg)",
-                    "transform": "rotate("+degrees+"deg)" /* For modern browsers(CSS3)  */
+                degrees -= 10;
+                $('.color-circle-heat').css({
+                    "-webkit-transform": "rotate(" + degrees + "deg)",
+                    "-moz-transform": "rotate(" + degrees + "deg)",
+                    "transform": "rotate(" + degrees + "deg)" /* For modern browsers(CSS3)  */
                 });
             });
 
             $('.downs').click(function() {
                 coolDecrement();
-                 degrees+=10;
+                degrees += 10;
                 $('.color-circle').css({
-                    "-webkit-transform": "rotate("+degrees+"deg)",
-                    "-moz-transform": "rotate("+degrees+"deg)",
-                    "transform": "rotate("+degrees+"deg)" /* For modern browsers(CSS3)  */
+                    "-webkit-transform": "rotate(" + degrees + "deg)",
+                    "-moz-transform": "rotate(" + degrees + "deg)",
+                    "transform": "rotate(" + degrees + "deg)" /* For modern browsers(CSS3)  */
                 });
             });
 
             $('.downs-heat').click(function() {
                 heatDecrement();
-                 degrees+=10;
+                degrees += 10;
                 $('.color-circle-heat').css({
-                    "-webkit-transform": "rotate("+degrees+"deg)",
-                    "-moz-transform": "rotate("+degrees+"deg)",
-                    "transform": "rotate("+degrees+"deg)" /* For modern browsers(CSS3)  */
+                    "-webkit-transform": "rotate(" + degrees + "deg)",
+                    "-moz-transform": "rotate(" + degrees + "deg)",
+                    "transform": "rotate(" + degrees + "deg)" /* For modern browsers(CSS3)  */
                 });
             });
 
@@ -309,14 +309,50 @@ app.directive('keyArea', function() {
     return {
         restrict: 'AE',
         templateUrl: './partials/keypad.html',
-        scope:{
+        scope: {
+            number: "@",
+            text: "@",
+            full: "@",
+            called: "@"
+        },
+        link: function(scope, element, attrs) {
+            scope.number = attrs.number;
+            scope.text = attrs.text;
+            scope.full = attrs.full;
+            scope.called = attrs.called;
+
+            $(element, attrs).on('click', function() {
+                if (scope.full == "not") {
+                    console.log("fwefweef");
+                    $('.numKey').text("").fadeOut();
+                } else {
+                    if (scope.called == "Call") {
+                         $('.numKey').append(" ");
+                    } else {
+                        $('.numKey').append(scope.number).fadeIn();
+                    }
+                }
+
+
+            });
+
+
+        }
+    }
+});
+
+app.directive('keyTop', function() {
+    return {
+        restrict: 'AE',
+        template: '<h1>{{number}}</h1>',
+        scope: {
             number: "@",
             text: "@"
         },
-        link: function(scope, element, attrs){
+        link: function(scope, element, attrs) {
             scope.number = attrs.number;
             scope.text = attrs.text;
-             
+
         }
     }
 });

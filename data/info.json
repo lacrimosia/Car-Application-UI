@@ -152,6 +152,16 @@
 			"url": "/apps/store",
 			"system": true,
 			"special": true
+		},
+		{
+			"name": "Local Weather",
+			"icon": "fa fa-cog",
+			"link": "/apps/weatherReport",
+			"description": "This is the App store",
+			"image": "images/weather.jpg",
+			"url": "/apps/weatherReport",
+			"system": true,
+			"special": true
 		}
 	],
 	"phonetabs":[
@@ -191,21 +201,6 @@
 			"title": "Spotify",
 			"icon": "fa fa-spotify",
 			"content": "I am the recents"
-		},
-		{
-			"title": "Pandora",
-			"icon": "fa fa-pandora",
-			"content": "I am the contacts"
-		},
-		{
-			"title": "Radio",
-			"icon": "fa fa-radio",
-			"content": "I am the keypad"
-		},
-		{
-			"title": "Sirius XM",
-			"icon": "fa fa-radio",
-			"content": "I am the voicemail"
 		}
 	],
 	"contacts":[
@@ -500,12 +495,6 @@
 			"icon": "fa fa-envelope",
 			"content": "I am the sent",
 			"link": "#/sent"
-		},
-		{
-			"title": "Starred",
-			"icon": "fa fa-star",
-			"content": "I am starred",
-			"link": "#/starred"
 		}
 	],
 	"directionsList":[
@@ -962,9 +951,9 @@
 			"color": "#00EF47"
 		},
 		{
-			"name": "Verizon Wireless",
+			"name": "Bank of America",
 			"icon": "fa fa-envelope",
-			"text": "Hello, This is Verizon Wireless calling to see if your service is working well. Please call us at 1-800-verizon.",
+			"text": "Hello, This is Jane from Bank of America calling about your House application. Please call me back at 7025370981. Thanks, have a good day.",
 			"number": "8005347583", 
 			"color": "#00EF47"
 		},

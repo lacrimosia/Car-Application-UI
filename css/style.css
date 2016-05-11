@@ -102,6 +102,9 @@ a:hover {
 
 .inboxArea {
     height: 75px;
+    background: #181818 !important;
+    color: #ffffff !important;
+    border: none !important;
 }
 
 .table th,
@@ -136,13 +139,13 @@ a:hover {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#16a8f5+0,004ef7+100;blue+color */
     background: #16a8f5;
     /* Old browsers */
-    background: -moz-radial-gradient(center, ellipse cover, #16a8f5 0%, #004ef7 100%);
+    background: -moz-radial-gradient(center, ellipse cover, #16a8f5 0%, #004ef7 100%) !important;
     /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover, #16a8f5 0%, #004ef7 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #16a8f5 0%, #004ef7 100%) !important;
     /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center, #16a8f5 0%, #004ef7 100%);
+    background: radial-gradient(ellipse at center, #16a8f5 0%, #004ef7 100%) !important;
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#16a8f5', endColorstr='#004ef7', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#16a8f5', endColorstr='#004ef7', GradientType=1) !important;
     /* IE6-9 fallback on horizontal gradient */
 }
 
@@ -303,6 +306,13 @@ a:hover {
     width: 100%;
     color: #16A8F5;
     height: 40px;
+}
+
+.statusbar2 {
+    background: #00327F;
+    width: 100%;
+    color: #16A8F5;
+    height: 50px;
 }
 
 h5 {
