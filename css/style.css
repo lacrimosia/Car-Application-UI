@@ -464,6 +464,10 @@ div.aw-widget-36hour-inner {
 
 /* style override */
 
+.navbar{
+	padding: 0px !important;
+}
+
 .navbar-collapse {
     padding-left: 0px !important;
     padding-right: 0px !important;

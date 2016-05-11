@@ -32,7 +32,7 @@ app.controller('home', [
             //$scope.reload();
             // remove desktop shortcut on click
             $scope.deleteBox = function(index, title, description, templateLink, array, size, voice, type) {
-                    modalService.openMenuModal(index, title, description, templateLink, array, size, voice, type);
+                modalService.openMenuModal(index, title, description, templateLink, array, size, voice, type);
             };
         });
 
@@ -54,7 +54,7 @@ app.controller('apps', [
             $scope.data = data; // access all data
             $scope.data = data; // access all data
             $scope.appsList = $scope.data.appsList; // list of apps
-            $scope.shortcutList = $scope.data.shortcuts;  // list of shortcuts
+            $scope.shortcutList = $scope.data.shortcuts; // list of shortcuts
             $scope.voice = responsiveVoice;
             $scope.voice.setDefaultVoice("US English Female");
 
@@ -94,7 +94,8 @@ app.controller('mail', [
     'ngAudio',
     'gotoService',
     '$routeParams',
-    function($scope, $http, contentService, arrayService, ngAudio, gotoService, $routeParams) {
+    'getIndex',
+    function($scope, $http, contentService, arrayService, ngAudio, gotoService, $routeParams, getIndex) {
         contentService.then(function(data) {
             $scope.data = data; // access all data
             $scope.inbox = $scope.data.inbox; // list of shortcuts
@@ -116,7 +117,7 @@ app.controller('mail', [
             };
 
             $scope.getIndex = function(index) {
-                $scope.message = index;
+                $scope.message = getIndex.current(index);
                 return $scope.message;
             };
 
@@ -140,7 +141,7 @@ app.controller('store', [
             $scope.data = data; // access all data
             $scope.data = data; // access all data
             $scope.appsList = $scope.data.appsList; // list of apps
-            $scope.shortcutList = $scope.data.shortcuts;  // list of shortcuts
+            $scope.shortcutList = $scope.data.shortcuts; // list of shortcuts
             $scope.voice = responsiveVoice;
             $scope.voice.setDefaultVoice("US English Female");
 
@@ -232,7 +233,7 @@ app.controller('weather', [
         // $scope.weather = weatherService.get({cityname: 'Las Vegas'});
         // $scope.weather = weatherService.getWeather();
         $scope.voice = responsiveVoice;
-            $scope.voice.setDefaultVoice("US English Female");
+        $scope.voice.setDefaultVoice("US English Female");
         $scope.goTo = function(url) {
             gotoService.getLink(url);
         }
@@ -272,7 +273,7 @@ app.controller('calendar', [
         $scope.day = moment();
 
         $scope.voice = responsiveVoice;
-            $scope.voice.setDefaultVoice("US English Female");
+        $scope.voice.setDefaultVoice("US English Female");
     }
 ]);
 
@@ -288,7 +289,7 @@ app.controller('systemTime', [
         $scope.minutes = timeService.getMinutes(); // show the minutes
         $scope.getType = timeService.getType($scope.hours); // am or pm
         $scope.voice = responsiveVoice;
-            $scope.voice.setDefaultVoice("US English Female");
+        $scope.voice.setDefaultVoice("US English Female");
     }
 ]);
 
@@ -450,4 +451,3 @@ app.controller('gps', [
         });
     }
 ]);
-

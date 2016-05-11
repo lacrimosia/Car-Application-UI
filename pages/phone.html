@@ -1,71 +1,71 @@
 <div class="container">
     <div class="row">
         <div>
-                <!--favorites-->
-                <div class="favorites">
-                    <h5 class="white">Contacts</h5>
-                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
-                        <ul class="list-group" ng-controller="phone">
-                            <li class="list-group-item inboxArea" ng-repeat="x in contacts" ng-style="{'min-height': '30% !important'}">
-                                <img ng-src="./images/{{x.photo}}" class="img-circle animated fadeIn" ng-style="{'width': '10%'}" />
-                                <strong class="gray">{{ x.name }}</strong>
-                                <div class="animated fadeIn pull-right">
-                                    <button class="btn btn-primary btn-lg"><i class="fa fa-phone pull-right" ng-click="voice.speak('Call '+x.name+'?')"></i></button>
-                                    <button class="btn btn-primary btn-lg"><i class="fa fa-envelope pull-right"></i></button>
-                                    <button class="btn btn-primary btn-lg"><i class="fa fa-info pull-right"></i></button>
-                                    <button class="btn btn-primary btn-lg" ng-click="deleteFavorites($index, contacts)"><i class="fa fa-times pull-right"></i></button>
-                                </div>
-                            </li>
-                        </ul>
+            <!--favorites-->
+            <div class="favorites">
+                <h5 class="white">Contacts</h5>
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                    <ul class="list-group" ng-controller="phone">
+                        <li class="list-group-item inboxArea" ng-repeat="x in contacts" ng-style="{'min-height': '30% !important'}">
+                            <img ng-src="./images/{{x.photo}}" class="img-circle animated fadeIn" ng-style="{'width': '10%'}" />
+                            <strong class="gray">{{ x.name }}</strong>
+                            <div class="animated fadeIn pull-right">
+                                <button class="btn btn-primary btn-lg"><i class="fa fa-phone pull-right" ng-click="voice.speak('Call '+x.name+'?')"></i></button>
+                                <button class="btn btn-primary btn-lg"><i class="fa fa-envelope pull-right"></i></button>
+                                <button class="btn btn-primary btn-lg"><i class="fa fa-info pull-right"></i></button>
+                                <button class="btn btn-primary btn-lg" ng-click="deleteFavorites($index, contacts)"><i class="fa fa-times pull-right"></i></button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- keypad -->
+            <div class="keypad" ng-controller="phone">
+                <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                    <!-- keypad buttons -->
+                    <div class="input-group col-md-12 col-lg-12">
+                        <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2" />
+                    </div>
+                    <key-area number="{{x.num}}" ng-repeat="x in phone" ng-if="x.num>0" text="{{x.text}}"></key-area>
+                    <key-area number="&#42;" ng-style="{'width': '100% !important'}"></key-area>
+                    <key-area number="0" ng-style="{'width': '100% !important'}"></key-area>
+                    <key-area number="&#35;" ng-style="{'width': '100% !important'}"></key-area>
+                    <div class="btn-group" role="group" aria-label="...">
+                        <button type="button" class="btn btn-primary btn-lg" style="width: 241px; height:125px;">
+                            <h1><i class="fa fa-phone"></i> Call</h1></button>
+                        <button type="button" class="btn btn-primary btn-lg" style="width: 241px; height:125px;">
+                            <h1><i class="fa fa-times"></i> End</h1></button>
                     </div>
                 </div>
-                <!-- keypad -->
-                <div class="keypad" ng-controller="phone">
-                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
-                        <!-- keypad buttons -->
-                        <div class="input-group col-md-12 col-lg-12">
-                            <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2" />
-                        </div>
-                        <key-area number="{{x.num}}" ng-repeat="x in phone" ng-if="x.num>0" text="{{x.text}}"></key-area>
-                        <key-area number="&#42;" ng-style="{'width': '100% !important'}"></key-area>
-                        <key-area number="0" ng-style="{'width': '100% !important'}"></key-area>
-                        <key-area number="&#35;" ng-style="{'width': '100% !important'}"></key-area>
-                        <div class="btn-group" role="group" aria-label="...">
-                            <button type="button" class="btn btn-primary btn-lg" style="width: 241px; height:125px;">
-                                <h1><i class="fa fa-phone"></i> Call</h1></button>
-                            <button type="button" class="btn btn-primary btn-lg" style="width: 241px; height:125px;">
-                                <h1><i class="fa fa-times"></i> End</h1></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
-                    <h3 class="white">Voicemail</h3>
-                    <table class="table" ng-controller="phone">
-                        <tbody>
-                            <tr class="inboxArea" ng-repeat="d in voicemail" ng-class="{'black': d.default==true}" ng-style="{'border-left-color': d.color, 'border-left-width': '3px', 'border-left-style': 'solid'}">
-                                <td>
-                                    <strong><i class="{{d.icon}}"></i></strong>
-                                    <br/>
-                                    <strong class="white">{{d.name}}</strong>
-                                </td>
-                                <td class="text-left">
-                                    <strong>{{ d.text}}</strong>
-                                    <br/>
-                                    <strong class="white">{{d.number}}</strong>
-                                </td>
-                                <td class="text-left">
-                                    <button class="btn btn-primary btn-sm" ng-click="voice.speak(d.text)"><i class="fa fa-volume-up"></i></button>
-                                    <!-- ng-mouseover="voice.speak('In '+d.distance+', '+d.text)" -->
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <!--email-->
+            </div>
+            <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
+                <h3 class="white">Voicemail</h3>
+                <table class="table" ng-controller="phone">
+                    <tbody>
+                        <tr class="inboxArea" ng-repeat="d in voicemail" ng-class="{'black': d.default==true}" ng-style="{'border-left-color': d.color, 'border-left-width': '3px', 'border-left-style': 'solid'}">
+                            <td>
+                                <strong><i class="{{d.icon}}"></i></strong>
+                                <br/>
+                                <strong class="white">{{d.name}}</strong>
+                            </td>
+                            <td class="text-left">
+                                <strong>{{ d.text}}</strong>
+                                <br/>
+                                <strong class="white">{{d.number}}</strong>
+                            </td>
+                            <td class="text-left">
+                                <button class="btn btn-primary btn-sm" ng-click="voice.speak(d.text)"><i class="fa fa-volume-up"></i></button>
+                                <!-- ng-mouseover="voice.speak('In '+d.distance+', '+d.text)" -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--email-->
+            <div class="mail" ng-controller="mail">
                 <div class="col-md-5 col-lg-5 col-sm-5 col-xs-5 animated fadeIn">
-                <h5 class="white">Mail</h5>
-                    <table class="table" ng-controller="mail">
+                    <h5 class="white">Mail</h5>
+                    <table class="table">
                         <tbody>
                             <tr ng-repeat="i in inbox" class="inboxArea" ng-click="getIndex($index)" ng-class="{'mail-light': message==$index}" ng-if="$index < 6">
                                 <td>
@@ -82,12 +82,12 @@
                     </table>
                 </div>
                 <!-- view message -->
-                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7 ma" ng-controller="mail">
-                    <div class="animated fadeIn inside" ng-repeat="i in inbox" ng-if="message==$index">
-                        <h2>{{i.title}}</h2>
-                        <h6>From: {{i.from}} <{{i.fromEmail}}></h6>
+                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7 ma">
+                    <div class="animated fadeIn inside" ng-repeat="x in inbox" ng-if="message==$index">
+                        <h2>{{x.title}}</h2>
+                        <h6>From: {{x.from}} <{{x.fromEmail}}></h6>
                         <hr/>
-                        <p>{{i.message }}</p>
+                        <p>{{x.message }}</p>
                         <div class="form-group">
                             <label for="comment">Reply:</label>
                             <textarea class="form-control" rows="5" id="comment" ng-model="yourModel" ng-virtual-keyboard="{forcePosition: 'bottom', size: 3, imageURI: 'images/keyboard.png'}" autoFocus></textarea>
@@ -95,6 +95,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     </div>
 </div>

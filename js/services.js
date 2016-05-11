@@ -120,14 +120,14 @@ app.factory('timeService', ['$location', function($location) {
 
         },
         getType: function(hours) {
-            /* if(hours > 12){
-               return 'PM';
-             }else if(hours < 12 || hours == 12){
+             if(hours > 12){
                return 'AM';
-             }*/
-            var types = hours >= 12 ? 'AM' : 'PM';
+             }else if(hours < 12 || hours == 12){
+               return 'PM';
+             }
+           /* var types = hours >= 12 ? 'AM' : 'PM';
             hours = hours % 12;
-            hours = hours ? hours : 12;
+            hours = hours ? hours : 12;*/
             return types;
         },
         getCurrentMonth: function(date) {
