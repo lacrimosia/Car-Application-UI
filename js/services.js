@@ -121,9 +121,9 @@ app.factory('timeService', ['$location', function($location) {
         },
         getType: function(hours) {
              if(hours > 12){
-               return 'PM';
-             }else if(hours == 0 || hours < 12){
                return 'AM';
+             }else if(hours == 0 || hours < 12){
+               return 'PM';
              }
            /* var types = hours >= 12 ? 'AM' : 'PM';
             hours = hours % 12;

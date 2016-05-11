@@ -290,6 +290,11 @@ app.controller('systemTime', [
         $scope.getType = timeService.getType($scope.hours); // am or pm
         $scope.voice = responsiveVoice;
         $scope.voice.setDefaultVoice("US English Female");
+
+        // go to a link
+        $scope.goTo = function(url) {
+            gotoService.getLink(url);
+        }
     }
 ]);
 
@@ -421,6 +426,7 @@ app.controller('settings', [
         });
     }
 ]);
+
 
 // menu controller
 app.controller('mainMenu', [

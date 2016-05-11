@@ -9,7 +9,7 @@
 		</div>
 		<!-- the time -->
 		<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-			<h4 class="text-right" ng-controller="systemTime">Weather: 98&deg; &nbsp; <i class="fa fa-clock-o"></i> {{hours}}:{{minutes}} {{getType}}</h4>
+			<h4 class="text-right" ng-controller="systemTime" ng-click="goTo('/apps/weatherReport')" uib-tooltip="View Weather" tooltip-placement="bottom" ng-style="{'cursor':'pointer'}">Weather: 98&deg; &nbsp; <i class="fa fa-clock-o"></i> {{hours}}:{{minutes}} {{getType}}</h4>
 		</div>
 		</div>
 	</div>

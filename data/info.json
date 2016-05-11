@@ -47,7 +47,7 @@
 		{
 			"name": "Spotify",
 			"icon": "fa fa-spotify",
-			"link": "apps/spotify",
+			"link": "apps/music-player",
 			"description": "Lets listen to spotify",
 			"background": "#181818"
 		},
@@ -777,8 +777,8 @@
 				"y": 125
 			},
 			"pulseLarge":{
-				"x": -55,
-				"y": -95
+				"x": 975,
+				"y": 500
 			},
 			"active": true,
 			"type": "security",
@@ -792,8 +792,8 @@
 				"y": 125
 			},
 			"pulseLarge":{
-				"x": -55,
-				"y": -95
+				"x": 975,
+				"y": 550
 			},
 			"active": true,
 			"type": "security",
@@ -807,10 +807,10 @@
 				"y": 125
 			},
 			"pulseLarge":{
-				"x": -55,
-				"y": -95
+				"x": 850,
+				"y": 630
 			},
-			"active": false,
+			"active": true,
 			"type": "security",
 			"color":"#008DF2"
 		},

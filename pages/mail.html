@@ -43,6 +43,7 @@
                             <label for="comment">Reply:</label>
                             <textarea class="form-control" rows="5" id="comment" ng-model="yourModel" ng-virtual-keyboard="{forcePosition: 'bottom', size: 3, imageURI: 'images/keyboard.png'}" autoFocus></textarea>
                             <button class="btn btn-primary btn-md pull-right"><i class="fa fa-reply"> Reply</i></button>
+                            <button class="btn btn-primary btn-md pull-right" ng-click="voice.speak('This email is from '+i.fromEmail+'. The message says '+i.message)"><i class="fa fa-volume-up"></i></button>
                         </div>
                     </div>
                 </div>

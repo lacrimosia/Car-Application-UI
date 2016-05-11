@@ -48,7 +48,7 @@ app.config(['$routeProvider','$locationProvider', function($routeProvider, $loca
       templateUrl: 'pages/frame.html'
    }).
 
-   when('/settings', {
+   when('/apps/settings', {
       templateUrl: 'pages/settings.html'
    }).
 
