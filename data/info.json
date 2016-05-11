@@ -254,6 +254,15 @@
 					"favorites": true,
 					"recent": true,
 					"category": "business"
+				},
+				{
+					"name": "Bill Gates",
+					"photo": "cruise.jpg",
+					"number": "785-605-2324",
+					"email": "billgates@gmail.com",
+					"favorites": true,
+					"recent": true,
+					"category": "business"
 				}
 	],
 	"musicplaylist": [

@@ -1,12 +1,11 @@
 <div class="container">
     <div class="row">
         <div>
-            <div class="phone" ng-controller="phone">
                 <!--favorites-->
                 <div class="favorites">
                     <h5 class="white">Contacts</h5>
-                    <div class="col-md-6 col-lg-6">
-                        <ul class="list-group">
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
+                        <ul class="list-group" ng-controller="phone">
                             <li class="list-group-item inboxArea" ng-repeat="x in contacts" ng-style="{'min-height': '30% !important'}">
                                 <img ng-src="./images/{{x.photo}}" class="img-circle animated fadeIn" ng-style="{'width': '10%'}" />
                                 <strong class="gray">{{ x.name }}</strong>
@@ -21,8 +20,8 @@
                     </div>
                 </div>
                 <!-- keypad -->
-                <div class="keypad">
-                    <div class="col-md-6 col-lg-6">
+                <div class="keypad" ng-controller="phone">
+                    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
                         <!-- keypad buttons -->
                         <div class="input-group col-md-12 col-lg-12">
                             <input type="text" class="form-control" placeholder="Recipient's username" aria-describedby="basic-addon2" />
@@ -39,7 +38,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-12 col-lg-12">
+                <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                     <h3 class="white">Voicemail</h3>
                     <table class="table" ng-controller="phone">
                         <tbody>
@@ -62,7 +61,40 @@
                         </tbody>
                     </table>
                 </div>
-            </div>
+
+                <!--email-->
+                <div class="col-md-5 col-lg-5 col-sm-5 col-xs-5 animated fadeIn">
+                <h5 class="white">Mail</h5>
+                    <table class="table" ng-controller="mail">
+                        <tbody>
+                            <tr ng-repeat="i in inbox" class="inboxArea" ng-click="getIndex($index)" ng-class="{'mail-light': message==$index}" ng-if="$index < 6">
+                                <td>
+                                    <strong>{{ i.title }}</strong>
+                                    <br/>
+                                    <strong class="gray">{{ i.from }}</strong>
+                                </td>
+                                <td><strong>{{ i.date }}</strong>
+                                    <br/>
+                                    <button class="btn btn-primary btn-sm"><i class="fa fa-reply"></i></button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- view message -->
+                <div class="col-md-7 col-lg-7 col-sm-7 col-xs-7 ma" ng-controller="mail">
+                    <div class="animated fadeIn inside" ng-repeat="i in inbox" ng-if="message==$index">
+                        <h2>{{i.title}}</h2>
+                        <h6>From: {{i.from}} <{{i.fromEmail}}></h6>
+                        <hr/>
+                        <p>{{i.message }}</p>
+                        <div class="form-group">
+                            <label for="comment">Reply:</label>
+                            <textarea class="form-control" rows="5" id="comment" ng-model="yourModel" ng-virtual-keyboard="{forcePosition: 'bottom', size: 3, imageURI: 'images/keyboard.png'}" autoFocus></textarea>
+                            <button class="btn btn-primary btn-md pull-right"><i class="fa fa-reply"> Reply</i></button>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
 </div>

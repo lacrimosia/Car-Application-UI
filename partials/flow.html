@@ -1,6 +1,6 @@
-<div class="col-md-12 shortcut-background" ng-controller="controls">
+<div class="col-md-12 col-lg-12 col-sm-12 col-xs-12 shortcut-background" ng-controller="controls">
     <h4 class="text-left white">AC/Heat Controls</h4>
-    <div class="col-md-6">
+    <div class="col-md-6 col-1g-6 col-sm-6 col-xs-6">
         <ul class="nav nav-justified" >
             <li><img src="./images/icons/climate.png" ng-mouseover="voice.speak('Climate Control')" ng-init="a=false;" class="img-responsive cars" ng-click="a=!a" ng-class="{'reg': a==true}"/></li>
             <li><img src="./images/icons/ac.png" ng-init="b=true;" class="img-responsive cars" ng-click="b=!b" ng-class="{'reg': b==true}" ng-mouseover="voice.speak('Air Conditioning')"/></li>
@@ -9,7 +9,7 @@
             <li><img src="./images/icons/airflow2.png" ng-mouseover="voice.speak('Bottom Airflow')" ng-init="f=false;" class="img-responsive cars" ng-mouseover="f=!f" ng-class="{'reg': f==true}" ng-click="f=!f" /></li>
         </ul>
     </div>
-    <div class="col-md-6 col-lg-6">
+    <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6">
         <knob></knob>
     </div>
 </div>

@@ -1,4 +1,4 @@
-<textarea type='text' ng-model="yourModel" ng-virtual-keyboard="{forcePosition: 'bottom', size: 5}"></textarea>
+<!--<textarea type='text' ng-model="yourModel" ng-virtual-keyboard="{forcePosition: 'bottom', size: 5}"></textarea>-->
 <div class="header">
     <i class="fa fa-angle-left" ng-click="previous()"></i>
     <span>{{month.format("MMMM, YYYY")}}</span>
@@ -15,4 +15,23 @@
 </div>
 <div class="week" ng-repeat="week in weeks">
     <span class="day" ng-class="{ today: day.isToday, 'different-month': !day.isCurrentMonth, selected: day.date.isSame(selected) }" ng-click="select(day)" ng-repeat="day in week.days">{{day.number}}</span>
+</div>
+
+<div class="container animated fadeIn">
+    <div class="row">
+        <!--ac/heat-->
+        <ac-heat></ac-heat>
+    </div>
+</div>
+
+<!--shortcuts -->
+<div class="container animated fadeIn" ng-controller="home">
+    <div class="row">
+        <div class="containment shortcut-background col-md-12 col-sm-12 col-xs-12 col-lg-12">
+            <h5>Dashboard</h5>
+            <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3" ng-repeat="s in shortcutList">
+                <home-shortcuts></home-shortcuts>
+            </div>
+        </div>
+    </div>
 </div>

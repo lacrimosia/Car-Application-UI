@@ -1,11 +1,11 @@
 <div class="settings" ng-controller="settings">
-    <div class="col-md-12 col-lg-12">
+    <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
         <div class="elements">
         <div class="elementsTop">
                 <h2 class="white">Vehicle Customization Settings</h2>
                 <button class="btn btn-primary btn-lg" ng-click="open = !open">Show Labels</button>
             </div>
-            <img src="./images/settings/carsettings.jpg" class="img-responsive center-block animated fadeIn" ng-style="{'width': '1060px !important'}" />
+            <img src="./images/settings/carsettings.jpg" class="carPic center-block animated fadeIn"/>
             
         </div>
     </div>
@@ -16,7 +16,7 @@
     </div>
     <!--end pulse-->
     <!--table of settings -->
-    <div class="col-md-4 col-lg-4">
+    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
         <h3 class="white redBack"><i class="fa fa-cog white"></i> Performance Settings</h3>
         <table class="table" ng-controller="driving">
             <tbody>
@@ -36,7 +36,7 @@
             </tbody>
         </table>
     </div>
-    <div class="col-md-4 col-lg-4">
+    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
         <h3 class="white yellowBack"><i class="fa fa-car white"></i> Vehicle Settings</h3>
         <table class="table" ng-controller="driving">
             <tbody>
@@ -56,7 +56,7 @@
             </tbody>
         </table>
     </div>
-    <div class="col-md-4 col-lg-4">
+    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
         <h3 class="white blueBack"><i class="fa fa-user-secret white"></i> Security Settings</h3>
         <table class="table" ng-controller="driving">
             <tbody>
