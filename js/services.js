@@ -103,9 +103,9 @@ app.factory('timeService', ['$location', function($location) {
             var d = new Date();
             var hours = d.getHours();
             if (hours > 12) {
-                hours = 24 - 12;
-            } else if (hours < 12) {
-                hours = hours + 12;
+                hours = hours - 12;
+            } else if (hours == 0) {
+                hours = 12;
             }
             return hours;
         },
@@ -121,14 +121,13 @@ app.factory('timeService', ['$location', function($location) {
         },
         getType: function(hours) {
              if(hours > 12){
-               return 'AM';
-             }else if(hours < 12 || hours == 12){
                return 'PM';
+             }else if(hours == 0 || hours < 12){
+               return 'AM';
              }
            /* var types = hours >= 12 ? 'AM' : 'PM';
             hours = hours % 12;
             hours = hours ? hours : 12;*/
-            return types;
         },
         getCurrentMonth: function(date) {
             var monthNames = ["January", "February", "March", "April", "May", "June",
